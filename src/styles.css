@@ -1,1 +1,18 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+.navbar{
+    margin-top: 20px;
+}
+
+*{
+	font-family: "Open Sans";
+}
+
+
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 1200px) {
+    h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  

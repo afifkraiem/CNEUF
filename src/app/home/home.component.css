@@ -1,0 +1,13 @@
+.homeHeader{
+background-color: #6E237D;
+height: auto;
+color: white;  
+margin-top: 20px; 
+text-align: center;
+
+}
+.homeBody{
+ background-image: url('src\assets\back-arc.jpg');
+ background-position: center;
+ height: 80vh;
+}
