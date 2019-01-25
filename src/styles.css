@@ -1,6 +1,8 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 .navbar{
     margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 *{
@@ -14,5 +16,10 @@
       font-size: 20px;
       text-align: center;
     }
+    .navbar{
+      margin-top: 20px;
+      margin-left: 2%;
+      margin-right: 2%;
+  }
   }
   

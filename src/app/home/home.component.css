@@ -7,7 +7,199 @@ text-align: center;
 
 }
 .homeBody{
- background-image: url('src\assets\back-arc.jpg');
+ background-image: url('src\assets\back.png');
  background-position: center;
  height: 80vh;
+ padding: 7%;
 }
+
+.half-circle {
+    
+    height: auto; 
+    border-top-left-radius:350px; 
+    border-top-right-radius: 350px; 
+    border: 5px solid gray;
+    border-bottom: 0;
+}
+.row1{
+    margin-top: -6%;
+}
+.cercle1 {
+    height: 100px;
+    width: 100px;
+    background-color: #9ECB69 ;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 2%;
+  
+    cursor: pointer;
+  }
+  .cercle1:hover {
+    height: 100px;
+    width: 100px;
+    background-color: #6E237D;
+    opacity: 0.8;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 2%;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    cursor: pointer;
+  }
+.row2{
+    margin-top: 4%;
+}
+  .cercle2 {
+    height: 100px;
+    width: 100px;
+    background-color: #1AA8E2;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    float: left;
+   
+  }
+  .cercle2:hover {
+    height: 100px;
+    width: 100px;
+    background-color: #6E237D;
+    opacity: 0.8;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    cursor: pointer;
+  }
+  .cercle3 {
+    height: 100px;
+    width: 100px;
+    background-color: #E52727;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    float: right;
+    
+  }
+  .cercle3:hover {
+    height: 100px;
+    width: 100px;
+    background-color: #6E237D;
+    opacity: 0.8;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    cursor: pointer;
+  }
+.row3{
+    margin-top: 10%;
+}
+  .cercle4 {
+    height: 100px;
+    width: 100px;
+    background-color: #F9D30B;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    float: left;
+    margin-left: -65px;
+   
+  }
+  .cercle4:hover {
+    height: 100px;
+    width: 100px;
+    background-color: #6E237D;
+    opacity: 0.8;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    cursor: pointer;
+  }
+  .cercle5 {
+    height: 100px;
+    width: 100px;
+    background-color: #6E237D;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    float: right;
+    margin-right: -65px;
+    
+  }
+  .cercle5:hover {
+    height: 100px;
+    width: 100px;
+    background-color: #6E237D;
+    opacity: 0.8;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top:8%;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 770px) {
+    .row1{
+        margin-top: -6%;
+    }
+    .cercle2 {
+        height: 100px;
+        width: 100px;
+        background-color: #1AA8E2;
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        padding-top:5%;
+        margin-left:-10%;
+        float: left;
+       
+      }
+      .cercle2:hover {
+        height: 100px;
+        width: 100px;
+        background-color: #6E237D;
+        opacity: 0.8;
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        padding-top:5%;
+        margin-left:-10%;
+        box-shadow: 0 0 20px rgba(0,0,0,.6);
+        cursor: pointer;
+      }
+      .cercle3 {
+        height: 100px;
+        width: 100px;
+        background-color: #E52727;
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        padding-top:5%;
+        float: right;
+        margin-right:-10%;
+      }
+      .cercle3:hover {
+        height: 100px;
+        width: 100px;
+        background-color: #6E237D;
+        opacity: 0.8;
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        padding-top:5%;
+        margin-right:-10%;
+        box-shadow: 0 0 20px rgba(0,0,0,.6);
+        cursor: pointer;
+      }
+  }
+  
