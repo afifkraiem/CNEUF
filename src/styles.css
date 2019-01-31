@@ -21,8 +21,33 @@ h2 {
   text-align: center;
   
   }
+  #sidebar {
+    min-width: 250px;
+    max-width: 270px;
+    background: #3a4352;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
+    transform-origin: bottom left;
+}
 
+  #sidebar .sidebar-header {
+    padding: 8px;
+    background: #2d3645;
+    max-height: 64px;
+}
+.sidebar-header:before {
+  content: '';
+  background: url(src/assets/auf-footer.png) no-repeat;
+  background-size: auto auto;
+  background-size: 100%;
+  display: block;
+  width: 31px;
+  height: 49px;
+  position: absolute;
  
+  opacity: 0.2;
+ 
+}
 
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 1200px) {
