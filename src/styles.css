@@ -4,11 +4,25 @@
     margin-left: 10%;
     margin-right: 10%;
 }
+h2 {
+  
+  text-align: center;
+}
 
 *{
 	font-family: "Open Sans";
 }
 
+.homeHeader{
+  background-color: #6E237D;
+  height: auto;
+  color: white;  
+  margin-top: 20px; 
+  text-align: center;
+  
+  }
+
+ 
 
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 1200px) {
@@ -22,4 +36,5 @@
       margin-right: 2%;
   }
   }
+  
   

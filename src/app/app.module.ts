@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { DescriptifComponent } from './Descriptif/Descriptif.component';
-import { CandidaturesComponent } from './Candidatures/Candidatures.component';
-import { CartographieComponent } from './Cartographie/Cartographie.component';
-import { ActsComponent } from './Acts/Acts.component';
-import { ModsComponent } from './Mods/Mods.component';
+import { DescriptifComponent } from './utilisateur/Descriptif/Descriptif.component';
+import { CandidaturesComponent } from './coord/Candidatures/Candidatures.component';
+import { CartographieComponent } from './utilisateur/Cartographie/Cartographie.component';
+import { ActsComponent } from './utilisateur/Acts/Acts.component';
+import { ModsComponent } from './utilisateur/Mods/Mods.component';
+import { AdminComponent } from './admin/admin.component';
+import { CoordComponent } from './coord/coord.component';
+import { UtilisateurComponent } from './utilisateur/utilisateur.component';
+import { SidebarCoordComponent } from './coord/sidebar-coord/sidebar-coord.component';
+import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.component';
 
 
 @NgModule({
@@ -23,7 +28,12 @@ import { ModsComponent } from './Mods/Mods.component';
       CandidaturesComponent,
       CartographieComponent,
       ActsComponent,
-      ModsComponent
+      ModsComponent,
+      AdminComponent,
+      CoordComponent,
+      UtilisateurComponent,
+      SidebarCoordComponent,
+      SidebarAdminComponent
    ],
    imports: [
       BrowserModule,
