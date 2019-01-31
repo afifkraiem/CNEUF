@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CNEUF": {
+    "projet-cneuf": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CNEUF",
+            "outputPath": "dist/projet-cneuf",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,6 +26,7 @@
               "src/styles.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
@@ -58,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CNEUF:build"
+            "browserTarget": "projet-cneuf:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "CNEUF:build:production"
+              "browserTarget": "projet-cneuf:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CNEUF:build"
+            "browserTarget": "projet-cneuf:build"
           }
         },
         "test": {
@@ -103,7 +104,7 @@
         }
       }
     },
-    "CNEUF-e2e": {
+    "projet-cneuf-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "CNEUF:serve"
+            "devServerTarget": "projet-cneuf:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CNEUF:serve:production"
+              "devServerTarget": "projet-cneuf:serve:production"
             }
           }
         },
@@ -132,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "CNEUF"
+  "defaultProject": "projet-cneuf"
 }

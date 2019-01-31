@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -38,7 +38,7 @@ import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.compo
    imports: [
       BrowserModule,
       AppRoutingModule,
-      AngularFontAwesomeModule
+     // AngularFontAwesomeModule normalement pr lr moment kol chay c haka wale ?oui normlmnet
    ],
    providers: [],
    bootstrap: [
