@@ -1,9 +1,25 @@
-<nav id="sidebar">
-  <div class="sidebar-header col-md-10">
-    <img src="../assets/CNEUF.png" class="img-responsive ">
-  </div> 
-  
-  <div class="sidebar-menu">
+<!-- Sidebar -->
 
-  </div>
-</nav>
+<div id="wrapper" class="active">
+
+        <div id="sidebar-wrapper">
+            <div class="sidebar-header">
+             <!--   <img src="assets/CNEUF.png" class="img-responsive logo">-->
+            </div>
+            
+         
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a routerLink="Candidatures">Soumetrre une canditature<i class="icone fab fa-elementor fa-2x"></i></a></li>
+                <li><a>Mes canditature<i class=" icone fab fa-elementor fa-2x"></i></a></li>                                
+                <li><a>Profil<i class=" icone fa fa-user fa-2x"></i></a></li>                
+            </ul>
+        </div>
+     <button href="#" id="menu-toggle"><i class="fas fa-bars "></i></button>
+
+
+<div class="container page-content-wrapper">
+<router-outlet></router-outlet>
+</div>
+    
+</div> 
+    

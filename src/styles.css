@@ -10,9 +10,12 @@ h2 {
 }
 
 *{
-	font-family: "Open Sans";
+  font-family: "Open Sans";
+ 
 }
-
+.page-content-wrapper{
+   background-color: #F2F2F2;
+}
 .homeHeader{
   background-color: #6E237D;
   height: auto;
@@ -21,6 +24,7 @@ h2 {
   text-align: center;
   
   }
+  /*
   #sidebar {
     min-width: 250px;
     max-width: 270px;
@@ -47,7 +51,7 @@ h2 {
  
   opacity: 0.2;
  
-}
+}*/
 
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 1200px) {

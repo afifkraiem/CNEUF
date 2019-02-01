@@ -9,6 +9,10 @@ export class SidebarCoordComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
+});
   }
 
 }
