@@ -8,13 +8,20 @@ h2 {
   
   text-align: center;
 }
+h3 {
+  color: #6E237D;
+}
 
-*{
+body{
   font-family: "Open Sans";
- 
+ background-color: #F2F2F2;
+ color: #535B64;
 }
 .page-content-wrapper{
    background-color: #F2F2F2;
+}
+.cnx{
+  text-align: right;
 }
 .homeHeader{
   background-color: #6E237D;
@@ -24,35 +31,17 @@ h2 {
   text-align: center;
   
   }
-  /*
-  #sidebar {
-    min-width: 250px;
-    max-width: 270px;
-    background: #3a4352;
-    color: #fff;
-    transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
-    transform-origin: bottom left;
-}
+  .header-login{
+    background-color: white ;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
-  #sidebar .sidebar-header {
-    padding: 8px;
-    background: #2d3645;
-    max-height: 64px;
-}
-.sidebar-header:before {
-  content: '';
-  background: url(src/assets/auf-footer.png) no-repeat;
-  background-size: auto auto;
-  background-size: 100%;
-  display: block;
-  width: 31px;
-  height: 49px;
-  position: absolute;
- 
-  opacity: 0.2;
- 
-}*/
-
+  }
+  .test{
+    color: #888888;
+    padding-right: 8%;
+  }
+  
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 1200px) {
     h2 {

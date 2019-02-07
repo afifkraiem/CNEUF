@@ -1,1 +1,687 @@
-<h2>haleo</h2>
+<h3>Soumettre votre canditature</h3>
+
+<div class="col-md-12">
+    <div class="box">
+        <div class="box-title row" id="box-title">
+            <h4 class="">Information CNEUF</h4>
+            <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content" > <i class="fa fa-chevron-up fa-lg"></i></a>
+        </div>
+       
+        <div class="box-content collapse in" id="box-content">
+                <hr>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="">Intitulé du CNEUF</label>
+                        <input type="text" class="form-control" placeholder="Intitulé du CNEUF" id="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="">Présentation de la formation</label>
+                        <textarea class="form-control" placeholder="Présentation de la formation" id=""> </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Nom du porteur du projet</label>
+                            <input type="text" class="form-control" placeholder="Nom du porteur du projet" id="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12" >
+                        <div class="form-group">
+                            <label for="">Date de mise en route prévue</label>
+                            <input type="date" class="form-control" placeholder="" id="">
+                        </div>
+                    </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Direction régionale de rattachement</label>
+                            <select class="form-control" id="">
+                                    <option value="" selected="selected">Choisir la direction régionale de rattachement</option>    
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                            </select>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Durée de la formation</label>
+                            <select class="form-control" id="">
+                                    <option value="" selected="selected">Choisir la durée de la formation</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                            </select>
+                         </div>
+                    </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <label for="">Montant global du projet sur toute sa durée en euros</label>
+                        <div class="input-group">
+                            <input  type="number" class="form-control" placeholder="0">
+                            <span class="input-group-addon" id="basic-addon">Euro</span>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <label for="">Montant demandé à l'AUF en euros</label>
+                        <div class="input-group">
+                            <input  type="number" class="form-control" placeholder="0">
+                            <span class="input-group-addon" id="basic-addon">Euro</span>
+                         </div>
+                    </div>
+            </div>
+
+
+        
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- context et justification-->
+
+<div class="col-md-12">
+     <br>
+        <div class="box">
+            <div class="box-title row" id="box-title">
+                <h4 class="">Context et justification du projet</h4>
+                <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content1" > <i class="fa fa-chevron-up fa-lg"></i></a>
+            </div>
+           
+            <div class="box-content collapse in" id="box-content1">
+                    <hr>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Context et environnement (1500 signes) <br><i class="description">Argumentaire justifiant sa pertinence et son caractère innovant </i></label>
+                            <textarea class="form-control" placeholder="Context et environnement" id=""> </textarea>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Objectifs (1500 signes) <br><i class="description">Soulignez les effets structurants pour vos partenaires , votre pays et montrer son ancrage régional. </i></label>
+                            <textarea class="form-control" placeholder="Objectifs" id=""> </textarea>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Cadre logique<br></label>
+                            <input type="file" class="form-control" id="">
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Desciption détaillée (5000 signes) <br><i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal"><i class="fas fa-info-circle"></i></a>
+                            </label>
+                            <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-md hidden-sm">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          
+                                        </div>
+                                        <div class="modal-body">
+                                          <p>Décrivez en détail le projet et ses lots d’activités ou les sous-projets qu’il comporte.<br>
+                                                * Indiquez pour chaque lot d’activités sa planification dans le temps.<br>
+                                                * Pour chaque action prévue, indiquez le ou les indicateurs vérifiables d’atteinte
+                                                des objectifs.<br>
+                                                * Indiquez dans quel « espace » s’inscrit chaque action et à quelle proportion (le
+                                                projet doit comporter des actions dans chacun des trois espaces/ou au moins deux
+                                                espaces:<br>
+                                                - Espace Savoirs et culture <br>
+                                                - Espace des métiers <br>
+                                                - Espace social
+                                                * Indiquez les indicateurs de réussite et les facteurs de risque<br>
+                                                Qui seront les bénéficiaires du C-NEUF, pour quels bénéfices et pour combien d’usagers </p>
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                            <!-- xs visible-->
+                                    <div class="modal-dialog modal-sm visible-sm">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>Décrivez en détail le projet et ses lots d’activités ou les sous-projets qu’il comporte.<br>
+                                                      * Indiquez pour chaque lot d’activités sa planification dans le temps.<br>
+                                                      * Pour chaque action prévue, indiquez le ou les indicateurs vérifiables d’atteinte
+                                                      des objectifs.<br>
+                                                      * Indiquez dans quel « espace » s’inscrit chaque action et à quelle proportion (le
+                                                      projet doit comporter des actions dans chacun des trois espaces/ou au moins deux
+                                                      espaces:<br>
+                                                      - Espace Savoirs et culture <br>
+                                                      - Espace des métiers <br>
+                                                      - Espace social
+                                                      * Indiquez les indicateurs de réussite et les facteurs de risque<br>
+                                                      Qui seront les bénéficiaires du C-NEUF, pour quels bénéfices et pour combien d’usagers </p>
+                                              </div>
+                                              
+                                            </div>
+                                          </div>
+                                  </div>
+                            <textarea class="form-control" placeholder="Description détaillée" id=""> </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Localisation des infrastructures mobilisées pour le projet<br><i class="description"></i></label>
+                                <input type="text" class="form-control" placeholder="Localisation" id="">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Ressources nécessaire <br><i class="description"> Inclure les ressources humaine, matérielles, financières ...</i></label>
+                                
+                                <textarea class="form-control" placeholder="Objectifs" id=""> </textarea>
+                            </div>
+                        </div>
+                </div>
+        
+                <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Indiquez s'il s'agit de locaux existants ou à prévoir <br><i class="description"> Joindre éventuellement des plans y compris d'aménagement</i></label>
+                                <br>      
+                                <input type="radio" name="Localisation" value="local"> Existants
+                                    <input type="radio" name="Localisation" value="local"> A prévoir
+                                    <br>
+                                    <br>
+                                    <input type="file" class="form-control" id="">
+                                
+    
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Stratégie de communication<br><i class="description"> Ainsi ses cibles et ses objectifs</i></label> 
+                                <textarea class="form-control"  id=""> </textarea>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Stratégie de pérrennisation<br><i class="description"> </i></label> 
+                                <textarea class="form-control"  id=""> </textarea>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Gouvernance du C-NEUF<br><i class="description">La structure de gouvernance et les différents partenaires qui sont associés.</i></label> 
+                                <textarea class="form-control" id=""> </textarea>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Date de transfert à un partenaire<br><i class="description"> Lors du transfet, le personnel permanent AUF réintègre la structure de rattachement à la DR de l’AUF.</i></label> 
+                                <input type="date" class="form-control" placeholder="" id="">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Organisation opérationnelle<br><i class="description">Précisez ainsi les compétences (ressources humaines) requises</i></label> 
+                                <textarea class="form-control"  id=""> </textarea>
+                            </div>
+                        </div>
+                </div>
+        
+                
+    
+            
+    
+            </div>
+        </div>
+    
+    </div>
+
+<!-- Partenaires-->
+    <div class="col-md-12">
+        <br>
+        <div class="box">
+            <div class="box-title row" id="box-title">
+                <h4 class="">Partenaires</h4>
+                <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content2" > <i class="fa fa-chevron-up fa-lg"></i></a>
+            </div>
+           
+            <div class="box-content collapse in" id="box-content2">
+                    <hr>
+
+                    <!-- académique-->
+                <div class="row">
+                    <h5>Partenaires Académiques</h5>
+                    <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                </div>
+                
+                <div class=" row small-box">
+                    <div class="row">
+                     <div class="col-md-4 col-xs-12">
+                           <div class="form-group">
+                                <label for="">Institution du correspondant du projet</label>
+                                <select class="form-control" id="">
+                                        <option value="" selected="selected">Choisir l'institution</option>    
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                </select>
+                           </div>
+                     </div>
+
+                     <div class="col-md-4 col-xs-12">
+                           <div class="form-group">
+                                <label for="">Nom du correspondant du projet</label>
+                                <input type="text" class="form-control">
+                           </div>
+                     </div>
+
+                     <div class="col-md-4 col-xs-12">
+                           <div class="form-group">
+                                <label for="">Coordonnées correspondant du projet</label>
+                                <input type="text" class="form-control">
+                           </div>
+                     </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="">Document de présentation du partenaire</label>
+                                        <input type="file" class="form-control">
+                                    </div>
+                              </div>
+         
+                              <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="">Lettre d'engagement du partenaire</label>
+                                        <input type="file" class="form-control">
+                                    </div>
+                              </div>
+                    </div>
+
+                </div>
+            
+         <!-- Socio-économique-->
+         <div class="row">
+                <h5>Partenaires Socio-économique (Entreprises,  ONG, Associations)</h5>
+                <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+            </div>
+            
+            <div class=" row small-box">
+                <div class="row">
+                 <div class="col-md-4 col-xs-12">
+                       <div class="form-group">
+                            <label for="">Institution du correspondant du projet</label>
+                            <input type="text" class="form-control">                               
+                       </div>
+                 </div>
+
+                 <div class="col-md-4 col-xs-12">
+                       <div class="form-group">
+                            <label for="">Nom du correspondant du projet</label>
+                            <input type="text" class="form-control">
+                       </div>
+                 </div>
+
+                 <div class="col-md-4 col-xs-12">
+                       <div class="form-group">
+                            <label for="">Coordonnées correspondant du projet</label>
+                            <input type="text" class="form-control">
+                       </div>
+                 </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                        <label for="">Document de présentation du partenaire</label>
+                                        <input type="file" class="form-control">
+                                </div>
+                          </div>
+     
+                          <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                        <label for="">Lettre d'engagement du partenaire</label>
+                                        <input type="file" class="form-control">
+                                </div>
+                          </div>
+                </div>
+
+            </div>
+        
+<!--Autres partenaires-->
+            <div class="row">
+                    <h5>Autres partenaires (Institutionnels, Coopérations, Médias...)</h5>
+                    <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                </div>
+
+                <div class=" row small-box">
+                    <div class="row">
+                     <div class="col-md-4 col-xs-12">
+                           <div class="form-group">
+                                <label for="">Institution du correspondant du projet</label>
+                                <input type="text" class="form-control">                               
+                           </div>
+                     </div>
+                 
+                     <div class="col-md-4 col-xs-12">
+                           <div class="form-group">
+                                <label for="">Nom du correspondant du projet</label>
+                                <input type="text" class="form-control">
+                           </div>
+                     </div>
+                 
+                     <div class="col-md-4 col-xs-12">
+                           <div class="form-group">
+                                <label for="">Coordonnées correspondant du projet</label>
+                                <input type="text" class="form-control">
+                           </div>
+                     </div>
+                    </div>
+                
+                    <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                            <label for="">Document de présentation du partenaire</label>
+                                            <input type="file" class="form-control">
+                                    </div>
+                              </div>
+                          
+                              <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                            <label for="">Lettre d'engagement du partenaire</label>
+                                            <input type="file" class="form-control">
+                                    </div>
+                              </div>
+                    </div>
+                
+                </div>
+
+
+                 <!--Autre implantations de l'AUF impliquées-->
+             <div class="row">
+                     <h5>Autre implantations de l'AUF impliquées</h5>
+                     <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                 </div>
+             
+                 <div class=" row small-box">
+                     <div class="row">
+                      <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                 <label for="">Institution du correspondant du projet</label>
+                                 <select class="form-control" id="">
+                                        <option value="" selected="selected">Choisir l'institution</option>    
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                </select>                           
+                            </div>
+                      </div>
+                  
+                      <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                 <label for="">Nom du correspondant du projet</label>
+                                 <input type="text" class="form-control">
+                            </div>
+                      </div>
+                  
+                      <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                 <label for="">Coordonnées correspondant du projet</label>
+                                 <input type="text" class="form-control">
+                            </div>
+                      </div>
+                     </div>
+                 
+                 </div>
+
+            </div>
+        </div>
+    
+    </div>
+     
+
+    
+<div class="col-md-12">
+    <br>
+        <div class="box">
+            <div class="box-title row" id="box-title">
+                <h4 class="">Eléments financières</h4>
+                <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content3" > <i class="fa fa-chevron-up fa-lg"></i></a>
+            </div>
+           
+            <div class="box-content collapse in" id="box-content3">
+                    <hr>
+                <div class="row">
+                <h4>Budget global recettes sur 4 années</h4>
+                <i class="description"> Cochez la case à droite du montant pour signifier qu’il s’agit d’un apport en nature
+                        (personnel mis à disposition, locaux mis à disposition, etc.<br></i>
+                        <br>
+                    <div class="table-responsive">
+                            <table class="table table-bordered">
+                               <tr>
+                                   <th></th>
+                                   <th>Recettes</th>
+                                   <th>2018</th>
+                                   <th>2019</th>
+                                   <th>2020</th>
+                                   <th>2021</th>
+                               </tr>   
+                               <tr>
+                                   <td rowspan="3" class="titre-table" >AUF</td>
+                                   <td>Fonctionnement</td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                               </tr>
+                               <tr>
+                                   <td>Investissement</td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                               </tr>
+                               <tr>
+                                   <td>Personnel</td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                               </tr>
+
+                               <tr>
+                                    <td rowspan="3" class="titre-table" >Partenaire 1</td>
+                                    <td>Fonctionnement</td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                </tr>
+                                <tr>
+                                    <td>Investissement</td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                </tr>
+                                <tr>
+                                    <td>Personnel</td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                </tr>
+                                <tr>
+                                    <td class="titre-table">Total  </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+    
+         <div class="row">
+                 <h4>Budget global dépenses sur 4 années</h4>
+                 <i class="description"> Indiquez le budget global dépenses sur 4 années ( un champs text est fournis aussi  pour décrire les détails du budget)<br></i>
+                         <br>
+                     <div class="table-responsive">
+                             <table class="table table-bordered">
+                                <tr>
+                                    <th>Dépenses</th>
+                                    <th>2018</th>
+                                    <th>2019</th>
+                                    <th>2020</th>
+                                    <th>2021</th>
+                                </tr>   
+                                <tr>
+                                    <td class="titre-table" >Fonctionnement <br> (consommable, vacations, détaillez par nature)</td>
+                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                </tr>
+                                <tr>
+                                        <td class="titre-table" >Investissement <br>(détail des équipements prévus)</td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                    </tr>
+                                <tr>
+                                        <td class="titre-table" >Personnel <br> (indiquez le côut chargé par niveau / type / grade) </td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                </tr>    
+                                <tr>
+                                        <td class="titre-table">Total  </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                </tr>
+                             </table>
+                     </div>
+                 </div>
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    <!-- Autres documents à fournir-->
+    <div class="col-md-12">
+            <br>
+            <div class="box">
+                <div class="box-title row" id="box-title">
+                    <h4 class="">Autres documents à fournir</h4>
+                    <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content4" > <i class="fa fa-chevron-up fa-lg"></i></a>
+                </div>
+               
+                <div class="box-content collapse in" id="box-content4">
+                        <hr>
+    
+                        
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Devis estimatifs des travaux à réaliser<br></label>
+                                <input type="file" class="form-control" id="">
+                             </div> 
+                        </div>
+
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="">Budget prévisionnel détaillé par activité<br></label>
+                                <input type="file" class="form-control" id="">
+                             </div> 
+                        </div> 
+                        
+                    </div>
+
+                    <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="">Type d'équipement demandé<br></label>
+                                    <input type="file" class="form-control" id="">
+                                 </div> 
+                            </div>
+    
+                            <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="">Charte de qualité signée<br></label>
+                                    <input type="file" class="form-control" id="">
+                                 </div> 
+                            </div> 
+                            
+                    </div>
+                    
+                   
+    
+                </div>
+            </div>
+    </div>
+    
+    <hr>
+
+    <div class="col-md-12">
+       <br>
+        <div class="box">
+            <div class="box-title row" id="box-title">
+            <div class="row">
+                 <div class="text-center">
+                     <button class=" btn btn1 " name="" type="submit">Enregistrer en brouillon</button> &nbsp;&nbsp;&nbsp;&nbsp;
+                     <button class=" btn btn1 " name="" type="submit">Soumettre à validation</button>
+                 </div>
+             </div>
+            </div>
+        </div>
+        <br><br>
+    </div>

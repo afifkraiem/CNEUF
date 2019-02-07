@@ -2,10 +2,10 @@
     float: right;
 }
 .sidebar-header{
-    height: 30%;
+    height:24%;
     background-image: url('/assets/Head.png') ;
     background-repeat: no-repeat;
-    background-color: white; 
+    background-color: #3A4352; 
 }
 #wrapper {
     padding-left: 70px;
@@ -37,8 +37,8 @@
 #sidebar-wrapper {
     
     box-shadow: 2px 0px 6px -1px rgba(0,0,0,0.29);
-    background-color: white; 
-    max-width: 252px;
+    background-color: #3A4352; 
+    width: 260px;
     margin-left: -270px;
     left: 70px;
     position: fixed;
@@ -49,7 +49,7 @@
 
 .sidebar-nav {
     
-    background:#F7F7F7;
+    background:#3A4352;
     display: block;
     list-style: none;
     margin: 0;
@@ -82,11 +82,15 @@
 #sidebar_menu li a, .sidebar-nav li a {
     padding-top: 5%;
     padding-right: 3%;
-    color:#3A4352;
+    color: white;
+    color: white;
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 14px;
     display: block;
     float: left;
     text-decoration: none;
-     background-color: white; 
+     background-color: #3A4352; 
     border-bottom: 1px solid #3A4352;
     width: 100%;
     -webkit-transition: background .5s;
@@ -119,8 +123,8 @@
 }
 
 .sidebar-nav li :hover {
-  color: #6f2082;
-  background: rgba(255,255,255,0.2);
+  color: white;
+  background: #6f2082;
   text-decoration: none;
 }
 

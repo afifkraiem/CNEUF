@@ -10,14 +10,36 @@
          
             <ul class="sidebar-nav" id="sidebar">
                 <li><a routerLink="Candidatures">Soumetrre une canditature<i class="icone fab fa-elementor fa-2x"></i></a></li>
-                <li><a>Mes canditature<i class=" icone fab fa-elementor fa-2x"></i></a></li>                                
+                <li><a>Suivie de canditature<i class=" icone fab fa-elementor fa-2x"></i></a></li>                                
                 <li><a>Profil<i class=" icone fa fa-user fa-2x"></i></a></li>                
             </ul>
         </div>
-     <button href="#" id="menu-toggle"><i class="fas fa-bars "></i></button>
-
+     
 
 <div class="container page-content-wrapper">
+    <nav class="header-login row">
+        <div class="col-md-1 col-sm-1 col-xs-1 ">
+             <button  href="#" id="menu-toggle"><i class="fas fa-bars "></i></button>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-4 hidden-xs">
+            <img src="../assets/CNEUF1.png" class="img-responsive logo">
+        </div>
+
+         <div  class=" col-md-6 col-sm-7 hidden-xs test cnx pull-right ">
+            <span> <i class="fas fa-user"></i> &nbsp; Bienvenue Syrine</span>
+           &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href=""><i class="fas fa-sign-out-alt"></i>  &nbsp; Se Déconnecter</a> 
+        </div>
+
+        <div  class="visible-xs test cnx pull-right ">
+            <span> <i class="fas fa-user"></i> &nbsp; Bienvenue Syrine</span>
+            <br>
+            <a href=""><i class="fas fa-sign-out-alt"></i>  &nbsp; Se Déconnecter</a> 
+        </div>
+
+    </nav>
+    <app-Candidatures></app-Candidatures>
 <router-outlet></router-outlet>
 </div>
     
