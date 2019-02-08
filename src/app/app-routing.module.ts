@@ -7,6 +7,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CandidaturesComponent } from './coord/Candidatures/Candidatures.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+
 
 const routes: Routes = [
   {path : 'home', component : HomeComponent},
@@ -16,7 +19,9 @@ const routes: Routes = [
   {path : 'Coord', component : CoordComponent},
   {path : 'Cartographie', component : CartographieComponent},
   {path : 'Acts', component : ActsComponent},
-  {path: 'candidatures', component: CandidaturesComponent}
+  {path: 'candidatures', component: CandidaturesComponent},
+  {path: 'signIn', component: SignInComponent},
+  {path: 'signUp', component: SignUpComponent}
 ];
 
 @NgModule({

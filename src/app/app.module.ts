@@ -16,6 +16,8 @@ import { CoordComponent } from './coord/coord.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { SidebarCoordComponent } from './coord/sidebar-coord/sidebar-coord.component';
 import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.compo
       CoordComponent,
       UtilisateurComponent,
       SidebarCoordComponent,
-      SidebarAdminComponent
+      SidebarAdminComponent,
+      SignInComponent,
+      SignUpComponent
    ],
    imports: [
       BrowserModule,
