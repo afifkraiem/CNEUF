@@ -1,12 +1,12 @@
 <h3>Formulaire de candidature projet CNEUF</h3>
-<form>
-<div class="col-md-12">
+<form [formGroup] = "form">
+  <div class="col-md-12">
     <div class="box">
         <div class="box-title row" id="box-title">
             <h4 class="">Informations CNEUF</h4>
             <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content" > <i class="fa fa-chevron-up fa-lg"></i></a>
         </div>
-       
+
         <div class="box-content collapse in" id="box-content">
                 <hr>
             <div class="row">
@@ -15,7 +15,7 @@
                         <label for="">Intitulé du projet CNEUF</label>
                         <input type="text" class="form-control" placeholder="Intitulé du projet" id="">
                     </div>
-                    
+
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <div class="form-group">
@@ -46,7 +46,7 @@
                         <div class="form-group">
                             <label for="">Direction régionale de rattachement</label>
                             <select class="form-control" id="">
-                                    <option value="" selected="selected">Choisir la direction régionale de rattachement</option>    
+                                    <option value="" selected="selected">Choisir la direction régionale de rattachement</option>
                                     <option>Afrique centrale et Grands-Lacs</option>
                                     <option>Afrique de l’Ouest</option>
                                     <option>Amériques</option>
@@ -94,7 +94,7 @@
             </div>
 
 
-        
+
 
         </div>
     </div>
@@ -112,27 +112,27 @@
                 <h4 class="">Contexte et justification du projet</h4>
                 <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content1" > <i class="fa fa-chevron-up fa-lg"></i></a>
             </div>
-           
+
             <div class="box-content collapse in" id="box-content1">
                     <hr>
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="">Contexte et environnement de l'évolution du projet (1500 signes) <br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal1"><i class="fas fa-info-circle"></i></a></label>
-                          <!--Modal--> 
+                          <!--Modal-->
                             <div class="modal fade" id="myModal1" role="dialog">
                                 <div class="modal-dialog modal-md hidden-sm hidden-xs">
                                   <div class="modal-content">
                                     <div class="modal-header">
                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      
+
                                     </div>
                                     <div class="modal-body">
                                       <p>Détaillez le contexte et l’environnement dans lequel évoluera le projet, ainsi que
                                         l’argumentaire justifiant sa pertinence, son caractère innovant et son appui pour l’ouverture
                                         des établissements membres à leur environnement.</p>
                                     </div>
-                                    
+
                                   </div>
                                 </div>
                         <!-- xs visible-->
@@ -140,40 +140,40 @@
                                         <div class="modal-content">
                                           <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            
+
                                           </div>
                                           <div class="modal-body">
                                             <p>Détaillez le contexte et l’environnement dans lequel évoluera le projet, ainsi que
                                                 l’argumentaire justifiant sa pertinence, son caractère innovant et son appui pour l’ouverture
                                                 des établissements membres à leur environnement.</p>
                                           </div>
-                                          
+
                                         </div>
                                       </div>
                               </div>
 
                             <textarea class="form-control" placeholder="Context et environnement" id=""> </textarea>
                         </div>
-                        
+
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="">Objectifs (1500 signes) <br><i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal2"><i class="fas fa-info-circle"></i></a></label>
-                           
-                            <!--Modal--> 
+
+                            <!--Modal-->
                             <div class="modal fade" id="myModal2" role="dialog">
                                 <div class="modal-dialog modal-md hidden-sm hidden-xs">
                                   <div class="modal-content">
                                     <div class="modal-header">
                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      
+
                                     </div>
                                     <div class="modal-body">
                                       <p>Détaillez les objectifs recherchés et les résultats attendus. Soulignez les effets structurants
                                         pour vos partenaires et mettez en avant l’originalité et la spécificité de votre projet C-NEUF
                                         pour votre pays et montrer son ancrage régional. </p>
                                     </div>
-                                    
+
                                   </div>
                                 </div>
                         <!-- xs visible-->
@@ -181,14 +181,14 @@
                                         <div class="modal-content">
                                           <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            
+
                                           </div>
                                           <div class="modal-body">
                                             <p>Détaillez les objectifs recherchés et les résultats attendus. Soulignez les effets structurants
                                                 pour vos partenaires et mettez en avant l’originalité et la spécificité de votre projet C-NEUF
                                                 pour votre pays et montrer son ancrage régional.</p>
                                           </div>
-                                          
+
                                         </div>
                                       </div>
                               </div>
@@ -197,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
@@ -206,7 +206,7 @@
                             <br>
                             <a href="src\assets\Cadre logique du projet.docx" download="Cadre logique du projet.docx" > <i class="fas fa-download"></i> Cliquez ici pour avoir le modèle word </a>
                         </div>
-                        
+
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
@@ -217,7 +217,7 @@
                                       <div class="modal-content">
                                         <div class="modal-header">
                                           <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                          
+
                                         </div>
                                         <div class="modal-body">
                                           <p>Décrivez en détail le projet et ses lots d’activités ou les sous-projets qu’il comporte.<br>
@@ -233,7 +233,7 @@
                                                 * Indiquez les indicateurs de réussite et les facteurs de risque<br>
                                                 Qui seront les bénéficiaires du C-NEUF, pour quels bénéfices et pour combien d’usagers </p>
                                         </div>
-                                        
+
                                       </div>
                                     </div>
                             <!-- xs visible-->
@@ -241,7 +241,7 @@
                                             <div class="modal-content">
                                               <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                
+
                                               </div>
                                               <div class="modal-body">
                                                 <p>Décrivez en détail le projet et ses lots d’activités ou les sous-projets qu’il comporte.<br>
@@ -257,7 +257,7 @@
                                                       * Indiquez les indicateurs de réussite et les facteurs de risque<br>
                                                       Qui seront les bénéficiaires du C-NEUF, pour quels bénéfices et pour combien d’usagers </p>
                                               </div>
-                                              
+
                                             </div>
                                           </div>
                                   </div>
@@ -270,14 +270,14 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Localisation des infrastructures mobilisées pour le projet<br><i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal3"><i class="fas fa-info-circle"></i></a></label>
-                           
-                                <!--Modal--> 
+
+                                <!--Modal-->
                                 <div class="modal fade" id="myModal3" role="dialog">
                                     <div class="modal-dialog modal-md hidden-sm hidden-xs">
                                       <div class="modal-content">
                                         <div class="modal-header">
                                           <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                          
+
                                         </div>
                                         <div class="modal-body">
                                           <p>Indiquez clairement le lieu où sera hébergé le projet C-NEUF, préciser s’il s’agit de locaux
@@ -285,7 +285,7 @@
                                                 (plusieurs lieux possibles)
                                                 </p>
                                         </div>
-                                        
+
                                       </div>
                                     </div>
                             <!-- xs visible-->
@@ -293,7 +293,7 @@
                                             <div class="modal-content">
                                               <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                
+
                                               </div>
                                               <div class="modal-body">
                                                 <p>Indiquez clairement le lieu où sera hébergé le projet C-NEUF, préciser s’il s’agit de locaux
@@ -301,42 +301,42 @@
                                                         (plusieurs lieux possibles)
                                                         </p>
                                               </div>
-                                              
+
                                             </div>
                                           </div>
                                   </div>
                                 <input type="text" class="form-control" placeholder="Localisation" id="">
-    
+
                             </div>
-                            
+
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Ressources nécessaires <br><i class="description"> Inclure les ressources humaine, matérielles, financières ...</i></label>
-                                
+
                                 <textarea class="form-control" placeholder="Objectifs" id=""> </textarea>
                             </div>
                         </div>
                 </div>
-        
+
                 <div class="row">
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Indiquez s'il s'agit de locaux existants ou à prévoir </label>
-                                <br>  <br>    
+                                <br>  <br>
                                 <input type="radio" name="Localisation" value="local"> Existants
                                     <input type="radio" name="Localisation" value="local"> A prévoir
                                     <br>
                                     <label><i class="description"> Joindre éventuellement des plans y compris d'aménagement</i></label>
                                     <input type="file" class="form-control" id="">
-                                
-    
+
+
                             </div>
-                            
+
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
-                                <label for="">Stratégie de communication<br><i class="description"> Détaillez la stratégie de communication autour du projet, ses cibles et ses objectifs </i></label> 
+                                <label for="">Stratégie de communication<br><i class="description"> Détaillez la stratégie de communication autour du projet, ses cibles et ses objectifs </i></label>
                                 <textarea class="form-control"  id=""> </textarea>
                             </div>
                         </div>
@@ -347,20 +347,20 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Stratégie de pérrennisation<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal4"><i class="fas fa-info-circle"></i></a></label>
-                           
-                                    <!--Modal--> 
+
+                                    <!--Modal-->
                                     <div class="modal fade" id="myModal4" role="dialog">
                                         <div class="modal-dialog modal-md hidden-sm hidden-xs">
                                           <div class="modal-content">
                                             <div class="modal-header">
                                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                              
+
                                             </div>
                                             <div class="modal-body">
                                               <p>Indiquez quelle est la stratégie qui sera mise en œuvre pour pérenniser éventuellement le
                                                     projet C-NEUF</p>
                                             </div>
-                                            
+
                                           </div>
                                         </div>
                                 <!-- xs visible-->
@@ -368,38 +368,38 @@
                                                 <div class="modal-content">
                                                   <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    
+
                                                   </div>
                                                   <div class="modal-body">
                                                     <p>Indiquez quelle est la stratégie qui sera mise en œuvre pour pérenniser éventuellement le
                                                             projet C-NEUF</p>
                                                   </div>
-                                                  
+
                                                 </div>
                                               </div>
                                       </div>
 
                                 <textarea class="form-control"  id=""> </textarea>
                             </div>
-                            
+
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Gouvernance du projet CNEUF<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal5"><i class="fas fa-info-circle"></i></a></label>
-                           
-                                <!--Modal--> 
+
+                                <!--Modal-->
                                 <div class="modal fade" id="myModal5" role="dialog">
                                     <div class="modal-dialog modal-md hidden-sm hidden-xs">
                                       <div class="modal-content">
                                         <div class="modal-header">
                                           <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                          
+
                                         </div>
                                         <div class="modal-body">
                                           <p>Décrivez la structure de gouvernance et comment les différents partenaires y sont
                                                 associés </p>
                                         </div>
-                                        
+
                                       </div>
                                     </div>
                             <!-- xs visible-->
@@ -407,13 +407,13 @@
                                             <div class="modal-content">
                                               <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                
+
                                               </div>
                                               <div class="modal-body">
                                                 <p>Décrivez la structure de gouvernance et comment les différents partenaires y sont
                                                         associés </p>
                                               </div>
-                                              
+
                                             </div>
                                           </div>
                                   </div><textarea class="form-control" id=""> </textarea>
@@ -425,19 +425,19 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Date de transfert à un partenaire<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal6"><i class="fas fa-info-circle"></i></a></label>
-                           
-                                <!--Modal--> 
+
+                                <!--Modal-->
                                 <div class="modal fade" id="myModal6" role="dialog">
                                     <div class="modal-dialog modal-md hidden-sm hidden-xs">
                                       <div class="modal-content">
                                         <div class="modal-header">
                                           <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                          
+
                                         </div>
                                         <div class="modal-body">
                                           <p>Indiquez la date prévue pour transférer la gestion du projet C-NEUF à un partenaire</p>
                                         </div>
-                                        
+
                                       </div>
                                     </div>
                             <!-- xs visible-->
@@ -445,13 +445,13 @@
                                             <div class="modal-content">
                                               <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                
+
                                               </div>
                                               <div class="modal-body">
                                                 <p>Décrivez la structure de gouvernance et comment les différents partenaires y sont
                                                         associés </p>
                                               </div>
-                                              
+
                                             </div>
                                           </div>
                                           </div>
@@ -461,19 +461,19 @@
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
-                                <label for="">Organisation opérationnelle<br><i class="description">Précisez ainsi les compétences (ressources humaines) requises</i></label> 
+                                <label for="">Organisation opérationnelle<br><i class="description">Précisez ainsi les compétences (ressources humaines) requises</i></label>
                                 <textarea class="form-control"  id=""> </textarea>
                             </div>
                         </div>
                 </div>
-        
-                
-    
-            
-    
+
+
+
+
+
             </div>
         </div>
-    
+
     </div>
 
 <!-- Partenaires-->
@@ -484,23 +484,25 @@
                 <h4 class="">Partenaires</h4>
                 <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content2" > <i class="fa fa-chevron-up fa-lg"></i></a>
             </div>
-           
+
             <div class="box-content collapse in" id="box-content2">
                     <hr>
 
                     <!-- académique-->
                 <div class="row">
                     <h5>Partenaires Académiques</h5>
-                    <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                    <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addParts()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
                 </div>
-                
+                <div formArrayName="academiques" >
+                  <div *ngFor="let acad of acadForms.controls; let i = index" [formGroupName]="i">
+                      <ng-container >
                 <div class=" row small-box">
                     <div class="row">
                      <div class="col-md-4 col-xs-12">
                            <div class="form-group">
                                 <label for="">Institution du correspondant du projet</label>
-                                <select class="form-control" id="">
-                                        <option value="" selected="selected">Choisir l'institution</option>    
+                                <select class="form-control" id="" formControlName ="institution">
+                                        <option value="" selected="selected">Choisir l'institution</option>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -512,14 +514,14 @@
                      <div class="col-md-4 col-xs-12">
                            <div class="form-group">
                                 <label for="">Nom et prénom du correspondant du projet</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" formControlName ="nom">
                            </div>
                      </div>
 
                      <div class="col-md-4 col-xs-12">
                            <div class="form-group">
                                 <label for="">Fonction</label>
-                                <input type="text" class="form-control" placeholder="Fonction">
+                                <input type="text" class="form-control" formControlName ="fonction" placeholder="Fonction">
                            </div>
                      </div>
                     </div>
@@ -530,8 +532,8 @@
                                        <label for="">Téléphone</label>
                                        <div class="row">
                                     <div class="col-md-5">
-                                         <select class=" form-control" id="">
-                                                 <option value="" selected="selected">(+000)</option>    
+                                         <select class=" form-control" formControlName ="tel" id="">
+                                                 <option value="" selected="selected">(+000)</option>
                                                  <option>1</option>
                                                  <option>2</option>
                                                  <option>3</option>
@@ -539,51 +541,51 @@
                                          </select>
                                      </div>
                                      <div class="col-md-7">
-                                       <input type="number" class="col-md-5 form-control">
+                                       <input type="number" class="col-md-5 form-control" formControlName ="num">
                                      </div>
                                     </div>
                                   </div>
                             </div>
-       
+
                             <div class="col-md-4 col-xs-12">
                                   <div class="form-group">
                                        <label for="">Email</label>
-                                       <input type="email" class="form-control">
+                                       <input type="email" class="form-control" formControlName ="email">
                                   </div>
                             </div>
-       
+
                             <div class="col-md-4 col-xs-12">
                                   <div class="form-group">
                                        <label for="">Adresse</label>
-                                       <input type="text" class="form-control" placeholder="Adresse">
+                                       <input type="text" class="form-control" placeholder="Adresse" formControlName ="adresse">
                                   </div>
                             </div>
                            </div>
 
                            <div class="row">
-                               
+
                             <div class="col-md-4 col-xs-12">
                                     <div class="form-group">
                                          <label for="">Code postal</label>
-                                         <input type="number" class="form-control" placeholder="Code postal">
+                                         <input type="number" class="form-control" placeholder="Code postal" formControlName ="code">
                                     </div>
                               </div>
                                 <div class="col-md-4 col-xs-12">
                                     <div class="form-group">
                                             <label for="">Ville</label>
-                                            <input type="text" class="form-control" placeholder="Ville" >
-                                    </div> 
+                                            <input type="text" class="form-control" placeholder="Ville" formControlName ="ville">
+                                    </div>
                                 </div>
-           
+
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Pays</label>
-                                           <select name="pays" class="form-control"> 
-                                            
+                                           <select name="pays" class="form-control" formControlName ="pays">
+
                                             <option value="default"> ---- </option>
                                             <option value="Afghanistan">Afghanistan </option>
                                             <option value="Afrique_Centrale">Afrique_Centrale </option>
-                                            <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                                            <option value="Afrique_du_sud">Afrique_du_Sud </option>
                                             <option value="Albanie">Albanie </option>
                                             <option value="Algerie">Algerie </option>
                                             <option value="Allemagne">Allemagne </option>
@@ -592,11 +594,11 @@
                                             <option value="Anguilla">Anguilla </option>
                                             <option value="Arabie_Saoudite">Arabie_Saoudite </option>
                                             <option value="Argentine">Argentine </option>
-                                            <option value="Armenie">Armenie </option> 
+                                            <option value="Armenie">Armenie </option>
                                             <option value="Australie">Australie </option>
                                             <option value="Autriche">Autriche </option>
                                             <option value="Azerbaidjan">Azerbaidjan </option>
-                                            
+
                                             <option value="Bahamas">Bahamas </option>
                                             <option value="Bangladesh">Bangladesh </option>
                                             <option value="Barbade">Barbade </option>
@@ -615,7 +617,7 @@
                                             <option value="Bulgarie">Bulgarie </option>
                                             <option value="Burkina_Faso">Burkina_Faso </option>
                                             <option value="Burundi">Burundi </option>
-                                            
+
                                             <option value="Caiman">Caiman </option>
                                             <option value="Cambodge">Cambodge </option>
                                             <option value="Cameroun">Cameroun </option>
@@ -623,8 +625,8 @@
                                             <option value="Canaries">Canaries </option>
                                             <option value="Cap_vert">Cap_Vert </option>
                                             <option value="Chili">Chili </option>
-                                            <option value="Chine">Chine </option> 
-                                            <option value="Chypre">Chypre </option> 
+                                            <option value="Chine">Chine </option>
+                                            <option value="Chypre">Chypre </option>
                                             <option value="Colombie">Colombie </option>
                                             <option value="Comores">Colombie </option>
                                             <option value="Congo">Congo </option>
@@ -636,12 +638,12 @@
                                             <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
                                             <option value="Croatie">Croatie </option>
                                             <option value="Cuba">Cuba </option>
-                                            
+
                                             <option value="Danemark">Danemark </option>
                                             <option value="Djibouti">Djibouti </option>
                                             <option value="Dominique">Dominique </option>
-                                            
-                                            <option value="Egypte">Egypte </option> 
+
+                                            <option value="Egypte">Egypte </option>
                                             <option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
                                             <option value="Equateur">Equateur </option>
                                             <option value="Erythree">Erythree </option>
@@ -649,13 +651,13 @@
                                             <option value="Estonie">Estonie </option>
                                             <option value="Etats_Unis">Etats_Unis </option>
                                             <option value="Ethiopie">Ethiopie </option>
-                                            
+
                                             <option value="Falkland">Falkland </option>
                                             <option value="Feroe">Feroe </option>
                                             <option value="Fidji">Fidji </option>
                                             <option value="Finlande">Finlande </option>
                                             <option value="France">France </option>
-                                            
+
                                             <option value="Gabon">Gabon </option>
                                             <option value="Gambie">Gambie </option>
                                             <option value="Georgie">Georgie </option>
@@ -673,13 +675,13 @@
                                             <option value="Guinee equatoriale">Guinee_Equatoriale </option>
                                             <option value="Guyana">Guyana </option>
                                             <option value="Guyane_Francaise ">Guyane_Francaise </option>
-                                            
+
                                             <option value="Haiti">Haiti </option>
-                                            <option value="Hawaii">Hawaii </option> 
+                                            <option value="Hawaii">Hawaii </option>
                                             <option value="Honduras">Honduras </option>
                                             <option value="Hong_Kong">Hong_Kong </option>
                                             <option value="Hongrie">Hongrie </option>
-                                            
+
                                             <option value="Inde">Inde </option>
                                             <option value="Indonesie">Indonesie </option>
                                             <option value="Iran">Iran </option>
@@ -688,29 +690,29 @@
                                             <option value="Islande">Islande </option>
                                             <option value="Israel">Israel </option>
                                             <option value="Italie">italie </option>
-                                            
+
                                             <option value="Jamaique">Jamaique </option>
                                             <option value="Jan Mayen">Jan Mayen </option>
                                             <option value="Japon">Japon </option>
                                             <option value="Jersey">Jersey </option>
                                             <option value="Jordanie">Jordanie </option>
-                                            
+
                                             <option value="Kazakhstan">Kazakhstan </option>
                                             <option value="Kenya">Kenya </option>
                                             <option value="Kirghizstan">Kirghizistan </option>
                                             <option value="Kiribati">Kiribati </option>
                                             <option value="Koweit">Koweit </option>
-                                            
+
                                             <option value="Laos">Laos </option>
                                             <option value="Lesotho">Lesotho </option>
                                             <option value="Lettonie">Lettonie </option>
                                             <option value="Liban">Liban </option>
                                             <option value="Liberia">Liberia </option>
                                             <option value="Liechtenstein">Liechtenstein </option>
-                                            <option value="Lituanie">Lituanie </option> 
+                                            <option value="Lituanie">Lituanie </option>
                                             <option value="Luxembourg">Luxembourg </option>
                                             <option value="Lybie">Lybie </option>
-                                            
+
                                             <option value="Macao">Macao </option>
                                             <option value="Macedoine">Macedoine </option>
                                             <option value="Madagascar">Madagascar </option>
@@ -736,7 +738,7 @@
                                             <option value="Mongolie">Mongolie </option>
                                             <option value="Montserrat">Montserrat </option>
                                             <option value="Mozambique">Mozambique </option>
-                                            
+
                                             <option value="Namibie">Namibie </option>
                                             <option value="Nauru">Nauru </option>
                                             <option value="Nepal">Nepal </option>
@@ -748,11 +750,11 @@
                                             <option value="Norvege">Norvege </option>
                                             <option value="Nouvelle_Caledonie">Nouvelle_Caledonie </option>
                                             <option value="Nouvelle_Zelande">Nouvelle_Zelande </option>
-                                            
+
                                             <option value="Oman">Oman </option>
                                             <option value="Ouganda">Ouganda </option>
                                             <option value="Ouzbekistan">Ouzbekistan </option>
-                                            
+
                                             <option value="Pakistan">Pakistan </option>
                                             <option value="Palau">Palau </option>
                                             <option value="Palestine">Palestine </option>
@@ -761,14 +763,14 @@
                                             <option value="Paraguay">Paraguay </option>
                                             <option value="Pays_Bas">Pays_Bas </option>
                                             <option value="Perou">Perou </option>
-                                            <option value="Philippines">Philippines </option> 
+                                            <option value="Philippines">Philippines </option>
                                             <option value="Pologne">Pologne </option>
                                             <option value="Polynesie">Polynesie </option>
                                             <option value="Porto_Rico">Porto_Rico </option>
                                             <option value="Portugal">Portugal </option>
-                                            
+
                                             <option value="Qatar">Qatar </option>
-                                            
+
                                             <option value="Republique_Dominicaine">Republique_Dominicaine </option>
                                             <option value="Republique_Tcheque">Republique_Tcheque </option>
                                             <option value="Reunion">Reunion </option>
@@ -776,7 +778,7 @@
                                             <option value="Royaume_Uni">Royaume_Uni </option>
                                             <option value="Russie">Russie </option>
                                             <option value="Rwanda">Rwanda </option>
-                                            
+
                                             <option value="Sahara Occidental">Sahara Occidental </option>
                                             <option value="Sainte_Lucie">Sainte_Lucie </option>
                                             <option value="Saint_Marin">Saint_Marin </option>
@@ -784,22 +786,22 @@
                                             <option value="Salvador">Salvador </option>
                                             <option value="Samoa_Occidentales">Samoa_Occidentales</option>
                                             <option value="Samoa_Americaine">Samoa_Americaine </option>
-                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option> 
-                                            <option value="Senegal">Senegal </option> 
+                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option>
+                                            <option value="Senegal">Senegal </option>
                                             <option value="Seychelles">Seychelles </option>
                                             <option value="Sierra Leone">Sierra Leone </option>
                                             <option value="Singapour">Singapour </option>
                                             <option value="Slovaquie">Slovaquie </option>
                                             <option value="Slovenie">Slovenie</option>
                                             <option value="Somalie">Somalie </option>
-                                            <option value="Soudan">Soudan </option> 
-                                            <option value="Sri_Lanka">Sri_Lanka </option> 
+                                            <option value="Soudan">Soudan </option>
+                                            <option value="Sri_Lanka">Sri_Lanka </option>
                                             <option value="Suede">Suede </option>
                                             <option value="Suisse">Suisse </option>
                                             <option value="Surinam">Surinam </option>
                                             <option value="Swaziland">Swaziland </option>
                                             <option value="Syrie">Syrie </option>
-                                            
+
                                             <option value="Tadjikistan">Tadjikistan </option>
                                             <option value="Taiwan">Taiwan </option>
                                             <option value="Tonga">Tonga </option>
@@ -808,64 +810,67 @@
                                             <option value="Thailande">Thailande </option>
                                             <option value="Tibet">Tibet </option>
                                             <option value="Timor_Oriental">Timor_Oriental </option>
-                                            <option value="Togo">Togo </option> 
+                                            <option value="Togo">Togo </option>
                                             <option value="Trinite_et_Tobago">Trinite_et_Tobago </option>
                                             <option value="Tristan da cunha">Tristan de cuncha </option>
                                             <option value="Tunisie">Tunisie </option>
-                                            <option value="Turkmenistan">Turmenistan </option> 
+                                            <option value="Turkmenistan">Turmenistan </option>
                                             <option value="Turquie">Turquie </option>
-                                            
+
                                             <option value="Ukraine">Ukraine </option>
                                             <option value="Uruguay">Uruguay </option>
-                                            
+
                                             <option value="Vanuatu">Vanuatu </option>
                                             <option value="Vatican">Vatican </option>
                                             <option value="Venezuela">Venezuela </option>
                                             <option value="Vierges_Americaines">Vierges_Americaines </option>
                                             <option value="Vierges_Britanniques">Vierges_Britanniques </option>
                                             <option value="Vietnam">Vietnam </option>
-                                            
+
                                             <option value="Wake">Wake </option>
                                             <option value="Wallis et Futuma">Wallis et Futuma </option>
-                                            
+
                                             <option value="Yemen">Yemen </option>
                                             <option value="Yougoslavie">Yougoslavie </option>
-                                            
+
                                             <option value="Zambie">Zambie </option>
                                             <option value="Zimbabwe">Zimbabwe </option>
-                                            
+
                                             </select>
                                       </div>
                                 </div>
-           
-                                
+
+
                                </div>
 
                     <div class="row">
                             <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
                                         <label for="">Document de présentation du partenaire</label>
-                                        <input type="file" class="form-control">
+                                        <input type="file" class="form-control" formControlName ="doc">
                                     </div>
                               </div>
-         
+
                               <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
                                         <label for="">Lettre d'engagement du partenaire</label>
-                                        <input type="file" class="form-control">
+                                        <input type="file" class="form-control" formControlName ="lettre">
                                     </div>
                               </div>
                     </div>
 
                 </div>
-            
-            
+                </ng-container>
+                </div>
+                </div>
+
+
          <!-- Socio-économique-->
          <div class="row">
                 <h5>Partenaires Socio-économique (Entreprises,  ONG, Associations)</h5>
                 <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
             </div>
-            
+
             <div class=" row small-box">
                     <div class="row">
                      <div class="col-md-4 col-xs-12">
@@ -897,7 +902,7 @@
                                        <div class="row">
                                     <div class="col-md-5">
                                          <select class=" form-control" id="">
-                                                 <option value="" selected="selected">(+000)</option>    
+                                                 <option value="" selected="selected">(+000)</option>
                                                  <option>1</option>
                                                  <option>2</option>
                                                  <option>3</option>
@@ -910,14 +915,14 @@
                                     </div>
                                   </div>
                             </div>
-       
+
                             <div class="col-md-4 col-xs-12">
                                   <div class="form-group">
                                        <label for="">Email</label>
                                        <input type="email" class="form-control">
                                   </div>
                             </div>
-       
+
                             <div class="col-md-4 col-xs-12">
                                   <div class="form-group">
                                        <label for="">Adresse</label>
@@ -927,7 +932,7 @@
                            </div>
 
                            <div class="row">
-                               
+
                             <div class="col-md-4 col-xs-12">
                                     <div class="form-group">
                                          <label for="">Code postal</label>
@@ -938,18 +943,18 @@
                                     <div class="form-group">
                                             <label for="">Ville</label>
                                             <input type="text" class="form-control" placeholder="Ville" >
-                                    </div> 
+                                    </div>
                                 </div>
-           
+
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Pays</label>
-                                           <select name="pays" class="form-control"> 
-                                            
+                                           <select name="pays" class="form-control">
+
                                             <option value="default"> ---- </option>
                                             <option value="Afghanistan">Afghanistan </option>
                                             <option value="Afrique_Centrale">Afrique_Centrale </option>
-                                            <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                                            <option value="Afrique_du_sud">Afrique_du_Sud </option>
                                             <option value="Albanie">Albanie </option>
                                             <option value="Algerie">Algerie </option>
                                             <option value="Allemagne">Allemagne </option>
@@ -958,11 +963,11 @@
                                             <option value="Anguilla">Anguilla </option>
                                             <option value="Arabie_Saoudite">Arabie_Saoudite </option>
                                             <option value="Argentine">Argentine </option>
-                                            <option value="Armenie">Armenie </option> 
+                                            <option value="Armenie">Armenie </option>
                                             <option value="Australie">Australie </option>
                                             <option value="Autriche">Autriche </option>
                                             <option value="Azerbaidjan">Azerbaidjan </option>
-                                            
+
                                             <option value="Bahamas">Bahamas </option>
                                             <option value="Bangladesh">Bangladesh </option>
                                             <option value="Barbade">Barbade </option>
@@ -981,7 +986,7 @@
                                             <option value="Bulgarie">Bulgarie </option>
                                             <option value="Burkina_Faso">Burkina_Faso </option>
                                             <option value="Burundi">Burundi </option>
-                                            
+
                                             <option value="Caiman">Caiman </option>
                                             <option value="Cambodge">Cambodge </option>
                                             <option value="Cameroun">Cameroun </option>
@@ -989,8 +994,8 @@
                                             <option value="Canaries">Canaries </option>
                                             <option value="Cap_vert">Cap_Vert </option>
                                             <option value="Chili">Chili </option>
-                                            <option value="Chine">Chine </option> 
-                                            <option value="Chypre">Chypre </option> 
+                                            <option value="Chine">Chine </option>
+                                            <option value="Chypre">Chypre </option>
                                             <option value="Colombie">Colombie </option>
                                             <option value="Comores">Colombie </option>
                                             <option value="Congo">Congo </option>
@@ -1002,12 +1007,12 @@
                                             <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
                                             <option value="Croatie">Croatie </option>
                                             <option value="Cuba">Cuba </option>
-                                            
+
                                             <option value="Danemark">Danemark </option>
                                             <option value="Djibouti">Djibouti </option>
                                             <option value="Dominique">Dominique </option>
-                                            
-                                            <option value="Egypte">Egypte </option> 
+
+                                            <option value="Egypte">Egypte </option>
                                             <option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
                                             <option value="Equateur">Equateur </option>
                                             <option value="Erythree">Erythree </option>
@@ -1015,13 +1020,13 @@
                                             <option value="Estonie">Estonie </option>
                                             <option value="Etats_Unis">Etats_Unis </option>
                                             <option value="Ethiopie">Ethiopie </option>
-                                            
+
                                             <option value="Falkland">Falkland </option>
                                             <option value="Feroe">Feroe </option>
                                             <option value="Fidji">Fidji </option>
                                             <option value="Finlande">Finlande </option>
                                             <option value="France">France </option>
-                                            
+
                                             <option value="Gabon">Gabon </option>
                                             <option value="Gambie">Gambie </option>
                                             <option value="Georgie">Georgie </option>
@@ -1039,13 +1044,13 @@
                                             <option value="Guinee equatoriale">Guinee_Equatoriale </option>
                                             <option value="Guyana">Guyana </option>
                                             <option value="Guyane_Francaise ">Guyane_Francaise </option>
-                                            
+
                                             <option value="Haiti">Haiti </option>
-                                            <option value="Hawaii">Hawaii </option> 
+                                            <option value="Hawaii">Hawaii </option>
                                             <option value="Honduras">Honduras </option>
                                             <option value="Hong_Kong">Hong_Kong </option>
                                             <option value="Hongrie">Hongrie </option>
-                                            
+
                                             <option value="Inde">Inde </option>
                                             <option value="Indonesie">Indonesie </option>
                                             <option value="Iran">Iran </option>
@@ -1054,29 +1059,29 @@
                                             <option value="Islande">Islande </option>
                                             <option value="Israel">Israel </option>
                                             <option value="Italie">italie </option>
-                                            
+
                                             <option value="Jamaique">Jamaique </option>
                                             <option value="Jan Mayen">Jan Mayen </option>
                                             <option value="Japon">Japon </option>
                                             <option value="Jersey">Jersey </option>
                                             <option value="Jordanie">Jordanie </option>
-                                            
+
                                             <option value="Kazakhstan">Kazakhstan </option>
                                             <option value="Kenya">Kenya </option>
                                             <option value="Kirghizstan">Kirghizistan </option>
                                             <option value="Kiribati">Kiribati </option>
                                             <option value="Koweit">Koweit </option>
-                                            
+
                                             <option value="Laos">Laos </option>
                                             <option value="Lesotho">Lesotho </option>
                                             <option value="Lettonie">Lettonie </option>
                                             <option value="Liban">Liban </option>
                                             <option value="Liberia">Liberia </option>
                                             <option value="Liechtenstein">Liechtenstein </option>
-                                            <option value="Lituanie">Lituanie </option> 
+                                            <option value="Lituanie">Lituanie </option>
                                             <option value="Luxembourg">Luxembourg </option>
                                             <option value="Lybie">Lybie </option>
-                                            
+
                                             <option value="Macao">Macao </option>
                                             <option value="Macedoine">Macedoine </option>
                                             <option value="Madagascar">Madagascar </option>
@@ -1102,7 +1107,7 @@
                                             <option value="Mongolie">Mongolie </option>
                                             <option value="Montserrat">Montserrat </option>
                                             <option value="Mozambique">Mozambique </option>
-                                            
+
                                             <option value="Namibie">Namibie </option>
                                             <option value="Nauru">Nauru </option>
                                             <option value="Nepal">Nepal </option>
@@ -1114,11 +1119,11 @@
                                             <option value="Norvege">Norvege </option>
                                             <option value="Nouvelle_Caledonie">Nouvelle_Caledonie </option>
                                             <option value="Nouvelle_Zelande">Nouvelle_Zelande </option>
-                                            
+
                                             <option value="Oman">Oman </option>
                                             <option value="Ouganda">Ouganda </option>
                                             <option value="Ouzbekistan">Ouzbekistan </option>
-                                            
+
                                             <option value="Pakistan">Pakistan </option>
                                             <option value="Palau">Palau </option>
                                             <option value="Palestine">Palestine </option>
@@ -1127,14 +1132,14 @@
                                             <option value="Paraguay">Paraguay </option>
                                             <option value="Pays_Bas">Pays_Bas </option>
                                             <option value="Perou">Perou </option>
-                                            <option value="Philippines">Philippines </option> 
+                                            <option value="Philippines">Philippines </option>
                                             <option value="Pologne">Pologne </option>
                                             <option value="Polynesie">Polynesie </option>
                                             <option value="Porto_Rico">Porto_Rico </option>
                                             <option value="Portugal">Portugal </option>
-                                            
+
                                             <option value="Qatar">Qatar </option>
-                                            
+
                                             <option value="Republique_Dominicaine">Republique_Dominicaine </option>
                                             <option value="Republique_Tcheque">Republique_Tcheque </option>
                                             <option value="Reunion">Reunion </option>
@@ -1142,7 +1147,7 @@
                                             <option value="Royaume_Uni">Royaume_Uni </option>
                                             <option value="Russie">Russie </option>
                                             <option value="Rwanda">Rwanda </option>
-                                            
+
                                             <option value="Sahara Occidental">Sahara Occidental </option>
                                             <option value="Sainte_Lucie">Sainte_Lucie </option>
                                             <option value="Saint_Marin">Saint_Marin </option>
@@ -1150,22 +1155,22 @@
                                             <option value="Salvador">Salvador </option>
                                             <option value="Samoa_Occidentales">Samoa_Occidentales</option>
                                             <option value="Samoa_Americaine">Samoa_Americaine </option>
-                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option> 
-                                            <option value="Senegal">Senegal </option> 
+                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option>
+                                            <option value="Senegal">Senegal </option>
                                             <option value="Seychelles">Seychelles </option>
                                             <option value="Sierra Leone">Sierra Leone </option>
                                             <option value="Singapour">Singapour </option>
                                             <option value="Slovaquie">Slovaquie </option>
                                             <option value="Slovenie">Slovenie</option>
                                             <option value="Somalie">Somalie </option>
-                                            <option value="Soudan">Soudan </option> 
-                                            <option value="Sri_Lanka">Sri_Lanka </option> 
+                                            <option value="Soudan">Soudan </option>
+                                            <option value="Sri_Lanka">Sri_Lanka </option>
                                             <option value="Suede">Suede </option>
                                             <option value="Suisse">Suisse </option>
                                             <option value="Surinam">Surinam </option>
                                             <option value="Swaziland">Swaziland </option>
                                             <option value="Syrie">Syrie </option>
-                                            
+
                                             <option value="Tadjikistan">Tadjikistan </option>
                                             <option value="Taiwan">Taiwan </option>
                                             <option value="Tonga">Tonga </option>
@@ -1174,37 +1179,37 @@
                                             <option value="Thailande">Thailande </option>
                                             <option value="Tibet">Tibet </option>
                                             <option value="Timor_Oriental">Timor_Oriental </option>
-                                            <option value="Togo">Togo </option> 
+                                            <option value="Togo">Togo </option>
                                             <option value="Trinite_et_Tobago">Trinite_et_Tobago </option>
                                             <option value="Tristan da cunha">Tristan de cuncha </option>
                                             <option value="Tunisie">Tunisie </option>
-                                            <option value="Turkmenistan">Turmenistan </option> 
+                                            <option value="Turkmenistan">Turmenistan </option>
                                             <option value="Turquie">Turquie </option>
-                                            
+
                                             <option value="Ukraine">Ukraine </option>
                                             <option value="Uruguay">Uruguay </option>
-                                            
+
                                             <option value="Vanuatu">Vanuatu </option>
                                             <option value="Vatican">Vatican </option>
                                             <option value="Venezuela">Venezuela </option>
                                             <option value="Vierges_Americaines">Vierges_Americaines </option>
                                             <option value="Vierges_Britanniques">Vierges_Britanniques </option>
                                             <option value="Vietnam">Vietnam </option>
-                                            
+
                                             <option value="Wake">Wake </option>
                                             <option value="Wallis et Futuma">Wallis et Futuma </option>
-                                            
+
                                             <option value="Yemen">Yemen </option>
                                             <option value="Yougoslavie">Yougoslavie </option>
-                                            
+
                                             <option value="Zambie">Zambie </option>
                                             <option value="Zimbabwe">Zimbabwe </option>
-                                            
+
                                             </select>
                                       </div>
                                 </div>
-           
-                                
+
+
                                </div>
 
                     <div class="row">
@@ -1214,7 +1219,7 @@
                                         <input type="file" class="form-control">
                                     </div>
                               </div>
-         
+
                               <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
                                         <label for="">Lettre d'engagement du partenaire</label>
@@ -1224,7 +1229,7 @@
                     </div>
 
                 </div>
-        
+
 <!--Autres partenaires-->
             <div class="row">
                     <h5>Autres partenaires (Institutionnels, Coopérations, Médias...)</h5>
@@ -1239,14 +1244,14 @@
                                     <input type="text" class="form-control">
                                </div>
                          </div>
-    
+
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Nom et prénom du correspondant du projet</label>
                                     <input type="text" class="form-control">
                                </div>
                          </div>
-    
+
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Fonction</label>
@@ -1254,7 +1259,7 @@
                                </div>
                          </div>
                         </div>
-    
+
                         <div class="row">
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
@@ -1262,7 +1267,7 @@
                                            <div class="row">
                                         <div class="col-md-5">
                                              <select class=" form-control" id="">
-                                                     <option value="" selected="selected">(+000)</option>    
+                                                     <option value="" selected="selected">(+000)</option>
                                                      <option>1</option>
                                                      <option>2</option>
                                                      <option>3</option>
@@ -1275,14 +1280,14 @@
                                         </div>
                                       </div>
                                 </div>
-           
+
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Email</label>
                                            <input type="email" class="form-control">
                                       </div>
                                 </div>
-           
+
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Adresse</label>
@@ -1290,9 +1295,9 @@
                                       </div>
                                 </div>
                                </div>
-    
+
                                <div class="row">
-                                   
+
                                 <div class="col-md-4 col-xs-12">
                                         <div class="form-group">
                                              <label for="">Code postal</label>
@@ -1303,18 +1308,18 @@
                                         <div class="form-group">
                                                 <label for="">Ville</label>
                                                 <input type="text" class="form-control" placeholder="Ville" >
-                                        </div> 
+                                        </div>
                                     </div>
-               
+
                                     <div class="col-md-4 col-xs-12">
                                           <div class="form-group">
                                                <label for="">Pays</label>
-                                           <select name="pays" class="form-control"> 
-                                            
+                                           <select name="pays" class="form-control">
+
                                             <option value="default"> ---- </option>
                                             <option value="Afghanistan">Afghanistan </option>
                                             <option value="Afrique_Centrale">Afrique_Centrale </option>
-                                            <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                                            <option value="Afrique_du_sud">Afrique_du_Sud </option>
                                             <option value="Albanie">Albanie </option>
                                             <option value="Algerie">Algerie </option>
                                             <option value="Allemagne">Allemagne </option>
@@ -1323,11 +1328,11 @@
                                             <option value="Anguilla">Anguilla </option>
                                             <option value="Arabie_Saoudite">Arabie_Saoudite </option>
                                             <option value="Argentine">Argentine </option>
-                                            <option value="Armenie">Armenie </option> 
+                                            <option value="Armenie">Armenie </option>
                                             <option value="Australie">Australie </option>
                                             <option value="Autriche">Autriche </option>
                                             <option value="Azerbaidjan">Azerbaidjan </option>
-                                            
+
                                             <option value="Bahamas">Bahamas </option>
                                             <option value="Bangladesh">Bangladesh </option>
                                             <option value="Barbade">Barbade </option>
@@ -1346,7 +1351,7 @@
                                             <option value="Bulgarie">Bulgarie </option>
                                             <option value="Burkina_Faso">Burkina_Faso </option>
                                             <option value="Burundi">Burundi </option>
-                                            
+
                                             <option value="Caiman">Caiman </option>
                                             <option value="Cambodge">Cambodge </option>
                                             <option value="Cameroun">Cameroun </option>
@@ -1354,8 +1359,8 @@
                                             <option value="Canaries">Canaries </option>
                                             <option value="Cap_vert">Cap_Vert </option>
                                             <option value="Chili">Chili </option>
-                                            <option value="Chine">Chine </option> 
-                                            <option value="Chypre">Chypre </option> 
+                                            <option value="Chine">Chine </option>
+                                            <option value="Chypre">Chypre </option>
                                             <option value="Colombie">Colombie </option>
                                             <option value="Comores">Colombie </option>
                                             <option value="Congo">Congo </option>
@@ -1367,12 +1372,12 @@
                                             <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
                                             <option value="Croatie">Croatie </option>
                                             <option value="Cuba">Cuba </option>
-                                            
+
                                             <option value="Danemark">Danemark </option>
                                             <option value="Djibouti">Djibouti </option>
                                             <option value="Dominique">Dominique </option>
-                                            
-                                            <option value="Egypte">Egypte </option> 
+
+                                            <option value="Egypte">Egypte </option>
                                             <option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
                                             <option value="Equateur">Equateur </option>
                                             <option value="Erythree">Erythree </option>
@@ -1380,13 +1385,13 @@
                                             <option value="Estonie">Estonie </option>
                                             <option value="Etats_Unis">Etats_Unis </option>
                                             <option value="Ethiopie">Ethiopie </option>
-                                            
+
                                             <option value="Falkland">Falkland </option>
                                             <option value="Feroe">Feroe </option>
                                             <option value="Fidji">Fidji </option>
                                             <option value="Finlande">Finlande </option>
                                             <option value="France">France </option>
-                                            
+
                                             <option value="Gabon">Gabon </option>
                                             <option value="Gambie">Gambie </option>
                                             <option value="Georgie">Georgie </option>
@@ -1404,13 +1409,13 @@
                                             <option value="Guinee equatoriale">Guinee_Equatoriale </option>
                                             <option value="Guyana">Guyana </option>
                                             <option value="Guyane_Francaise ">Guyane_Francaise </option>
-                                            
+
                                             <option value="Haiti">Haiti </option>
-                                            <option value="Hawaii">Hawaii </option> 
+                                            <option value="Hawaii">Hawaii </option>
                                             <option value="Honduras">Honduras </option>
                                             <option value="Hong_Kong">Hong_Kong </option>
                                             <option value="Hongrie">Hongrie </option>
-                                            
+
                                             <option value="Inde">Inde </option>
                                             <option value="Indonesie">Indonesie </option>
                                             <option value="Iran">Iran </option>
@@ -1419,29 +1424,29 @@
                                             <option value="Islande">Islande </option>
                                             <option value="Israel">Israel </option>
                                             <option value="Italie">italie </option>
-                                            
+
                                             <option value="Jamaique">Jamaique </option>
                                             <option value="Jan Mayen">Jan Mayen </option>
                                             <option value="Japon">Japon </option>
                                             <option value="Jersey">Jersey </option>
                                             <option value="Jordanie">Jordanie </option>
-                                            
+
                                             <option value="Kazakhstan">Kazakhstan </option>
                                             <option value="Kenya">Kenya </option>
                                             <option value="Kirghizstan">Kirghizistan </option>
                                             <option value="Kiribati">Kiribati </option>
                                             <option value="Koweit">Koweit </option>
-                                            
+
                                             <option value="Laos">Laos </option>
                                             <option value="Lesotho">Lesotho </option>
                                             <option value="Lettonie">Lettonie </option>
                                             <option value="Liban">Liban </option>
                                             <option value="Liberia">Liberia </option>
                                             <option value="Liechtenstein">Liechtenstein </option>
-                                            <option value="Lituanie">Lituanie </option> 
+                                            <option value="Lituanie">Lituanie </option>
                                             <option value="Luxembourg">Luxembourg </option>
                                             <option value="Lybie">Lybie </option>
-                                            
+
                                             <option value="Macao">Macao </option>
                                             <option value="Macedoine">Macedoine </option>
                                             <option value="Madagascar">Madagascar </option>
@@ -1467,7 +1472,7 @@
                                             <option value="Mongolie">Mongolie </option>
                                             <option value="Montserrat">Montserrat </option>
                                             <option value="Mozambique">Mozambique </option>
-                                            
+
                                             <option value="Namibie">Namibie </option>
                                             <option value="Nauru">Nauru </option>
                                             <option value="Nepal">Nepal </option>
@@ -1479,11 +1484,11 @@
                                             <option value="Norvege">Norvege </option>
                                             <option value="Nouvelle_Caledonie">Nouvelle_Caledonie </option>
                                             <option value="Nouvelle_Zelande">Nouvelle_Zelande </option>
-                                            
+
                                             <option value="Oman">Oman </option>
                                             <option value="Ouganda">Ouganda </option>
                                             <option value="Ouzbekistan">Ouzbekistan </option>
-                                            
+
                                             <option value="Pakistan">Pakistan </option>
                                             <option value="Palau">Palau </option>
                                             <option value="Palestine">Palestine </option>
@@ -1492,14 +1497,14 @@
                                             <option value="Paraguay">Paraguay </option>
                                             <option value="Pays_Bas">Pays_Bas </option>
                                             <option value="Perou">Perou </option>
-                                            <option value="Philippines">Philippines </option> 
+                                            <option value="Philippines">Philippines </option>
                                             <option value="Pologne">Pologne </option>
                                             <option value="Polynesie">Polynesie </option>
                                             <option value="Porto_Rico">Porto_Rico </option>
                                             <option value="Portugal">Portugal </option>
-                                            
+
                                             <option value="Qatar">Qatar </option>
-                                            
+
                                             <option value="Republique_Dominicaine">Republique_Dominicaine </option>
                                             <option value="Republique_Tcheque">Republique_Tcheque </option>
                                             <option value="Reunion">Reunion </option>
@@ -1507,7 +1512,7 @@
                                             <option value="Royaume_Uni">Royaume_Uni </option>
                                             <option value="Russie">Russie </option>
                                             <option value="Rwanda">Rwanda </option>
-                                            
+
                                             <option value="Sahara Occidental">Sahara Occidental </option>
                                             <option value="Sainte_Lucie">Sainte_Lucie </option>
                                             <option value="Saint_Marin">Saint_Marin </option>
@@ -1515,22 +1520,22 @@
                                             <option value="Salvador">Salvador </option>
                                             <option value="Samoa_Occidentales">Samoa_Occidentales</option>
                                             <option value="Samoa_Americaine">Samoa_Americaine </option>
-                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option> 
-                                            <option value="Senegal">Senegal </option> 
+                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option>
+                                            <option value="Senegal">Senegal </option>
                                             <option value="Seychelles">Seychelles </option>
                                             <option value="Sierra Leone">Sierra Leone </option>
                                             <option value="Singapour">Singapour </option>
                                             <option value="Slovaquie">Slovaquie </option>
                                             <option value="Slovenie">Slovenie</option>
                                             <option value="Somalie">Somalie </option>
-                                            <option value="Soudan">Soudan </option> 
-                                            <option value="Sri_Lanka">Sri_Lanka </option> 
+                                            <option value="Soudan">Soudan </option>
+                                            <option value="Sri_Lanka">Sri_Lanka </option>
                                             <option value="Suede">Suede </option>
                                             <option value="Suisse">Suisse </option>
                                             <option value="Surinam">Surinam </option>
                                             <option value="Swaziland">Swaziland </option>
                                             <option value="Syrie">Syrie </option>
-                                            
+
                                             <option value="Tadjikistan">Tadjikistan </option>
                                             <option value="Taiwan">Taiwan </option>
                                             <option value="Tonga">Tonga </option>
@@ -1539,39 +1544,39 @@
                                             <option value="Thailande">Thailande </option>
                                             <option value="Tibet">Tibet </option>
                                             <option value="Timor_Oriental">Timor_Oriental </option>
-                                            <option value="Togo">Togo </option> 
+                                            <option value="Togo">Togo </option>
                                             <option value="Trinite_et_Tobago">Trinite_et_Tobago </option>
                                             <option value="Tristan da cunha">Tristan de cuncha </option>
                                             <option value="Tunisie">Tunisie </option>
-                                            <option value="Turkmenistan">Turmenistan </option> 
+                                            <option value="Turkmenistan">Turmenistan </option>
                                             <option value="Turquie">Turquie </option>
-                                            
+
                                             <option value="Ukraine">Ukraine </option>
                                             <option value="Uruguay">Uruguay </option>
-                                            
+
                                             <option value="Vanuatu">Vanuatu </option>
                                             <option value="Vatican">Vatican </option>
                                             <option value="Venezuela">Venezuela </option>
                                             <option value="Vierges_Americaines">Vierges_Americaines </option>
                                             <option value="Vierges_Britanniques">Vierges_Britanniques </option>
                                             <option value="Vietnam">Vietnam </option>
-                                            
+
                                             <option value="Wake">Wake </option>
                                             <option value="Wallis et Futuma">Wallis et Futuma </option>
-                                            
+
                                             <option value="Yemen">Yemen </option>
                                             <option value="Yougoslavie">Yougoslavie </option>
-                                            
+
                                             <option value="Zambie">Zambie </option>
                                             <option value="Zimbabwe">Zimbabwe </option>
-                                            
+
                                             </select>
                                           </div>
                                     </div>
-               
-                                    
+
+
                                    </div>
-    
+
                         <div class="row">
                                 <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
@@ -1579,7 +1584,7 @@
                                             <input type="file" class="form-control">
                                         </div>
                                   </div>
-             
+
                                   <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
                                             <label for="">Lettre d'engagement du partenaire</label>
@@ -1587,7 +1592,7 @@
                                         </div>
                                   </div>
                         </div>
-    
+
                     </div>
 
 
@@ -1604,14 +1609,14 @@
                                     <input type="text" class="form-control">
                                </div>
                          </div>
-    
+
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Nom et prénom du correspondant du projet</label>
                                     <input type="text" class="form-control">
                                </div>
                          </div>
-    
+
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Fonction</label>
@@ -1619,7 +1624,7 @@
                                </div>
                          </div>
                         </div>
-    
+
                         <div class="row">
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
@@ -1627,7 +1632,7 @@
                                            <div class="row">
                                         <div class="col-md-5">
                                              <select class=" form-control" id="">
-                                                     <option value="" selected="selected">(+000)</option>    
+                                                     <option value="" selected="selected">(+000)</option>
                                                      <option>1</option>
                                                      <option>2</option>
                                                      <option>3</option>
@@ -1640,14 +1645,14 @@
                                         </div>
                                       </div>
                                 </div>
-           
+
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Email</label>
                                            <input type="email" class="form-control">
                                       </div>
                                 </div>
-           
+
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Adresse</label>
@@ -1655,9 +1660,9 @@
                                       </div>
                                 </div>
                                </div>
-    
+
                                <div class="row">
-                                   
+
                                 <div class="col-md-4 col-xs-12">
                                         <div class="form-group">
                                              <label for="">Code postal</label>
@@ -1668,18 +1673,18 @@
                                         <div class="form-group">
                                                 <label for="">Ville</label>
                                                 <input type="text" class="form-control" placeholder="Ville" >
-                                        </div> 
+                                        </div>
                                     </div>
-               
+
                                     <div class="col-md-4 col-xs-12">
                                           <div class="form-group">
                                                <label for="">Pays</label>
-                                           <select name="pays" class="form-control"> 
-                                            
+                                           <select name="pays" class="form-control">
+
                                             <option value="default"> ---- </option>
                                             <option value="Afghanistan">Afghanistan </option>
                                             <option value="Afrique_Centrale">Afrique_Centrale </option>
-                                            <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                                            <option value="Afrique_du_sud">Afrique_du_Sud </option>
                                             <option value="Albanie">Albanie </option>
                                             <option value="Algerie">Algerie </option>
                                             <option value="Allemagne">Allemagne </option>
@@ -1688,11 +1693,11 @@
                                             <option value="Anguilla">Anguilla </option>
                                             <option value="Arabie_Saoudite">Arabie_Saoudite </option>
                                             <option value="Argentine">Argentine </option>
-                                            <option value="Armenie">Armenie </option> 
+                                            <option value="Armenie">Armenie </option>
                                             <option value="Australie">Australie </option>
                                             <option value="Autriche">Autriche </option>
                                             <option value="Azerbaidjan">Azerbaidjan </option>
-                                            
+
                                             <option value="Bahamas">Bahamas </option>
                                             <option value="Bangladesh">Bangladesh </option>
                                             <option value="Barbade">Barbade </option>
@@ -1711,7 +1716,7 @@
                                             <option value="Bulgarie">Bulgarie </option>
                                             <option value="Burkina_Faso">Burkina_Faso </option>
                                             <option value="Burundi">Burundi </option>
-                                            
+
                                             <option value="Caiman">Caiman </option>
                                             <option value="Cambodge">Cambodge </option>
                                             <option value="Cameroun">Cameroun </option>
@@ -1719,8 +1724,8 @@
                                             <option value="Canaries">Canaries </option>
                                             <option value="Cap_vert">Cap_Vert </option>
                                             <option value="Chili">Chili </option>
-                                            <option value="Chine">Chine </option> 
-                                            <option value="Chypre">Chypre </option> 
+                                            <option value="Chine">Chine </option>
+                                            <option value="Chypre">Chypre </option>
                                             <option value="Colombie">Colombie </option>
                                             <option value="Comores">Colombie </option>
                                             <option value="Congo">Congo </option>
@@ -1732,12 +1737,12 @@
                                             <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
                                             <option value="Croatie">Croatie </option>
                                             <option value="Cuba">Cuba </option>
-                                            
+
                                             <option value="Danemark">Danemark </option>
                                             <option value="Djibouti">Djibouti </option>
                                             <option value="Dominique">Dominique </option>
-                                            
-                                            <option value="Egypte">Egypte </option> 
+
+                                            <option value="Egypte">Egypte </option>
                                             <option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
                                             <option value="Equateur">Equateur </option>
                                             <option value="Erythree">Erythree </option>
@@ -1745,13 +1750,13 @@
                                             <option value="Estonie">Estonie </option>
                                             <option value="Etats_Unis">Etats_Unis </option>
                                             <option value="Ethiopie">Ethiopie </option>
-                                            
+
                                             <option value="Falkland">Falkland </option>
                                             <option value="Feroe">Feroe </option>
                                             <option value="Fidji">Fidji </option>
                                             <option value="Finlande">Finlande </option>
                                             <option value="France">France </option>
-                                            
+
                                             <option value="Gabon">Gabon </option>
                                             <option value="Gambie">Gambie </option>
                                             <option value="Georgie">Georgie </option>
@@ -1769,13 +1774,13 @@
                                             <option value="Guinee equatoriale">Guinee_Equatoriale </option>
                                             <option value="Guyana">Guyana </option>
                                             <option value="Guyane_Francaise ">Guyane_Francaise </option>
-                                            
+
                                             <option value="Haiti">Haiti </option>
-                                            <option value="Hawaii">Hawaii </option> 
+                                            <option value="Hawaii">Hawaii </option>
                                             <option value="Honduras">Honduras </option>
                                             <option value="Hong_Kong">Hong_Kong </option>
                                             <option value="Hongrie">Hongrie </option>
-                                            
+
                                             <option value="Inde">Inde </option>
                                             <option value="Indonesie">Indonesie </option>
                                             <option value="Iran">Iran </option>
@@ -1784,29 +1789,29 @@
                                             <option value="Islande">Islande </option>
                                             <option value="Israel">Israel </option>
                                             <option value="Italie">italie </option>
-                                            
+
                                             <option value="Jamaique">Jamaique </option>
                                             <option value="Jan Mayen">Jan Mayen </option>
                                             <option value="Japon">Japon </option>
                                             <option value="Jersey">Jersey </option>
                                             <option value="Jordanie">Jordanie </option>
-                                            
+
                                             <option value="Kazakhstan">Kazakhstan </option>
                                             <option value="Kenya">Kenya </option>
                                             <option value="Kirghizstan">Kirghizistan </option>
                                             <option value="Kiribati">Kiribati </option>
                                             <option value="Koweit">Koweit </option>
-                                            
+
                                             <option value="Laos">Laos </option>
                                             <option value="Lesotho">Lesotho </option>
                                             <option value="Lettonie">Lettonie </option>
                                             <option value="Liban">Liban </option>
                                             <option value="Liberia">Liberia </option>
                                             <option value="Liechtenstein">Liechtenstein </option>
-                                            <option value="Lituanie">Lituanie </option> 
+                                            <option value="Lituanie">Lituanie </option>
                                             <option value="Luxembourg">Luxembourg </option>
                                             <option value="Lybie">Lybie </option>
-                                            
+
                                             <option value="Macao">Macao </option>
                                             <option value="Macedoine">Macedoine </option>
                                             <option value="Madagascar">Madagascar </option>
@@ -1832,7 +1837,7 @@
                                             <option value="Mongolie">Mongolie </option>
                                             <option value="Montserrat">Montserrat </option>
                                             <option value="Mozambique">Mozambique </option>
-                                            
+
                                             <option value="Namibie">Namibie </option>
                                             <option value="Nauru">Nauru </option>
                                             <option value="Nepal">Nepal </option>
@@ -1844,11 +1849,11 @@
                                             <option value="Norvege">Norvege </option>
                                             <option value="Nouvelle_Caledonie">Nouvelle_Caledonie </option>
                                             <option value="Nouvelle_Zelande">Nouvelle_Zelande </option>
-                                            
+
                                             <option value="Oman">Oman </option>
                                             <option value="Ouganda">Ouganda </option>
                                             <option value="Ouzbekistan">Ouzbekistan </option>
-                                            
+
                                             <option value="Pakistan">Pakistan </option>
                                             <option value="Palau">Palau </option>
                                             <option value="Palestine">Palestine </option>
@@ -1857,14 +1862,14 @@
                                             <option value="Paraguay">Paraguay </option>
                                             <option value="Pays_Bas">Pays_Bas </option>
                                             <option value="Perou">Perou </option>
-                                            <option value="Philippines">Philippines </option> 
+                                            <option value="Philippines">Philippines </option>
                                             <option value="Pologne">Pologne </option>
                                             <option value="Polynesie">Polynesie </option>
                                             <option value="Porto_Rico">Porto_Rico </option>
                                             <option value="Portugal">Portugal </option>
-                                            
+
                                             <option value="Qatar">Qatar </option>
-                                            
+
                                             <option value="Republique_Dominicaine">Republique_Dominicaine </option>
                                             <option value="Republique_Tcheque">Republique_Tcheque </option>
                                             <option value="Reunion">Reunion </option>
@@ -1872,7 +1877,7 @@
                                             <option value="Royaume_Uni">Royaume_Uni </option>
                                             <option value="Russie">Russie </option>
                                             <option value="Rwanda">Rwanda </option>
-                                            
+
                                             <option value="Sahara Occidental">Sahara Occidental </option>
                                             <option value="Sainte_Lucie">Sainte_Lucie </option>
                                             <option value="Saint_Marin">Saint_Marin </option>
@@ -1880,22 +1885,22 @@
                                             <option value="Salvador">Salvador </option>
                                             <option value="Samoa_Occidentales">Samoa_Occidentales</option>
                                             <option value="Samoa_Americaine">Samoa_Americaine </option>
-                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option> 
-                                            <option value="Senegal">Senegal </option> 
+                                            <option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option>
+                                            <option value="Senegal">Senegal </option>
                                             <option value="Seychelles">Seychelles </option>
                                             <option value="Sierra Leone">Sierra Leone </option>
                                             <option value="Singapour">Singapour </option>
                                             <option value="Slovaquie">Slovaquie </option>
                                             <option value="Slovenie">Slovenie</option>
                                             <option value="Somalie">Somalie </option>
-                                            <option value="Soudan">Soudan </option> 
-                                            <option value="Sri_Lanka">Sri_Lanka </option> 
+                                            <option value="Soudan">Soudan </option>
+                                            <option value="Sri_Lanka">Sri_Lanka </option>
                                             <option value="Suede">Suede </option>
                                             <option value="Suisse">Suisse </option>
                                             <option value="Surinam">Surinam </option>
                                             <option value="Swaziland">Swaziland </option>
                                             <option value="Syrie">Syrie </option>
-                                            
+
                                             <option value="Tadjikistan">Tadjikistan </option>
                                             <option value="Taiwan">Taiwan </option>
                                             <option value="Tonga">Tonga </option>
@@ -1904,39 +1909,39 @@
                                             <option value="Thailande">Thailande </option>
                                             <option value="Tibet">Tibet </option>
                                             <option value="Timor_Oriental">Timor_Oriental </option>
-                                            <option value="Togo">Togo </option> 
+                                            <option value="Togo">Togo </option>
                                             <option value="Trinite_et_Tobago">Trinite_et_Tobago </option>
                                             <option value="Tristan da cunha">Tristan de cuncha </option>
                                             <option value="Tunisie">Tunisie </option>
-                                            <option value="Turkmenistan">Turmenistan </option> 
+                                            <option value="Turkmenistan">Turmenistan </option>
                                             <option value="Turquie">Turquie </option>
-                                            
+
                                             <option value="Ukraine">Ukraine </option>
                                             <option value="Uruguay">Uruguay </option>
-                                            
+
                                             <option value="Vanuatu">Vanuatu </option>
                                             <option value="Vatican">Vatican </option>
                                             <option value="Venezuela">Venezuela </option>
                                             <option value="Vierges_Americaines">Vierges_Americaines </option>
                                             <option value="Vierges_Britanniques">Vierges_Britanniques </option>
                                             <option value="Vietnam">Vietnam </option>
-                                            
+
                                             <option value="Wake">Wake </option>
                                             <option value="Wallis et Futuma">Wallis et Futuma </option>
-                                            
+
                                             <option value="Yemen">Yemen </option>
                                             <option value="Yougoslavie">Yougoslavie </option>
-                                            
+
                                             <option value="Zambie">Zambie </option>
                                             <option value="Zimbabwe">Zimbabwe </option>
-                                            
+
                                             </select>
                                           </div>
                                     </div>
-               
-                                    
+
+
                                    </div>
-    
+
                         <div class="row">
                                 <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
@@ -1944,7 +1949,7 @@
                                             <input type="file" class="form-control">
                                         </div>
                                   </div>
-             
+
                                   <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
                                             <label for="">Lettre d'engagement du partenaire</label>
@@ -1952,16 +1957,16 @@
                                         </div>
                                   </div>
                         </div>
-    
+
                     </div>
 
             </div>
         </div>
-    
-    </div>
-     
 
-    
+    </div>
+
+
+
 <div class="col-md-12">
     <br>
         <div class="box">
@@ -1969,7 +1974,7 @@
                 <h4 class="">Eléments financiers</h4>
                 <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content3" > <i class="fa fa-chevron-up fa-lg"></i></a>
             </div>
-           
+
             <div class="box-content collapse in" id="box-content3">
                     <hr>
                 <div class="row">
@@ -1986,7 +1991,7 @@
                                    <th>2020</th>
                                    <th>2021</th>
                                    <th>2022</th>
-                               </tr>   
+                               </tr>
                                <tr>
                                    <td rowspan="3" class="titre-table" >AUF</td>
                                    <td>Fonctionnement</td>
@@ -2043,7 +2048,7 @@
                             </table>
                     </div>
                 </div>
-    
+
          <div class="row">
                  <h4>Budget global dépenses sur 4 années</h4>
                  <i class="description"> Indiquez le budget global dépenses sur 4 années ( un champs text est fournis aussi  pour décrire les détails du budget)<br></i>
@@ -2056,7 +2061,7 @@
                                     <th>2020</th>
                                     <th>2021</th>
                                     <th>2022</th>
-                                </tr>   
+                                </tr>
                                 <tr>
                                     <td class="titre-table" >Fonctionnement <br> <i class="description">(consommable, vacations, détaillez par nature) </i></td>
                                     <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
@@ -2077,7 +2082,7 @@
                                         <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
                                         <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
                                         <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                </tr>    
+                                </tr>
                                 <tr>
                                         <td class="titre-table">Total  </td>
                                         <td></td>
@@ -2089,13 +2094,13 @@
                              </table>
                      </div>
                  </div>
-    
+
             </div>
         </div>
-    
+
     </div>
-    
-    
+
+
     <!-- Autres documents à fournir-->
     <div class="col-md-12">
             <br>
@@ -2104,7 +2109,7 @@
                     <h4 class="">Autres documents à fournir</h4>
                     <a class="pull-right" role="button" data-toggle="collapse" data-parent="#box-title" data-target="#box-content4" > <i class="fa fa-chevron-up fa-lg"></i></a>
                 </div>
-               
+
                 <div class="box-content collapse in" id="box-content4">
                         <hr>
                     <div class="row">
@@ -2112,16 +2117,16 @@
                             <div class="form-group">
                                 <label for="">Devis estimatifs des travaux à réaliser<br></label>
                                 <input type="file" class="form-control" id="">
-                             </div> 
+                             </div>
                         </div>
 
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Budget prévisionnel détaillé par activité<br></label>
                                 <input type="file" class="form-control" id="">
-                             </div> 
-                        </div> 
-                        
+                             </div>
+                        </div>
+
                     </div>
 
                     <div class="row">
@@ -2129,30 +2134,30 @@
                                 <div class="form-group">
                                     <label for="">Type d'équipement demandé<br></label>
                                     <input type="file" class="form-control" id="">
-                                 </div> 
+                                 </div>
                             </div>
-    
+
                             <div class="col-md-6 col-xs-12">
                                 <div class="form-group">
                                     <label for="">Charte de qualité signée<br></label>
                                     <input type="file" class="form-control" id="">
-                                 </div> 
-                            </div> 
-                           
-                                       
+                                 </div>
+                            </div>
+
+
                     </div>
-                  
+
                     <div class="row">
                         <div class="pull-right">
                         <a href="src\assets\Charte de qualité.docx" download="Charte de qualité.docx" > <i class="fas fa-download"></i> Cliquez ici pour avoir la charte de qualité </a>
 
                         </div>
                     </div>
-    
+
                 </div>
             </div>
     </div>
-    
+
     <hr>
 
     <div class="col-md-12">

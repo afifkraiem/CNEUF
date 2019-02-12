@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -44,6 +45,8 @@ import { ProfileComponent } from './profile/profile.component';
    imports: [
       BrowserModule,
       AppRoutingModule,
+      FormsModule,
+      ReactiveFormsModule 
      // AngularFontAwesomeModule normalement pr lr moment kol chay c haka wale ?oui normlmnet
    ],
    providers: [],
