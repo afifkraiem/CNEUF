@@ -56,5 +56,7 @@ export class CandidaturesComponent implements OnInit {
       doc: '',
     }));
   }
-
+removePart(index) {
+  this.acadForms.removeAt(index);
+}
 }

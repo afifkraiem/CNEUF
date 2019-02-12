@@ -496,6 +496,8 @@
                 <div formArrayName="academiques" >
                   <div *ngFor="let acad of acadForms.controls; let i = index" [formGroupName]="i">
                       <ng-container >
+                          <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removePart(i)><i class="fas fa-trash-alt"></i> Supprimer </button>
+
                 <div class=" row small-box">
                     <div class="row">
                      <div class="col-md-4 col-xs-12">
