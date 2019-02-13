@@ -13,14 +13,14 @@
                 <div class="col-md-6 col-xs-12">
                     <div class="form-group">
                         <label for="">Intitulé du projet CNEUF</label>
-                        <input type="text" class="form-control" placeholder="Intitulé du projet" id="">
+                        <input type="text" class="form-control" placeholder="Intitulé du projet" formControlName="nom_projet">
                     </div>
 
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <div class="form-group">
                         <label for="">Présentation du projet CNEUF</label>
-                        <textarea class="form-control" placeholder="Présentation du projet" id=""> </textarea>
+                        <textarea class="form-control" placeholder="Présentation du projet" formControlName="presentation"> </textarea>
                     </div>
                 </div>
             </div>
@@ -29,14 +29,14 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="">Nom du porteur du projet</label>
-                            <input type="text" class="form-control" placeholder="Nom du porteur du projet" id="">
+                            <input type="text" class="form-control" placeholder="Nom du porteur du projet" formControlName="nom_porteur_projet">
                         </div>
                     </div>
 
                     <div class="col-md-6 col-xs-12" >
                         <div class="form-group">
                             <label for="">Date de mise en route prévue</label>
-                            <input type="date" class="form-control" placeholder="" id="">
+                            <input type="date" class="form-control" placeholder="" formControlName="date_debut">
                         </div>
                     </div>
             </div>
@@ -45,7 +45,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="">Direction régionale de rattachement</label>
-                            <select class="form-control" id="">
+                            <select class="form-control" formControlName="direction_reg">
                                     <option value="" selected="selected">Choisir la direction régionale de rattachement</option>
                                     <option>Afrique centrale et Grands-Lacs</option>
                                     <option>Afrique de l’Ouest</option>
@@ -64,7 +64,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="">Durée prévue du projet (4 ans maximum)</label>
-                            <select class="form-control" id="">
+                            <select class="form-control" formControlName="duree">
                                     <option value="" selected="selected">Choisir la durée de la formation</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -79,7 +79,7 @@
                     <div class="col-md-6 col-xs-12">
                         <label for="">Montant global du projet sur toute sa durée en euros</label>
                         <div class="input-group">
-                            <input  type="number" class="form-control" placeholder="0">
+                            <input  type="number" class="form-control" placeholder="0" formControlName="montant_global">
                             <span class="input-group-addon" id="basic-addon">Euro</span>
                          </div>
                     </div>
@@ -87,7 +87,7 @@
                     <div class="col-md-6 col-xs-12">
                         <label for="">Montant demandé à l'AUF en euros sur toute sa durée</label>
                         <div class="input-group">
-                            <input  type="number" class="form-control" placeholder="0">
+                            <input  type="number" class="form-control" placeholder="0" formControlName="montant_auf">
                             <span class="input-group-addon" id="basic-addon">Euro</span>
                          </div>
                     </div>
@@ -152,7 +152,7 @@
                                       </div>
                               </div>
 
-                            <textarea class="form-control" placeholder="Context et environnement" id=""> </textarea>
+                            <textarea class="form-control" placeholder="Context et environnement" formControlName="contexte"> </textarea>
                         </div>
 
                     </div>
@@ -193,7 +193,7 @@
                                       </div>
                               </div>
 
-                            <textarea class="form-control" placeholder="Objectifs" id=""> </textarea>
+                            <textarea class="form-control" placeholder="Objectifs" formControlName="objectif"> </textarea>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                     <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label for="">Cadre logique<br></label>
-                            <input type="file" class="form-control" id="">
+                            <input type="file" class="form-control" formControlName="cadre_logic">
                             <br>
                             <a href="src\assets\Cadre logique du projet.docx" download="Cadre logique du projet.docx" > <i class="fas fa-download"></i> Cliquez ici pour avoir le modèle word </a>
                         </div>
@@ -261,7 +261,7 @@
                                             </div>
                                           </div>
                                   </div>
-                            <textarea class="form-control" placeholder="Description détaillée" id=""> </textarea>
+                            <textarea class="form-control" placeholder="Description détaillée"formControlName="description"> </textarea>
                         </div>
                     </div>
                 </div>
@@ -305,17 +305,10 @@
                                             </div>
                                           </div>
                                   </div>
-                                <input type="text" class="form-control" placeholder="Localisation" id="">
+                                <input type="text" class="form-control" placeholder="Localisation" formControlName="localisation">
 
                             </div>
 
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <label for="">Ressources nécessaires <br><i class="description"> Inclure les ressources humaine, matérielles, financières ...</i></label>
-
-                                <textarea class="form-control" placeholder="Objectifs" id=""> </textarea>
-                            </div>
                         </div>
                 </div>
 
@@ -324,11 +317,11 @@
                             <div class="form-group">
                                 <label for="">Indiquez s'il s'agit de locaux existants ou à prévoir </label>
                                 <br>  <br>
-                                <input type="radio" name="Localisation" value="local"> Existants
-                                    <input type="radio" name="Localisation" value="local"> A prévoir
+                                <input type="radio" formControlName="locaux" value="existant"> Existants
+                                <input type="radio" formControlName="locaux" value="prevoir"> A prévoir
                                     <br>
                                     <label><i class="description"> Joindre éventuellement des plans y compris d'aménagement</i></label>
-                                    <input type="file" class="form-control" id="">
+                                    <input type="file" class="form-control" formControlName="plan_amenagement">
 
 
                             </div>
@@ -337,7 +330,7 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Stratégie de communication<br><i class="description"> Détaillez la stratégie de communication autour du projet, ses cibles et ses objectifs </i></label>
-                                <textarea class="form-control"  id=""> </textarea>
+                                <textarea class="form-control"  formControlName="stratg_comm"> </textarea>
                             </div>
                         </div>
                 </div>
@@ -379,7 +372,7 @@
                                               </div>
                                       </div>
 
-                                <textarea class="form-control"  id=""> </textarea>
+                                <textarea class="form-control"  formControlName="stratg_perren"> </textarea>
                             </div>
 
                         </div>
@@ -416,7 +409,7 @@
 
                                             </div>
                                           </div>
-                                  </div><textarea class="form-control" id=""> </textarea>
+                                  </div><textarea class="form-control" formControlName="gouvernance"> </textarea>
                             </div>
                         </div>
                 </div>
@@ -455,14 +448,14 @@
                                             </div>
                                           </div>
                                           </div>
-                                    <input type="date" class="form-control" placeholder="" id="">
+                                    <input type="date" class="form-control" placeholder="" formControlName="date_transfert">
                             </div>
 
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Organisation opérationnelle<br><i class="description">Précisez ainsi les compétences (ressources humaines) requises</i></label>
-                                <textarea class="form-control"  id=""> </textarea>
+                                <textarea class="form-control"  formControlName="org_opera"> </textarea>
                             </div>
                         </div>
                 </div>
@@ -496,7 +489,7 @@
                 <div formArrayName="academiques" >
                   <div *ngFor="let acad of acadForms.controls; let i = index" [formGroupName]="i">
                       <ng-container >
-                          <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removePart(i)><i class="fas fa-trash-alt"></i> Supprimer </button>
+                          <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removePart(i)><i class="fas fa-trash-alt"></i> </button>
 
                 <div class=" row small-box">
                     <div class="row">
@@ -1989,55 +1982,55 @@
                                <tr>
                                    <th></th>
                                    <th>Recettes</th>
-                                   <th>2019</th>
-                                   <th>2020</th>
-                                   <th>2021</th>
-                                   <th>2022</th>
+                                   <th>Année 1</th>
+                                   <th>Année 2</th>
+                                   <th>Année 3</th>
+                                   <th>Année 4</th>
                                </tr>
                                <tr>
                                    <td rowspan="3" class="titre-table" >AUF</td>
                                    <td>Fonctionnement</td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_fct_a1"><input type="checkbox" formControlName="n_fct_a1" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_fct_a2"><input type="checkbox" formControlName="n_fct_a2" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_fct_a3"><input type="checkbox" formControlName="n_fct_a3" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_fct_a4"><input type="checkbox" formControlName="n_fct_a4" value="oui"></td>
                                </tr>
                                <tr>
                                    <td>Investissement</td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_invest_a1"><input type="checkbox" formControlName="n_invest_a1" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_invest_a2"><input type="checkbox" formControlName="n_invest_a2" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_invest_a3"><input type="checkbox" formControlName="n_invest_a3" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_invest_a4"><input type="checkbox" formControlName="n_invest_a4" value="oui"></td>
                                </tr>
                                <tr>
                                    <td>Personnel</td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_perso_a1"><input type="checkbox"  formControlName="n_perso_a1" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_perso_a2"><input type="checkbox"  formControlName="n_perso_a2" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_perso_a3"><input type="checkbox"  formControlName="n_perso_a3" value="oui"></td>
+                                   <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_perso_a4"><input type="checkbox"  formControlName="n_perso_a4" value="oui"></td>
                                </tr>
 
                                <tr>
                                     <td rowspan="3" class="titre-table" >Partenaire 1</td>
                                     <td>Fonctionnement</td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <td>Investissement</td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <td>Personnel</td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox" id="nature" name="nature" value="nature"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <td class="titre-table">Total  </td>
@@ -2059,35 +2052,34 @@
                              <table class="table table-bordered">
                                 <tr>
                                     <th>Dépenses</th>
-                                    <th>2019</th>
-                                    <th>2020</th>
-                                    <th>2021</th>
-                                    <th>2022</th>
+                                    <th>Année 1</th>
+                                    <th>Année 2</th>
+                                    <th>Année 3</th>
+                                    <th>Année 4</th>
                                 </tr>
                                 <tr>
                                     <td class="titre-table" >Fonctionnement <br> <i class="description">(consommable, vacations, détaillez par nature) </i></td>
-                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                    <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                </tr>
-                                <tr>
-                                        <td class="titre-table" >Investissement <br><i class="description">(détail des équipements prévus)</i></td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                    </tr>
-                                <tr>
-                                        <td class="titre-table" >Personnel <br> <i class="description">(indiquez le côut chargé par niveau / type / grade)</i> </td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
-                                        <td><textarea class="form-control"></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"></td>
+                                    <td><textarea class="form-control" formControlName="d_fct_a1" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_fct_a1"  ></td>
+                                    <td><textarea class="form-control" formControlName="d_fct_a2" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_fct_a2"  ></td>
+                                    <td><textarea class="form-control" formControlName="d_fct_a3" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_fct_a3"  ></td>
+                                    <td><textarea class="form-control" formControlName="d_fct_a4" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_fct_a4"  ></td>
+                                </tr>  
+                                <tr>  
+                                        <td class="titre-table" >Investissement <br><i class="description">(détail des équipements prévus)</i></td>  
+                                        <td><textarea class="form-control" formControlName="d_invest_a1" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_invest_a1" ></td>
+                                        <td><textarea class="form-control" formControlName="d_invest_a2" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_invest_a2" ></td>
+                                        <td><textarea class="form-control" formControlName="d_invest_a3" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_invest_a3" ></td>
+                                        <td><textarea class="form-control" formControlName="d_invest_a4" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_invest_a4" ></td>
+                                    </tr>  
+                                <tr>  
+                                        <td class="titre-table" >Personnel <br> <i class="description">(indiquez le côut chargé par niveau / type / grade)</i> </td>  
+                                        <td><textarea class="form-control" formControlName="d_perso_a1" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_perso_a1" ></td>
+                                        <td><textarea class="form-control" formControlName="d_perso_a2" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_perso_a2" ></td>
+                                        <td><textarea class="form-control" formControlName="d_perso_a3" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_perso_a3" ></td>
+                                        <td><textarea class="form-control" formControlName="d_perso_a4" ></textarea> <br><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="m_d_perso_a4" ></td>
                                 </tr>
                                 <tr>
                                         <td class="titre-table">Total  </td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -2118,14 +2110,14 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Devis estimatifs des travaux à réaliser<br></label>
-                                <input type="file" class="form-control" id="">
+                                <input type="file" class="form-control" formControlName="devis_travaux">
                              </div>
                         </div>
 
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Budget prévisionnel détaillé par activité<br></label>
-                                <input type="file" class="form-control" id="">
+                                <input type="file" class="form-control" formControlName="budget_prev">
                              </div>
                         </div>
 
@@ -2135,14 +2127,14 @@
                             <div class="col-md-6 col-xs-12">
                                 <div class="form-group">
                                     <label for="">Type d'équipement demandé<br></label>
-                                    <input type="file" class="form-control" id="">
+                                    <input type="file" class="form-control" formControlName="equipement">
                                  </div>
                             </div>
 
                             <div class="col-md-6 col-xs-12">
                                 <div class="form-group">
                                     <label for="">Charte de qualité signée<br></label>
-                                    <input type="file" class="form-control" id="">
+                                    <input type="file" class="form-control" formControlName="charte_qualite">
                                  </div>
                             </div>
 
@@ -2156,6 +2148,8 @@
                         </div>
                     </div>
 
+                    
+
                 </div>
             </div>
     </div>
@@ -2166,6 +2160,11 @@
        <br>
         <div class="box">
             <div class="box-title row" id="box-title">
+                <div class="row container">
+                  <br>
+                    <p> <input type="checkbox" formControlName="cgu" value="oui"> Je reconnais avoir lu et accepté les <a href="#">Conditions Générales d'Utilisation <i class="fas fa-external-link-alt"></i> </a> </p>
+                  </div>
+                  <br>
             <div class="row">
                  <div class="text-center">
                      <button class=" btn btn1 " name="" type="submit">Enregistrer en brouillon</button> &nbsp;&nbsp;&nbsp;&nbsp;

@@ -1,0 +1,78 @@
+nom_projet
+presentation 
+nom_porteur_projet  
+date_debut
+direction_reg
+duree 
+montant_global
+montant_auf
+
+
+
+//////contexte
+
+contexte
+objectif
+cadre_logic
+description 
+localisation 
+.....
+plan_amenagement
+stratg_comm
+stratg_perren
+gouvernance
+date_transfert
+org_opera
+
+/////partenaires
+
+
+
+
+
+////finance
+
+m_fct_a1              n_fct_a1
+m_fct_a2              n_fct_a2
+m_fct_a3              n_fct_a3
+m_fct_a4              n_fct_a4
+    
+m_invest_a1           n_invest_a1
+m_invest_a2           n_invest_a2
+m_invest_a3           n_invest_a3
+m_invest_a4           n_invest_a4
+    
+m_perso_a1            n_perso_a1
+m_perso_a2            n_perso_a2
+m_perso_a3            n_perso_a3
+m_perso_a4            n_perso_a4
+    
+
+**********
+
+d_fct_a1              m_d_fct_a1
+d_fct_a2              m_d_fct_a2
+d_fct_a3              m_d_fct_a3
+d_fct_a4              m_d_fct_a4
+d   
+d_invest_a1           m_d_invest_a
+d_invest_a2           m_d_invest_a
+d_invest_a3           m_d_invest_a
+d_invest_a4           m_d_invest_a
+d   
+d_perso_a1            m_d_perso_a1
+d_perso_a2            m_d_perso_a2
+d_perso_a3            m_d_perso_a3
+d_perso_a4            m_d_perso_a4
+
+
+
+////autres doc
+
+devis_travaux
+budget_prev
+equipement
+charte_qualité
+
+///
+cgu
