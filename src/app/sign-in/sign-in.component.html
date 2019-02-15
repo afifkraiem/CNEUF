@@ -9,14 +9,15 @@
 <div class="fond">
   <br>
   <div class=" sign-box">
-    <form>
-      <label>Adresse de messagerie</label>
-      <input type="text" class="form-control input-sign" placeholder="Adresse de messagerie">
+    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+      <label>Nom d'utilisateur</label>
+      <input type="text" class="form-control input-sign" [(ngModel)]="form.username" #username="ngModel" name= " username" placeholder="Adresse de messagerie">
       <br>
       <label>Mot de passe</label> <a href=""> Vous avez oublié votre mot de passe? </a>
-      <input type="password" class="form-control input-sign" placeholder="Mot de passe">
+      <input type="password" class="form-control input-sign" placeholder="Mot de passe"  [(ngModel)]="form.password" name = " password " #password="ngModel"
+      required minlength="6">
      <br>
-      <button class="btn" type="submit" routerLink="../Coord/candidatures">Se connecter</button>
+      <button class="btn" type="submit">Se connecter</button>
     </form>
     <div class="divider">
         <h2>OU</h2>

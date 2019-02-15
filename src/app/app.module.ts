@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,7 +23,6 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
-
 
 @NgModule({
    declarations: [
@@ -48,7 +49,9 @@ import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
       BrowserModule,
       AppRoutingModule,
       FormsModule,
-      ReactiveFormsModule 
+      ReactiveFormsModule,
+      HttpClientModule,
+      RouterModule
      // AngularFontAwesomeModule normalement pr lr moment kol chay c haka wale ?oui normlmnet
    ],
    providers: [],

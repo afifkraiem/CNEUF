@@ -28,18 +28,17 @@ const routes: Routes = [
   {path: 'signUp', component: SignUpComponent},
   {path: 'Profile', component: ProfileComponent},
 
-  {path : 'Coord', component : CoordComponent, children:[
+  {path : 'Coord', component : CoordComponent, children: [
     {path: 'candidatures', component: CandidaturesComponent},
     ]
   },
 
   {
-    path: 'admin', component: AdminComponent, children:[
+    path: 'admin', component: AdminComponent, children: [
       {path: 'admin-dash', component: AdminDashComponent},
       {path: 'sidebar-admin', component: SidebarAdminComponent}
     ]
   },
-  
 
 ];
 

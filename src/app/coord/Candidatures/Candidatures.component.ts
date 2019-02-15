@@ -14,6 +14,29 @@ export class CandidaturesComponent implements OnInit {
   }
   ngOnInit() {
     this.form = this.fb.group({
+      nom_projet: '',
+      presentation: '',
+      nom_porteur_projet: '',
+      date_debut: '',
+      direction_reg: '',
+      duree: '',
+      montant_global: '',
+      montant_auf: '',
+      contexte: '',
+      objectif: '',
+      cadre_logic: '',
+      description: '',
+      localisation: '',
+      locaux: '',
+      plan_amenagement: '',
+      stratg_comm: '',
+      stratg_perren: '',
+      gouvernance: '',
+      date_transfert: '',
+      org_opera: '',
+      
+
+
       academiques: this.fb.array([this.addAcad()]),
     });
   }
