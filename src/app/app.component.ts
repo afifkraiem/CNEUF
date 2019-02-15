@@ -10,6 +10,6 @@ import { RouterLinkWithHref } from '@angular/router';
 export class AppComponent implements OnInit{
   title = 'CNEUF';
   ngOnInit(){
-    $('div').addClass('df');
+    
   }
 }

@@ -20,6 +20,7 @@ import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.compo
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ProfileComponent } from './profile/profile.component';
       SidebarAdminComponent,
       SignInComponent,
       SignUpComponent,
-      ProfileComponent
+      ProfileComponent,
+      AdminDashComponent
    ],
    imports: [
       BrowserModule,

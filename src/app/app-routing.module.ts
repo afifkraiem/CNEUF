@@ -10,6 +10,11 @@ import { CandidaturesComponent } from './coord/Candidatures/Candidatures.compone
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
+import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.component';
+
+
 
 
 const routes: Routes = [
@@ -17,13 +22,25 @@ const routes: Routes = [
   {path : '', component : HomeComponent},
   {path : 'Descriptif', component : DescriptifComponent},
   {path : 'Mods', component : ModsComponent},
-  {path : 'Coord', component : CoordComponent},
   {path : 'Cartographie', component : CartographieComponent},
   {path : 'Acts', component : ActsComponent},
-  {path: 'candidatures', component: CandidaturesComponent},
   {path: 'signIn', component: SignInComponent},
   {path: 'signUp', component: SignUpComponent},
-  {path: 'Profile', component: ProfileComponent}
+  {path: 'Profile', component: ProfileComponent},
+
+  {path : 'Coord', component : CoordComponent, children:[
+    {path: 'candidatures', component: CandidaturesComponent},
+    ]
+  },
+
+  {
+    path: 'admin', component: AdminComponent, children:[
+      {path: 'admin-dash', component: AdminDashComponent},
+      {path: 'sidebar-admin', component: SidebarAdminComponent}
+    ]
+  },
+  
+
 ];
 
 @NgModule({
