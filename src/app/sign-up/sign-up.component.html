@@ -5,25 +5,30 @@
     <span></span>
     <span></span>
   </div>
-  
+
   <div class="fond">
     <br>
     <div class=" sign-box">
-      <form>
-        <label>Adresse de messagerie</label>
-        <input type="text" class="form-control input-sign" placeholder="Adresse de messagerie">
+      <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+          <label>Nom complet</label>
+          <input type="text" class="form-control input-sign" placeholder="Nom et prénom" name="name" [(ngModel)]="form.name" #name="ngModel" required>
+          <br>
+        <label>Nom d'utilisateur</label>
+        <input type="text" class="form-control input-sign" placeholder="Nom d'utilisateur" name="username" [(ngModel)]="form.username" #username="ngModel"
+        required>
         <br>
-        <label>Nouveau mot de passe</label> 
-        <input type="password" class="form-control input-sign" placeholder="Nom d'utilisateur">
+        <label>Adresse de messagerie</label>
+        <input type="email" class="form-control input-sign" placeholder="Aresse de messagerie"  name="email" [(ngModel)]="form.email" #email="ngModel" required email>
        <br>
-        <label>Confirmer le nouveau mot de passe</label> 
+        <label>Nouveau mot de passe</label>
+        <input type="password" class="form-control input-sign" placeholder="Mot de passe" name="password" [(ngModel)]="form.password" #password="ngModel"
+        required minlength="6">
+       <br>
+        <label>Confirmer le nouveau mot de passe</label>
         <input type="password" class="form-control input-sign" placeholder="Mot de passe">
        <br>
-       <label>Nom d'utilisateur</label> 
-       <input type="text" class="form-control input-sign" placeholder="Mot de passe">
-      <br>
         <button class="btn" type="submit">Créer</button>
       </form>
-     
-  
+
+
   </div>

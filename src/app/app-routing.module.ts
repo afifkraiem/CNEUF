@@ -1,3 +1,5 @@
+import { SoumissionComponent } from './coord/soumission/soumission.component';
+import { AuthGuard } from './guards/auth.guard';
 import { ModsComponent } from './utilisateur/Mods/Mods.component';
 import { ActsComponent } from './utilisateur/Acts/Acts.component';
 import { CoordComponent } from './coord/coord.component';
@@ -16,7 +18,6 @@ import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.compo
 
 
 
-
 const routes: Routes = [
   {path : 'home', component : HomeComponent},
   {path : '', component : HomeComponent},
@@ -28,13 +29,15 @@ const routes: Routes = [
   {path: 'signUp', component: SignUpComponent},
   {path: 'Profile', component: ProfileComponent},
 
-  {path : 'Coord', component : CoordComponent, children: [
+  {path : 'Coord', component : CoordComponent, canActivate: [AuthGuard], children: [
     {path: 'candidatures', component: CandidaturesComponent},
+    {path: 'soumission', component: SoumissionComponent}
+
     ]
   },
 
   {
-    path: 'admin', component: AdminComponent, children: [
+    path: 'admin', component: AdminComponent, canActivate: [AuthGuard], children: [
       {path: 'admin-dash', component: AdminDashComponent},
       {path: 'sidebar-admin', component: SidebarAdminComponent}
     ]

@@ -6,8 +6,8 @@
                     <div class="sidebar-header">
                      <!--   <img src="assets/CNEUF.png" class="img-responsive logo">-->
                     </div>
-        
-        
+
+
                     <ul class="sidebar-nav" id="sidebar">
                         <li><a>Tableau de bord<i class="icone fa fa-tachometer-alt fa-2x"></i></a></li>
                         <li><a routerLink="candidatures">Mes candidatures<i class="icone fab fa-elementor fa-2x"></i></a></li>
@@ -15,58 +15,57 @@
                         <li><a routerLink="../Profile">Gestion actualités<i class=" icone fa fa-newspaper fa-2x"></i></a></li>
                     </ul>
                 </div>
-        
-        
+
+
         <div class="container page-content-wrapper">
             <nav class="header-login row">
                 <div class="col-md-1 col-sm-1 col-xs-1 ">
                      <button  href="#" id="menu-toggle"><i class="fas fa-bars "></i></button>
                 </div>
-        
+
                 <div class="col-md-3 col-sm-4 col-xs-4 hidden-xs">
                     <a routerLink = "../home">
-        
+
                     <img src="../assets/CNEUF1.png" class="img-responsive logo">
                     </a>
                 </div>
-        
+
                  <div  class="  hidden-xs test cnx pull-right ">
                      <div class="row profil">
                     <ul class=" pull-right">
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                         <img class="img-responsive user" src="../assets/user.png"> &nbsp;&nbsp; Bienvenue Syrine <b class="caret"></b></a>
+                         <img class="img-responsive user" src="../assets/user.png"> &nbsp;&nbsp;  {{username}} <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href=""><i class="fas fa-user"> </i> Mon Profil</a></li>
                                 <li> <a href=""><i class="fas fa-sign-out-alt"></i>  Se déconnecter</a> </li>
                             </ul>
                         </li>
                     </ul>
-        
-        
+
+
                      </div>
-        
+
                 </div>
-        
+
                 <div  class="visible-xs test cnx pull-right ">
                         <div class="row profil">
                                 <ul class=" pull-right">
                                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                     <img class="img-responsive user" src="../assets/user.png">  <b class="caret"></b></a>
+                                     <img class="img-responsive user" src="../assets/user.png" > {{username}} <b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                             <li><a href=""><i class="fas fa-user"> </i> Mon Profil</a></li>
                                             <li> <a href=""><i class="fas fa-sign-out-alt"></i>  Se déconnecter</a> </li>
                                         </ul>
                                     </li>
                                 </ul>
-        
-        
+
+
                                  </div>
-        
+
                 </div>
-        
+
             </nav>
         <router-outlet></router-outlet>
         </div>
-        
+
         </div>
-        

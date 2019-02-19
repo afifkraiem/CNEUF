@@ -30,8 +30,7 @@ export class HeaderComponent implements OnInit {
           this.auth = 'user';
           return true;
         });
-        console.log(this.auth);
-        console.log(this.roles);
+
 
       }
   }

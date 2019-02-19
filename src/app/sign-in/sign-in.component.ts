@@ -13,12 +13,16 @@ export class SignInComponent implements OnInit {
   form: any = {};
   private loginInfo: AuthLoginInfo;
   errorMessage: '';
+      returnUrl: string;
+
 
   constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private router: Router,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.tokenStorage.signOut();
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+
 
   }
   onSubmit() {
@@ -33,8 +37,7 @@ export class SignInComponent implements OnInit {
         this.tokenStorage.saveToken(data.accessToken);
         this.tokenStorage.saveUsername(data.username);
         this.tokenStorage.saveAuthorities(data.authorities);
-       this.router.navigateByUrl('/home');
-      window.location.reload();
+        this.router.navigate([this.returnUrl]);
 
 
       },

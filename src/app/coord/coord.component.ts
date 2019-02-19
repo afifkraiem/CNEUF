@@ -1,3 +1,4 @@
+import { TokenStorageService } from './../auth/token-storage.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coord.component.css']
 })
 export class CoordComponent implements OnInit {
-
-  constructor() { }
+username: string;
+  constructor(private tokenstorage: TokenStorageService) { }
 
   ngOnInit() {
+    if (this.tokenstorage.getToken()) {
+
+    this.username = this.tokenstorage.getUsername();
+    console.log (this.username);
   }
+}
 
 }

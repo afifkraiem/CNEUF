@@ -1,3 +1,4 @@
+import { SoumissionComponent } from './coord/soumission/soumission.component';
 import { RouterModule } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
@@ -23,7 +24,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
-
+import { httpInterceptorProviders } from './auth/auth-interceptor';
 @NgModule({
    declarations: [
       AppComponent,
@@ -43,7 +44,8 @@ import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
       SignInComponent,
       SignUpComponent,
       ProfileComponent,
-      AdminDashComponent
+      AdminDashComponent,
+      SoumissionComponent
    ],
    imports: [
       BrowserModule,
@@ -54,7 +56,7 @@ import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
       RouterModule
      // AngularFontAwesomeModule normalement pr lr moment kol chay c haka wale ?oui normlmnet
    ],
-   providers: [],
+   providers: [httpInterceptorProviders],
    bootstrap: [
       AppComponent
    ]
