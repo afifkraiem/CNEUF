@@ -25,6 +25,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
 import { httpInterceptorProviders } from './auth/auth-interceptor';
+import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
+
 @NgModule({
    declarations: [
       AppComponent,
@@ -45,7 +47,8 @@ import { httpInterceptorProviders } from './auth/auth-interceptor';
       SignUpComponent,
       ProfileComponent,
       AdminDashComponent,
-      SoumissionComponent
+      SoumissionComponent,
+      AffCandComponent
    ],
    imports: [
       BrowserModule,
