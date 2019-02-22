@@ -1,5 +1,4 @@
 .stat{
-    width: 100%;
     display: block;
     margin: 8%;
     padding: 20px;
@@ -24,4 +23,8 @@ div .stat:hover{
 .chiffre label{
     font-size: 30px;
     margin-bottom: -10px;
+}
+
+.img-stat{
+    margin : 0 auto;
 }

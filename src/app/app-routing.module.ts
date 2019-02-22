@@ -14,7 +14,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
-import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.component';
+import { ArticleComponent } from './admin/article/article.component';
 import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
 
 
@@ -39,7 +39,7 @@ const routes: Routes = [
   {
     path: 'admin', component: AdminComponent, children: [
       {path: 'admin-dash', component: AdminDashComponent},
-      {path: 'sidebar-admin', component: SidebarAdminComponent},
+      {path: 'article', component: ArticleComponent},
       {path: 'aff_cand', component: AffCandComponent}
 
     ]

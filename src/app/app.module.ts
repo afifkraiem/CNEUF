@@ -19,7 +19,7 @@ import { AdminComponent } from './admin/admin.component';
 import { CoordComponent } from './coord/coord.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { SidebarCoordComponent } from './coord/sidebar-coord/sidebar-coord.component';
-import { SidebarAdminComponent } from './admin/sidebar-admin/sidebar-admin.component';
+import { ArticleComponent } from './admin/article/article.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -42,7 +42,7 @@ import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
       CoordComponent,
       UtilisateurComponent,
       SidebarCoordComponent,
-      SidebarAdminComponent,
+      ArticleComponent,
       SignInComponent,
       SignUpComponent,
       ProfileComponent,
