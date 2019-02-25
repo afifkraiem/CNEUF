@@ -39,7 +39,6 @@ export class SignInComponent implements OnInit {
         this.tokenStorage.saveAuthorities(data.authorities);
         this.router.navigate([this.returnUrl]);
 
-
       },
       error => {
         console.log(error);

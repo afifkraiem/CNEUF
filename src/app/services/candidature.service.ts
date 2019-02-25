@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class CandidatureService {
 
   constructor(private http: HttpClient) { }
-  apiUrl = 'http://localhost:8080/cands';
+  apiUrl = 'http://localhost:8080/api';
 
   getCandidatures() {
     return this.http.get<any>(this.apiUrl + '/cands');
@@ -15,7 +15,7 @@ export class CandidatureService {
 
   getCandByUserId(id: number) {
 
-    return this.http.get (this.apiUrl + '/cands/' + id);
+    return this.http.get<any[]> (this.apiUrl + '/cands/' + id);
   }
 
   saveCand(candidature: Candidature) {

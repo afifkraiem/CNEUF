@@ -31,7 +31,6 @@ export class HeaderComponent implements OnInit {
           return true;
         });
 
-
       }
   }
 logout() {
