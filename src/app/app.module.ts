@@ -1,3 +1,4 @@
+import { CandDetailsComponent } from './admin/cand-details/cand-details.component';
 import { SoumissionComponent } from './coord/soumission/soumission.component';
 import { RouterModule } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -26,7 +27,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
 import { httpInterceptorProviders } from './auth/auth-interceptor';
 import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
-
 @NgModule({
    declarations: [
       AppComponent,
@@ -48,7 +48,8 @@ import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
       ProfileComponent,
       AdminDashComponent,
       SoumissionComponent,
-      AffCandComponent
+      AffCandComponent,
+      CandDetailsComponent
    ],
    imports: [
       BrowserModule,

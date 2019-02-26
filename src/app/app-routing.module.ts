@@ -1,3 +1,4 @@
+import { CandDetailsComponent } from './admin/cand-details/cand-details.component';
 import { SoumissionComponent } from './coord/soumission/soumission.component';
 import { AuthGuard } from './guards/auth.guard';
 import { ModsComponent } from './utilisateur/Mods/Mods.component';
@@ -40,7 +41,8 @@ const routes: Routes = [
     path: 'admin', component: AdminComponent, children: [
       {path: 'admin-dash', component: AdminDashComponent},
       {path: 'article', component: ArticleComponent},
-      {path: 'aff_cand', component: AffCandComponent}
+      {path: 'aff_cand', component: AffCandComponent},
+      {path: 'cand-details/:id', component: CandDetailsComponent}
 
     ]
   },

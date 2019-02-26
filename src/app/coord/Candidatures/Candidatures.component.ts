@@ -15,8 +15,12 @@ export class CandidaturesComponent implements OnInit {
 
   }
   ngOnInit() {
-console.log(this.showCands());
+this.userservice.getUserid().subscribe(res => {
+  this.currentUser = res;
+  console.log(res);
+}
 
+  );
   }
 showCands() {
   this.cands = this.candservice.getCandByUserId(1123);

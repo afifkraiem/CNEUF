@@ -19,5 +19,6 @@ getAllCands() {
     this.candidatures = data;
   });  }
 
+
 }
 
