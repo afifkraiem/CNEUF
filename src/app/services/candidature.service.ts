@@ -15,10 +15,10 @@ export class CandidatureService {
 
   getCandByUserId(id: number) {
 
-    return this.http.get<any[]> (this.apiUrl + '/cand/' + id);
+    return this.http.get<any[]> (this.apiUrl + '/cands/' + id);
   }
 getCandById(id: number) {
-  return this.http.get<any[]> (this.apiUrl + '/cands/' + id);
+  return this.http.get<any[]> (this.apiUrl + '/cand/' + id);
 
 }
   saveCand(candidature: Candidature) {

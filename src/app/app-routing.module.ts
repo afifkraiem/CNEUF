@@ -30,7 +30,7 @@ const routes: Routes = [
   {path: 'signUp', component: SignUpComponent},
   {path: 'Profile', component: ProfileComponent},
 
-  {path : 'Coord', component : CoordComponent, canActivate: [AuthGuard], children: [
+  {path : 'Coord', component : CoordComponent,  children: [
     {path: 'candidatures', component: CandidaturesComponent},
     {path: 'soumission', component: SoumissionComponent}
 
