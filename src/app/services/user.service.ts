@@ -12,7 +12,7 @@ constructor(private http: HttpClient) { }
 
 apiUrl = 'http://localhost:8080/api';
 
-  getUserid() {
+  getUser() {
     return this.http.get(this.apiUrl + '/id');
   }
 }
