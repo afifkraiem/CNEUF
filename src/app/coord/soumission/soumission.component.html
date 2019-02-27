@@ -863,29 +863,33 @@
          <!-- Socio-économique-->
          <div class="row">
                 <h5>Partenaires Socio-économique (Entreprises,  ONG, Associations)</h5>
-                <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addEco()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
             </div>
+            <div formArrayName="academiques" >
+              <div *ngFor="let eco of ecoForms.controls; let i = index" [formGroupName]="i">
+                  <ng-container >
+                      <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removeEco()><i class="fas fa-trash-alt"></i> </button>
 
             <div class=" row small-box">
                     <div class="row">
                      <div class="col-md-4 col-xs-12">
                            <div class="form-group">
                                 <label for="">Institution du correspondant du projet</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" formControlName="institution">
                            </div>
                      </div>
 
                      <div class="col-md-4 col-xs-12">
                            <div class="form-group">
                                 <label for="">Nom et prénom du correspondant du projet</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" formControlName="nom">
                            </div>
                      </div>
 
                      <div class="col-md-4 col-xs-12">
                            <div class="form-group">
                                 <label for="">Fonction</label>
-                                <input type="text" class="form-control" placeholder="Fonction">
+                                <input type="text" class="form-control" placeholder="Fonction" formControlName="fonction">
                            </div>
                      </div>
                     </div>
@@ -896,7 +900,7 @@
                                        <label for="">Téléphone</label>
                                        <div class="row">
                                     <div class="col-md-5">
-                                         <select class=" form-control" id="">
+                                         <select class=" form-control" id="" formControlName="tel">
                                                  <option value="" selected="selected">(+000)</option>
                                                  <option>1</option>
                                                  <option>2</option>
@@ -905,7 +909,7 @@
                                          </select>
                                      </div>
                                      <div class="col-md-7">
-                                       <input type="number" class="col-md-5 form-control">
+                                       <input type="number" class="col-md-5 form-control" formControlName="num">
                                      </div>
                                     </div>
                                   </div>
@@ -914,14 +918,14 @@
                             <div class="col-md-4 col-xs-12">
                                   <div class="form-group">
                                        <label for="">Email</label>
-                                       <input type="email" class="form-control">
+                                       <input type="email" class="form-control" formControlName="email">
                                   </div>
                             </div>
 
                             <div class="col-md-4 col-xs-12">
                                   <div class="form-group">
                                        <label for="">Adresse</label>
-                                       <input type="text" class="form-control" placeholder="Adresse">
+                                       <input type="text" class="form-control" placeholder="Adresse" formControlName="adresse">
                                   </div>
                             </div>
                            </div>
@@ -931,20 +935,20 @@
                             <div class="col-md-4 col-xs-12">
                                     <div class="form-group">
                                          <label for="">Code postal</label>
-                                         <input type="number" class="form-control" placeholder="Code postal">
+                                         <input type="number" class="form-control" placeholder="Code postal" formControlName="code">
                                     </div>
                               </div>
                                 <div class="col-md-4 col-xs-12">
                                     <div class="form-group">
                                             <label for="">Ville</label>
-                                            <input type="text" class="form-control" placeholder="Ville" >
+                                            <input type="text" class="form-control" placeholder="Ville"  formControlName="ville">
                                     </div>
                                 </div>
 
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Pays</label>
-                                           <select name="pays" class="form-control">
+                                           <select name="pays" class="form-control" formControlName="pays">
 
                                             <option value="default"> ---- </option>
                                             <option value="Afghanistan">Afghanistan </option>
@@ -1211,46 +1215,53 @@
                             <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
                                         <label for="">Document de présentation du partenaire</label>
-                                        <input type="file" class="form-control">
+                                        <input type="file" class="form-control" formControlName="document">
                                     </div>
                               </div>
 
                               <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
                                         <label for="">Lettre d'engagement du partenaire</label>
-                                        <input type="file" class="form-control">
+                                        <input type="file" class="form-control" formControlName="lettre">
                                     </div>
                               </div>
-                    </div>
+                            </div>
 
-                </div>
+                          </div>
+                          </ng-container>
+                          </div>
+                          </div>
 
 <!--Autres partenaires-->
             <div class="row">
                     <h5>Autres partenaires (Institutionnels, Coopérations, Médias...)</h5>
-                    <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                    <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addAut() ><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
                 </div>
+                <div formArrayName="autres" >
+                  <div *ngFor="let aut of autForms.controls; let i = index" [formGroupName]="i">
+                      <ng-container >
+                          <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removeAut()><i class="fas fa-trash-alt"></i> </button>
 
                 <div class=" row small-box">
                         <div class="row">
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Institution du correspondant du projet</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" formControlName="institution">
                                </div>
                          </div>
 
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Nom et prénom du correspondant du projet</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" formControlName="nom">
                                </div>
                          </div>
 
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Fonction</label>
-                                    <input type="text" class="form-control" placeholder="Fonction">
+                                    <input type="text" class="form-control" placeholder="Fonction" formControlName="fonction">
                                </div>
                          </div>
                         </div>
@@ -1261,7 +1272,7 @@
                                            <label for="">Téléphone</label>
                                            <div class="row">
                                         <div class="col-md-5">
-                                             <select class=" form-control" id="">
+                                             <select class=" form-control" id="" formControlName="tel">
                                                      <option value="" selected="selected">(+000)</option>
                                                      <option>1</option>
                                                      <option>2</option>
@@ -1270,7 +1281,7 @@
                                              </select>
                                          </div>
                                          <div class="col-md-7">
-                                           <input type="number" class="col-md-5 form-control">
+                                           <input type="number" class="col-md-5 form-control" formControlName="num">
                                          </div>
                                         </div>
                                       </div>
@@ -1279,14 +1290,14 @@
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Email</label>
-                                           <input type="email" class="form-control">
+                                           <input type="email" class="form-control" formControlName="email">
                                       </div>
                                 </div>
 
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Adresse</label>
-                                           <input type="text" class="form-control" placeholder="Adresse">
+                                           <input type="text" class="form-control" placeholder="Adresse" formControlName="adresse">
                                       </div>
                                 </div>
                                </div>
@@ -1296,20 +1307,20 @@
                                 <div class="col-md-4 col-xs-12">
                                         <div class="form-group">
                                              <label for="">Code postal</label>
-                                             <input type="number" class="form-control" placeholder="Code postal">
+                                             <input type="number" class="form-control" placeholder="Code postal" formControlName="code">
                                         </div>
                                   </div>
                                     <div class="col-md-4 col-xs-12">
                                         <div class="form-group">
                                                 <label for="">Ville</label>
-                                                <input type="text" class="form-control" placeholder="Ville" >
+                                                <input type="text" class="form-control" placeholder="Ville" formControlName="ville">
                                         </div>
                                     </div>
 
                                     <div class="col-md-4 col-xs-12">
                                           <div class="form-group">
                                                <label for="">Pays</label>
-                                           <select name="pays" class="form-control">
+                                           <select name="pays" class="form-control" formControlName="pays">
 
                                             <option value="default"> ---- </option>
                                             <option value="Afghanistan">Afghanistan </option>
@@ -1576,46 +1587,53 @@
                                 <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
                                             <label for="">Document de présentation du partenaire</label>
-                                            <input type="file" class="form-control">
+                                            <input type="file" class="form-control" formControlName="document">
                                         </div>
                                   </div>
 
                                   <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
                                             <label for="">Lettre d'engagement du partenaire</label>
-                                            <input type="file" class="form-control">
+                                            <input type="file" class="form-control" formControlName="lettre">
                                         </div>
                                   </div>
-                        </div>
+                                </div>
 
-                    </div>
+                              </div>
+                              </ng-container>
+                              </div>
+                              </div>
 
 
                  <!--Autres implantations de l'AUF impliquées-->
              <div class="row">
                      <h5>Autres implantations de l'AUF impliquées</h5>
-                     <button class="btn  btn1 pull-right" id="add_establishment" type="button"><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                     <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addImpl()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
                  </div>
+                 <div formArrayName="implantations" >
+                  <div *ngFor="let impl of implForms.controls; let i = index" [formGroupName]="i">
+                      <ng-container >
+                          <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removeImpl()><i class="fas fa-trash-alt"></i> </button>
                  <div class=" row small-box">
                         <div class="row">
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Institution du correspondant du projet</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" formControlName="institution">
                                </div>
                          </div>
 
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Nom et prénom du correspondant du projet</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" formControlName="nom">
                                </div>
                          </div>
 
                          <div class="col-md-4 col-xs-12">
                                <div class="form-group">
                                     <label for="">Fonction</label>
-                                    <input type="text" class="form-control" placeholder="Fonction">
+                                    <input type="text" class="form-control" placeholder="Fonction" formControlName="fonction">
                                </div>
                          </div>
                         </div>
@@ -1626,7 +1644,7 @@
                                            <label for="">Téléphone</label>
                                            <div class="row">
                                         <div class="col-md-5">
-                                             <select class=" form-control" id="">
+                                             <select class=" form-control" id="" formControlName="tel">
                                                      <option value="" selected="selected">(+000)</option>
                                                      <option>1</option>
                                                      <option>2</option>
@@ -1635,7 +1653,7 @@
                                              </select>
                                          </div>
                                          <div class="col-md-7">
-                                           <input type="number" class="col-md-5 form-control">
+                                           <input type="number" class="col-md-5 form-control" formControlName="num">
                                          </div>
                                         </div>
                                       </div>
@@ -1644,14 +1662,14 @@
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Email</label>
-                                           <input type="email" class="form-control">
+                                           <input type="email" class="form-control" formControlName="email">
                                       </div>
                                 </div>
 
                                 <div class="col-md-4 col-xs-12">
                                       <div class="form-group">
                                            <label for="">Adresse</label>
-                                           <input type="text" class="form-control" placeholder="Adresse">
+                                           <input type="text" class="form-control" placeholder="Adresse" formControlName="adresse">
                                       </div>
                                 </div>
                                </div>
@@ -1661,20 +1679,20 @@
                                 <div class="col-md-4 col-xs-12">
                                         <div class="form-group">
                                              <label for="">Code postal</label>
-                                             <input type="number" class="form-control" placeholder="Code postal">
+                                             <input type="number" class="form-control" placeholder="Code postal" formControlName="code">
                                         </div>
                                   </div>
                                     <div class="col-md-4 col-xs-12">
                                         <div class="form-group">
                                                 <label for="">Ville</label>
-                                                <input type="text" class="form-control" placeholder="Ville" >
+                                                <input type="text" class="form-control" placeholder="Ville" formControlName="ville">
                                         </div>
                                     </div>
 
                                     <div class="col-md-4 col-xs-12">
                                           <div class="form-group">
                                                <label for="">Pays</label>
-                                           <select name="pays" class="form-control">
+                                           <select name="pays" class="form-control" formControlName="pays">
 
                                             <option value="default"> ---- </option>
                                             <option value="Afghanistan">Afghanistan </option>
@@ -1941,19 +1959,22 @@
                                 <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
                                             <label for="">Document de présentation du partenaire</label>
-                                            <input type="file" class="form-control">
+                                            <input type="file" class="form-control" formControlName="document">
                                         </div>
                                   </div>
 
                                   <div class="col-md-6 col-xs-12">
                                         <div class="form-group">
                                             <label for="">Lettre d'engagement du partenaire</label>
-                                            <input type="file" class="form-control">
+                                            <input type="file" class="form-control" formControlName="lettre">
                                         </div>
                                   </div>
-                        </div>
+                                </div>
 
-                    </div>
+                              </div>
+                              </ng-container>
+                              </div>
+                              </div>
 
             </div>
         </div>
@@ -2168,7 +2189,7 @@
             <div class="row">
                  <div class="text-center">
                      <button class=" btn btn1 " name="" type="submit">Enregistrer en brouillon</button> &nbsp;&nbsp;&nbsp;&nbsp;
-                     <button class=" btn btn1 " name="" type="submit">Soumettre à validation</button>
+                     <button class=" btn btn1 " name="" type="submit" (click) = Soumettre()>Soumettre à validation</button>
                  </div>
              </div>
             </div>

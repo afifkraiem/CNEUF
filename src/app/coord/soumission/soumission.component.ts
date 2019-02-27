@@ -1,3 +1,5 @@
+import { CandidatureService } from './../../services/candidature.service';
+import { Candidature } from './../../candidature';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormArray, FormBuilder } from '@angular/forms';
 import { TokenStorageService } from 'src/app/auth/token-storage.service';
@@ -12,7 +14,8 @@ export class SoumissionComponent implements OnInit {
 
     form: FormGroup;
 username: any;
-    constructor(private fb: FormBuilder, private tokenstorage: TokenStorageService) {
+candidature: Candidature;
+    constructor(private fb: FormBuilder, private tokenstorage: TokenStorageService, private candserice: CandidatureService) {
 
     }
     ngOnInit() {
@@ -37,17 +40,18 @@ username: any;
         gouvernance: '',
         date_transfert: '',
         org_opera: '',
+        academiques: this.fb.array([this.createPart()]),
+        economiques: this.fb.array([this.createPart()]),
+        autres: this.fb.array([this.createPart()]),
+        implantationsn: this.fb.array([this.createPart()])
 
-
-
-        academiques: this.fb.array([this.addAcad()]),
       });
       if (this.tokenstorage.getToken()) {
         this.username = this.tokenstorage.getUsername();
         console.log(this.username);
       }
     }
-    addAcad() {
+    createPart() {
       return this.fb.group({
         institution: '',
         nom: '',
@@ -70,24 +74,56 @@ username: any;
 
     addParts() {
     const acad = <FormArray>this.form.controls.academiques as FormArray;
-      acad.push(this.fb.group({
-        institution: '',
-        nom: '',
-        document: '',
-        lettre: '',
-        fonction: '',
-        tel: '',
-        num: '',
-        email: '',
-        adresse: '',
-        code: '',
-        ville: '',
-        pays: '',
-        doc: '',
-      }));
+      acad.push(this.createPart() );
+
     }
   removePart(index) {
     this.acadForms.removeAt(index);
+  }
+
+  get ecoForms() {
+    return this.form.get('economiques') as FormArray;
+  }
+
+  addEco() {
+  const eco = <FormArray>this.form.controls.economiques as FormArray;
+    eco.push(this.createPart());
+}
+
+removeEco(index) {
+  this.ecoForms.removeAt(index);
+}
+get autForms() {
+  return this.form.get('autres') as FormArray;
+}
+
+addAut() {
+const aut = <FormArray>this.form.controls.autres as FormArray;
+  aut.push(this.createPart());
+}
+removeAut(index) {
+this.autForms.removeAt(index);
+}
+
+get implForms() {
+  return this.form.get('implantations') as FormArray;
+}
+
+addImpl() {
+const impl = <FormArray>this.form.controls.implantations as FormArray;
+  impl.push(this.createPart());
+}
+removeImpl(index) {
+this.implForms.removeAt(index);
+}
+
+Soumettre() {
+  console.log(this.form.value);
+  console.log('hello');
+  this.candserice.saveCand(this.form.value).subscribe(
+    data => console.log('success!', data),
+    error => console.log('error', error)
+  );
   }
   }
 
