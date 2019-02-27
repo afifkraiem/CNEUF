@@ -79,6 +79,11 @@ body{
   color: white;
   background-color: #6F2082;
   }
+  .btn1fin{
+    background-color: white;
+    color: #6F2082;
+    border-color:  #6F2082;
+    }
   h5{
   display: inline-block;
   padding-left: 5%; 
@@ -121,4 +126,24 @@ body{
   }
   }
   
-  
+  @media print {
+    
+    .header-login{
+      display: none;
+    }
+    
+    #wrapper.active #sidebar-wrapper {
+      display: none;
+    }  
+    
+    .box{
+      margin-left: -250px;
+      width: 150%;
+    }
+
+    .print{
+      display: none;
+    }
+
+   
+  }

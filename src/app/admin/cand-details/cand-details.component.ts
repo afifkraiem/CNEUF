@@ -22,5 +22,9 @@ showCand() {
     console.log(data);
     this.cand = data;
   }));  }
+print(){
+  window.print();
+}
+
 }
 
