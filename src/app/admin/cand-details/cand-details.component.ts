@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./cand-details.component.css']
 })
 export class CandDetailsComponent implements OnInit {
-private id;
+ id;
 cand: any;
   constructor(private route: ActivatedRoute, private candservice: CandidatureService) { }
 
@@ -22,9 +22,7 @@ showCand() {
     console.log(data);
     this.cand = data;
   }));  }
-print(){
-  window.print();
-}
+
 
 }
 

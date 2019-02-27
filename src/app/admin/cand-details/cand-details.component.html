@@ -5,19 +5,19 @@
             <br> <br>
             <button (click)=print() type="submit" class="btn btn1 pull-right"><i class="fas fa-print"> </i> Imprimer</button>
         </div>
-        <div class="box-title" id="box-title">
+        <div class="box-title" id="box-title" >
             <h3 class="">Informations CNEUF</h3>
             <hr>
         </div>
-    <p> <b>Intitulé du projet CNEUF : </b>syrinecneuf</p>
+    <p> <b>Intitulé du projet CNEUF : </b>{{cand.nom_projet}}</p>
     <p> <b>Présentation du projet CNEUF : </b> </p>
-    <p> <b>Nom du porteur du projet : </b></p>
+    <p> <b>Nom du porteur du projet : </b>{{cand.nom_porteur_projet}}</p>
     <p> <b>Direction régionale de rattachement : </b></p>
     <p> <b>Date de mise en route prévue : </b></p>
     <p> <b>Durée prévue du projet : </b></p>
     <p> <b>Montant global du projet sur toute sa durée en euros : </b></p>
     <p> <b>Montant demandé à l'AUF en euros sur toute sa durée : </b></p>
-    
+
     <div class="box-title" id="box-title">
         <hr>
         <h3 class="">Contexte et justification du projet</h3>
@@ -52,7 +52,7 @@
         <p> <b>Pays : </b>syrinecneuf</p>
         <p class="print"> <b>Document de présentation du partenaire : </b> <a href="src\assets\Cadre logique du projet.docx" download="Cadre logique du projet.docx" > <i class="fas fa-download"></i> Cliquez ici pour télécharger le fichier joint </a></p>
         <p class="print"> <b>Lettre d'engagement du partenaire : </b> <a href="src\assets\Cadre logique du projet.docx" download="Cadre logique du projet.docx" > <i class="fas fa-download"></i> Cliquez ici pour télécharger le fichier joint </a></p>
-            
+
     </div>
 
     <div class="box-title" id="box-title">
@@ -114,8 +114,8 @@
                     <td></td>
                 </tr>
      </table>
-     </div>    
-     
+     </div>
+
     <p> <b>Budget global dépenses   : </b></p>
      <div class="table-responsive">
             <table class="table table-bordered">
@@ -140,7 +140,7 @@
                         <td></td>
                 </tr>
             </table>
-    </div>   
+    </div>
 
     <div class="table-responsive">
             <table class="table table-bordered">
@@ -165,8 +165,8 @@
                         <td></td>
                 </tr>
             </table>
-    </div>   
-              
+    </div>
+
  <div class="box-title" id="box-title">
             <hr>
             <h3 class="">Autres documents </h3>
@@ -187,4 +187,4 @@
 </div>
 
 </div>
-</div>    
+</div>
