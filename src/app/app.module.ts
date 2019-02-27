@@ -1,3 +1,5 @@
+import { TokenStorageService } from './auth/token-storage.service';
+import { AuthService } from './auth/auth.service';
 import { CandDetailsComponent } from './admin/cand-details/cand-details.component';
 import { SoumissionComponent } from './coord/soumission/soumission.component';
 import { RouterModule } from '@angular/router';
@@ -25,7 +27,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
-import { httpInterceptorProviders } from './auth/auth-interceptor';
+import { httpInterceptorProviders, AuthInterceptor } from './auth/auth-interceptor';
 import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
 @NgModule({
    declarations: [
@@ -60,7 +62,7 @@ import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
       RouterModule
      // AngularFontAwesomeModule normalement pr lr moment kol chay c haka wale ?oui normlmnet
    ],
-   providers: [httpInterceptorProviders],
+   providers: [httpInterceptorProviders, AuthInterceptor, AuthService, TokenStorageService],
    bootstrap: [
       AppComponent
    ]

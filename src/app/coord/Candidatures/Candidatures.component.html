@@ -1,15 +1,54 @@
-<table class="table table-bordered">
-  <tr>
-      <th>Ref</th>
-      <th>Intitulé du CNEUF</th>
-      <th>Porteur de projet</th>
- 
-  </tr>
-  <tr class="non-vu" *ngFor= " let cand of cands; ">
-      <td>{{cand.id}}</td>
-      <td>{{cand.nom}}</td>
-      <td>{{cand.porteur_projet}}</td>
+<div class="col-md-12">
+  <br><br>
+  <div class="box">
 
-    </tr>
-<p>hello!</p>
+    <h4>Liste des canditatures</h4>
+
+    <div class="row ">
+      <div class="pull-right">
+      <label>Trier par</label>
+        <select class="form-control" formControlName="direction_reg">
+            <option value="" selected="selected">---</option>
+            <option value="">Les plus récentes</option>
+            <option value="">Les plus anciennes</option>
+    </select>
+    </div>
+  </div>
+<br>
+<br>
+    <div class="row ">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+              <tr>
+                  <th>Ref</th>
+                  <th>Intitulé du CNEUF</th>
+                  <th>Porteur de projet</th>
+                  <th>Etat</th>
+                  <th>Détails</th>
+              </tr>
+              <tr class="non-vu" *ngFor= " let cand of candidatures ; ">
+                  <td>{{cand.idcneuf}}</td>
+                  <td>{{cand.nom_projet}}</td>
+                  <td>{{cand.nom_porteur_projet}}</td>
+                  <td class="text-center "><i title="Brouillon" class="fas fa-edit" style="color:#702381;"></i></td>
+                  <td class="text-center"><a routerLink = "../cand-details/{{cand.id}}"><i class="fas fa-eye"></i></a></td>
+                </tr>
+
+
+             </table>
+             <div class="text-center">
+                <ul class="pagination">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+             </div>
+
+             </div>
+
+    </div>
+
+  </div>
+</div>
+
 

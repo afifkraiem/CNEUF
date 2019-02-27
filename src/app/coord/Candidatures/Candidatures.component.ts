@@ -1,7 +1,9 @@
+import { TokenStorageService } from './../../auth/token-storage.service';
 import { Observable } from 'rxjs';
 import { CandidatureService } from './../../services/candidature.service';
 import { Component, OnInit } from '@angular/core';
 import {UserService} from '../../services/user.service';
+import { tokenKey } from '@angular/core/src/view';
 @Component({
   selector: 'app-Candidatures',
   templateUrl: './Candidatures.component.html',
@@ -10,22 +12,19 @@ import {UserService} from '../../services/user.service';
 export class CandidaturesComponent implements OnInit {
 
   currentUser: any;
-  cands: Observable<any[]>;
-  constructor(private userservice: UserService, private candservice: CandidatureService) {
+  candidatures: any;
+  id: any;
+  constructor(private userservice: UserService, private candservice: CandidatureService, private tokenstorage: TokenStorageService) {
 
   }
   ngOnInit() {
-this.userservice.getUserid().subscribe(res => {
-  this.currentUser = res;
-  console.log(res);
-}
-
-  );
-  }
-showCands() {
-  this.cands = this.candservice.getCandByUserId(1123);
-  return this.cands;
-
+    this.candidatures = [];
+    return this.candservice.getCandByUserId().subscribe((data: {}) => {
+      console.log(data);
+      this.candidatures = data;
+    });
 }
 
 }
+
+
