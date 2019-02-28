@@ -1,6 +1,6 @@
 import { TokenStorageService } from './../auth/token-storage.service';
 import { Component, OnInit } from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-coord',
   templateUrl: './coord.component.html',
@@ -16,6 +16,11 @@ username: string;
     this.username = this.tokenstorage.getUsername();
     console.log (this.username);
   }
+  
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
+});
 }
 
 }

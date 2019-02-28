@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TokenStorageService } from '../auth/token-storage.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-admin',
@@ -14,6 +15,13 @@ username: string;
 if (this.tokenstorage.getToken()) {
   this.username = this.tokenstorage.getUsername();
 }
+
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("active");
+});
+
   }
+ 
 
 }

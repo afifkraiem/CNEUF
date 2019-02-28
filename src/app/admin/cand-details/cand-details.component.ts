@@ -23,6 +23,8 @@ showCand() {
     this.cand = data;
   }));  }
 
-
+print(){
+  window.print(); 
+}
 }
 
