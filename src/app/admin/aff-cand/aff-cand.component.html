@@ -21,15 +21,19 @@
             <table class="table table-bordered">
               <tr>
                   <th>Ref</th>
+                  <th>Date de soumission</th>
                   <th>Intitulé du CNEUF</th>
                   <th>Porteur de projet</th>
+                  <th>Direction régionae</th>
                   <th>Etat</th>
                   <th>Détails</th>
               </tr>
               <tr class="non-vu" *ngFor= " let cand of candidatures; ">
                   <td>{{cand.id}}</td>
+                  <td>{{cand.id}}</td>
                   <td>{{cand.nom_projet}}</td>
                   <td>{{cand.nom_porteur_projet}}</td>
+                  <td>{{cand.direction_reg}}</td>
                   <td class="text-center "><i title="Brouillon" class="fas fa-edit" style="color:#702381;"></i></td>
                   <td class="text-center"><a routerLink = "../cand-details/{{cand.id}}"><i class="fas fa-eye"></i></a></td>
                 </tr>

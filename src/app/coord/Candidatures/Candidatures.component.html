@@ -27,11 +27,11 @@
                   <th>Détails</th>
               </tr>
               <tr class="non-vu" *ngFor= " let cand of candidatures ; ">
-                  <td>{{cand.idcneuf}}</td>
+                  <td>{{cand.id}}</td>
                   <td>{{cand.nom_projet}}</td>
                   <td>{{cand.nom_porteur_projet}}</td>
                   <td class="text-center "><i title="Brouillon" class="fas fa-edit" style="color:#702381;"></i></td>
-                  <td class="text-center"><a routerLink = "../cand-details/{{cand.id}}"><i class="fas fa-eye"></i></a></td>
+                  <td class="text-center"><a routerLink = "./../cand-details/{{cand.id}}"><i class="fas fa-eye"></i></a></td>
                 </tr>
 
 

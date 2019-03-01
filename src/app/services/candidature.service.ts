@@ -23,7 +23,7 @@ export class CandidatureService {
     return this.http.get<any> (this.apiUrl + '/cands1', options);
   }
 getCandById(id: number) {
-  return this.http.get<any[]> (this.apiUrl + '/cands/' + id);
+  return this.http.get<any[]> (this.apiUrl + '/cneuf/' + id);
 
 }
   saveCand(candidature: any) {
