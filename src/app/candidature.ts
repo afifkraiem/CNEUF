@@ -19,8 +19,8 @@ export class Candidature {
   gouvernance: string;
   date_transfert: string;
   org_opera: string;
-  academiques:  [];
-  economiques: [];
-  autres: [];
-  implantations: [];
+  academiques: any[];
+  economiques: any[];
+  autres: any[];
+  implantations: any[];
 }

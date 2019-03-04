@@ -486,7 +486,7 @@
                     <h5>Partenaires Académiques</h5>
                     <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addParts()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
                 </div>
-                <div formArrayName="academiques" >
+                <div formArrayName="partenaireAcad" >
                   <div *ngFor="let acad of acadForms.controls; let i = index" [formGroupName]="i">
                       <ng-container >
                           <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removePart(i)><i class="fas fa-trash-alt"></i> </button>
@@ -865,7 +865,7 @@
                 <h5>Partenaires Socio-économique (Entreprises,  ONG, Associations)</h5>
                 <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addEco()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
             </div>
-            <div formArrayName="academiques" >
+            <div formArrayName="partenaireSe" >
               <div *ngFor="let eco of ecoForms.controls; let i = index" [formGroupName]="i">
                   <ng-container >
                       <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removeEco()><i class="fas fa-trash-alt"></i> </button>
@@ -1237,7 +1237,7 @@
                     <h5>Autres partenaires (Institutionnels, Coopérations, Médias...)</h5>
                     <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addAut() ><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
                 </div>
-                <div formArrayName="autres" >
+                <div formArrayName="partenaireAutre" >
                   <div *ngFor="let aut of autForms.controls; let i = index" [formGroupName]="i">
                       <ng-container >
                           <button class="btn  btn1 pull-right" id="removePart" type="button" (click)= removeAut()><i class="fas fa-trash-alt"></i> </button>

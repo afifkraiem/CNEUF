@@ -40,9 +40,9 @@ candidature: Candidature;
         gouvernance: '',
         date_transfert: '',
         org_opera: '',
-        academiques: this.fb.array([this.createPart()]),
-        economiques: this.fb.array([this.createPart()]),
-        autres: this.fb.array([this.createPart()]),
+        partenaireAcad: this.fb.array([this.createPart()]),
+        partenaireSe: this.fb.array([this.createPart()]),
+        partenaireAutre: this.fb.array([this.createPart()]),
         implantations: this.fb.array([this.createPart()])
 
       });
@@ -55,7 +55,6 @@ candidature: Candidature;
       return this.fb.group({
         institution: '',
         nom: '',
-        document: '',
         lettre: '',
         fonction: '',
         tel: '',
@@ -69,11 +68,11 @@ candidature: Candidature;
       });
     }
     get acadForms() {
-      return this.form.get('academiques') as FormArray;
+      return this.form.get('partenaireAcad') as FormArray;
     }
 
     addParts() {
-    const acad = <FormArray>this.form.controls.academiques as FormArray;
+    const acad = <FormArray>this.form.controls.partenaireAcad as FormArray;
       acad.push(this.createPart() );
 
     }
@@ -82,11 +81,11 @@ candidature: Candidature;
   }
 
   get ecoForms() {
-    return this.form.get('economiques') as FormArray;
+    return this.form.get('partenaireSe') as FormArray;
   }
 
   addEco() {
-  const eco = <FormArray>this.form.controls.economiques as FormArray;
+  const eco = <FormArray>this.form.controls.partenaireSe as FormArray;
     eco.push(this.createPart());
 }
 
@@ -94,11 +93,11 @@ removeEco(index) {
   this.ecoForms.removeAt(index);
 }
 get autForms() {
-  return this.form.get('autres') as FormArray;
+  return this.form.get('partenaireAutre') as FormArray;
 }
 
 addAut() {
-const aut = <FormArray>this.form.controls.autres as FormArray;
+const aut = <FormArray>this.form.controls.partenaireAutre as FormArray;
   aut.push(this.createPart());
 }
 removeAut(index) {
@@ -120,10 +119,9 @@ this.implForms.removeAt(index);
 Soumettre() {
   console.log(this.form.value);
   console.log('hello');
-  this.candserice.saveCand(this.form.value).subscribe(
-    data => console.log('success!', data),
-    error => console.log('error', error)
-  );
+  this.candserice.saveCand(this.form.value).subscribe( data => {
+    alert('cneuf created successfully.');
+  });
   }
   }
 

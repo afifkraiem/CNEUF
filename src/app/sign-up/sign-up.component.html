@@ -23,7 +23,7 @@
         <label>Nom d'utilisateur</label>
         <input type="text" class="form-control input-sign" placeholder="Nom d'utilisateur" name="username" [(ngModel)]="form.username" #username="ngModel" [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" required />
         <div *ngIf="f.submitted && username.invalid">
-          <div *ngIf="username.errors?.required">Username is required</div>
+          <div *ngIf="username?.errors.required">Username is required</div>
         </div>
       </div>
         <br>
@@ -31,8 +31,8 @@
         <label>Adresse de messagerie</label>
         <input type="email" class="form-control input-sign" placeholder="Aresse de messagerie"  name="email" [(ngModel)]="form.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
         <div *ngIf="f.submitted && form.controls.email.errors" class="error">
-          <div *ngIf="email.errors?.required">Email is required</div>
-          <div *ngIf="email.errors?.email">Email must be a valid email address</div>
+          <div *ngIf="email?.errors.required">Email is required</div>
+          <div *ngIf="email?.errors?.email">Email must be a valid email address</div>
         </div>
       </div>
        <br>
