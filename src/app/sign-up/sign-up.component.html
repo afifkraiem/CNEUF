@@ -13,26 +13,31 @@
 
         <div class="form-group">
           <label>Nom complet</label>
-          <input type="text" class="form-control input-sign" placeholder="Nom et prénom" name="name" [(ngModel)]="form.name" #name="ngModel"  [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required/>
-          <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
-            <div *ngIf="name.hasError('required')">Name is required</div>
+        <input type="text" class="form-control input-sign" placeholder="Nom et prénom" name="name" [(ngModel)]="form.name" #name="ngModel"  [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required/>
+        <br>  
+        <div *ngIf="f.submitted && name.invalid " class="alert alert-danger"> 
+            Nom obligatoire !
           </div>
         </div>
           <br>
           <div class="form-group">
         <label>Nom d'utilisateur</label>
         <input type="text" class="form-control input-sign" placeholder="Nom d'utilisateur" name="username" [(ngModel)]="form.username" #username="ngModel" [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" required />
-        <div *ngIf="f.submitted && username.invalid">
-          <div *ngIf="username?.errors.required">Username is required</div>
+       
+        <br>
+        <div *ngIf="f.submitted && username.invalid" class="alert alert-danger">
+          Nom d'utilisateur obligatoire !
         </div>
       </div>
         <br>
         <div class="form-group">
         <label>Adresse de messagerie</label>
         <input type="email" class="form-control input-sign" placeholder="Aresse de messagerie"  name="email" [(ngModel)]="form.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
-        <div *ngIf="f.submitted && form.controls.email.errors" class="error">
-          <div *ngIf="email?.errors.required">Email is required</div>
-          <div *ngIf="email?.errors?.email">Email must be a valid email address</div>
+        
+        <br>
+        <div *ngIf="f.submitted && email.invalid" class="alert alert-danger">
+          <div *ngIf="email?.errors.required">Adresse de messagerie obligatoire !</div>
+          <div *ngIf="email?.errors.email">Adresse de messagerie non valide !</div>
         </div>
       </div>
        <br>
@@ -40,14 +45,16 @@
         <label>Nouveau mot de passe</label>
         <input type="password" class="form-control input-sign" placeholder="Mot de passe" name="password" [(ngModel)]="form.password" #password="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6" />
-        <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
-            <div *ngIf="password.errors?.required">Password is required</div>
-            <div *ngIf="password.errors?.minlength">Password must be at least 6 characters</div>
+        <br>
+
+        <div *ngIf="f.submitted && password.invalid" class="alert alert-danger">
+            <div *ngIf="password?.errors.required">Mot de passe obligatoire !</div>
+            <div *ngIf="password?.errors.minlength">le mot de passe doit contenir au moins 6 caractères !</div>
         </div>
       </div>
        <br>
         <button class="btn" type="submit"  >Créer</button>
-        <div *ngIf="f.submitted && !f.valid" class="alert alert-warning">
+        <div *ngIf="f.submitted && isSignUpFailed" class="alert alert-warning">
             Signup failed!<br/>{{errorMessage}}
           </div>
       </form>

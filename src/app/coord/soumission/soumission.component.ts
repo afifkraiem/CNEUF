@@ -40,16 +40,18 @@ candidature: Candidature;
         gouvernance: '',
         date_transfert: '',
         org_opera: '',
-        partenaireAcad: this.fb.array([this.createPart()]),
-        partenaireSe: this.fb.array([this.createPart()]),
-        partenaireAutre: this.fb.array([this.createPart()]),
-        implantations: this.fb.array([this.createPart()])
+        partenaireAcad: this.fb.array([]),
+        partenaireSe: this.fb.array([]),
+        partenaireAutre: this.fb.array([]),
+        implantations: this.fb.array([]),
+        partenaires: this.fb.array([])
 
       });
       if (this.tokenstorage.getToken()) {
         this.username = this.tokenstorage.getUsername();
         console.log(this.username);
       }
+
     }
     createPart() {
       return this.fb.group({
@@ -67,14 +69,36 @@ candidature: Candidature;
         doc: '',
       });
     }
+    createinst() {
+      return this.fb.group ({
+        fpa1: '',
+        fpa2: '',
+        fpa3: '',
+        fpa4: '',
+        ipa1: '',
+        ipa2: '',
+        ipa3: '',
+        ipa4: '',
+        ppa1: '',
+        ppa2: '',
+        ppa3: '',
+        ppa4: ''
+
+      });
+    }
     get acadForms() {
       return this.form.get('partenaireAcad') as FormArray;
+    }
+    get partesnaires() {
+      return this.form.get('partenaires') as FormArray;
     }
 
     addParts() {
     const acad = <FormArray>this.form.controls.partenaireAcad as FormArray;
       acad.push(this.createPart() );
 
+      const part = <FormArray>this.form.controls.partenaires as FormArray;
+      part.push(this.createinst() );
     }
   removePart(index) {
     this.acadForms.removeAt(index);
@@ -123,5 +147,6 @@ Soumettre() {
     alert('cneuf created successfully.');
   });
   }
+ 
   }
 

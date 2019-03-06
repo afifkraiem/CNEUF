@@ -1,8 +1,9 @@
+import { HttpHandler } from '@angular/common/http';
 import { AuthService } from './../auth/auth.service';
 import { SignUpInfo } from './../auth/signup-info';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import {HttpResponse} from '@angular/common/http';
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -12,9 +13,10 @@ export class SignUpComponent implements OnInit {
   form: any = {};
   signupInfo: SignUpInfo;
   errorMessage = '';
-  submitted = false;
+  isSignUpFailed = false;
 
-  constructor(private authService: AuthService, private router: Router) { }
+
+  constructor(private authService: AuthService, private router: Router, resp: HttpHandler) { }
 
   ngOnInit() {
   }
@@ -30,14 +32,24 @@ export class SignUpComponent implements OnInit {
     this.authService.signUp(this.signupInfo).subscribe(
       data => {
         console.log(data);
+        this.isSignUpFailed = false;
+
+        if (this.form.valid) {
+          this.router.navigateByUrl('/signIn');
+
+        } else {
+          return;
+        }
 
       },
       error => {
         console.log(error);
         this.errorMessage = error.error.message;
+        console.log(this.errorMessage);
+        this.isSignUpFailed = true;
+
 
       }
     );
-this.router.navigateByUrl('/signIn');
   }
 }
