@@ -15,6 +15,9 @@ export class SoumissionComponent implements OnInit {
     form: FormGroup;
 username: any;
 candidature: Candidature;
+parts: any [];
+testnom: string;
+pnom: string;
     constructor(private fb: FormBuilder, private tokenstorage: TokenStorageService, private candserice: CandidatureService) {
 
     }
@@ -60,17 +63,29 @@ candidature: Candidature;
     createinst() {
       return this.fb.group ({
       fpa1: '',
+      cfpa1: '',
       fpa2: '',
+      cfpa2: '',
       fpa3: '',
+      cfpa3: '',
       fpa4: '',
+      cfpa4: '',
       ipa1: '',
+      cipa1: '',
       ipa2: '',
+      cipa2: '',
       ipa3: '',
+      cipa3: '',
       ipa4: '',
+      cipa4: '',
       ppa1: '',
+      cppa1: '',
       ppa2: '',
+      cppa2: '',
       ppa3: '',
-      ppa4: ''
+      cppa3: '',
+      ppa4: '',
+      cppa4: ''
       
       });
       } 
@@ -215,8 +230,7 @@ this.implForms.removeAt(index);
 }
 
 Soumettre() {
-  const frm = JSON.stringify(JSON.parse(this.form.value));
-  console.log(frm);
+  console.log(this.form.value);
   console.log('hello');
   this.candserice.saveCand(this.form.value).subscribe( data => {
     alert('cneuf created successfully.');

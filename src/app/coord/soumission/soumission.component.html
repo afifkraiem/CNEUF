@@ -16,6 +16,8 @@
                         <input type="text" class="form-control" placeholder="Intitulé du projet" formControlName="nom_projet" >
                     </div>
 
+
+
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <div class="form-group">
@@ -267,66 +269,97 @@
                 </div>
 
                 <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Gouvernance du projet CNEUF<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal5"><i class="fas fa-info-circle"></i></a></label>
+
+                            <!--Modal-->
+                            <div class="modal fade" id="myModal5" role="dialog">
+                                <div class="modal-dialog modal-md hidden-sm hidden-xs">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Décrivez la structure de gouvernance et comment les différents partenaires y sont
+                                            associés </p>
+                                    </div>
+
+                                  </div>
+                                </div>
+                        <!-- xs visible-->
+                                <div class="modal-dialog modal-sm visible-sm visible-xs">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                          </div>
+                                          <div class="modal-body">
+                                            <p>Décrivez la structure de gouvernance et comment les différents partenaires y sont
+                                                    associés </p>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                              </div><textarea class="form-control" formControlName="gouvernance"> </textarea>
+                        </div>
+                    </div>
+
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
-                                <label for="">Localisation des infrastructures mobilisées pour le projet<br><i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal3"><i class="fas fa-info-circle"></i></a></label>
-
-                                <!--Modal-->
-                                <div class="modal fade" id="myModal3" role="dialog">
-                                    <div class="modal-dialog modal-md hidden-sm hidden-xs">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                                        </div>
-                                        <div class="modal-body">
-                                          <p>Indiquez clairement le lieu où sera hébergé le projet C-NEUF, préciser s’il s’agit de locaux
-                                                existants ou à prévoir, éventuellement joindre des plans y compris d’aménagement ;
-                                                (plusieurs lieux possibles)
-                                                </p>
-                                        </div>
-
-                                      </div>
-                                    </div>
-                            <!-- xs visible-->
-                                    <div class="modal-dialog modal-sm visible-sm visible-xs">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                                              </div>
-                                              <div class="modal-body">
-                                                <p>Indiquez clairement le lieu où sera hébergé le projet C-NEUF, préciser s’il s’agit de locaux
-                                                        existants ou à prévoir, éventuellement joindre des plans y compris d’aménagement ;
-                                                        (plusieurs lieux possibles)
-                                                        </p>
-                                              </div>
-
-                                            </div>
-                                          </div>
-                                  </div>
-                                <input type="text" class="form-control" placeholder="Localisation" formControlName="localisation">
-
+                                <label for="">Organisation opérationnelle<br><i class="description">Précisez ainsi les compétences (ressources humaines) requises</i></label>
+                                <textarea class="form-control"  formControlName="org_opera"> </textarea>
                             </div>
+                </div>
 
-                        </div>
                 </div>
 
                 <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <label for="">Indiquez s'il s'agit de locaux existants ou à prévoir </label>
-                                <br>  <br>
-                                <input type="radio" formControlName="locaux" value="existant"> Existants
-                                <input type="radio" formControlName="locaux" value="prevoir"> A prévoir
-                                    <br>
-                                    <label><i class="description"> Joindre éventuellement des plans y compris d'aménagement</i></label>
-                                    <input type="file" class="form-control" formControlName="plan_amenagement">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Localisation des infrastructures mobilisées pour le projet<br><i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal3"><i class="fas fa-info-circle"></i></a></label>
 
+                            <!--Modal-->
+                            <div class="modal fade" id="myModal3" role="dialog">
+                                <div class="modal-dialog modal-md hidden-sm hidden-xs">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-                            </div>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Indiquez clairement le lieu où sera hébergé le projet C-NEUF, préciser s’il s’agit de locaux
+                                            existants ou à prévoir, éventuellement joindre des plans y compris d’aménagement ;
+                                            (plusieurs lieux possibles)
+                                            </p>
+                                    </div>
+
+                                  </div>
+                                </div>
+                        <!-- xs visible-->
+                                <div class="modal-dialog modal-sm visible-sm visible-xs">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                          </div>
+                                          <div class="modal-body">
+                                            <p>Indiquez clairement le lieu où sera hébergé le projet C-NEUF, préciser s’il s’agit de locaux
+                                                    existants ou à prévoir, éventuellement joindre des plans y compris d’aménagement ;
+                                                    (plusieurs lieux possibles)
+                                                    </p>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                              </div>
+                            <input type="text" class="form-control" placeholder="Localisation" formControlName="localisation">
 
                         </div>
+
+                    </div>
+                 
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Stratégie de communication<br><i class="description"> Détaillez la stratégie de communication autour du projet, ses cibles et ses objectifs </i></label>
@@ -337,6 +370,22 @@
 
 
                 <div class="row">
+                    
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="">Indiquez s'il s'agit de locaux existants ou à prévoir </label>
+                            <br>  <br>
+                            <input type="radio" formControlName="locaux" value="existant"> Existants
+                            <input type="radio" formControlName="locaux" value="prevoir"> A prévoir
+                                <br>
+                                <label><i class="description"> Joindre éventuellement des plans y compris d'aménagement</i></label>
+                                <input type="file" class="form-control" formControlName="plan_amenagement">
+
+
+                        </div>
+
+                    </div>
+
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Stratégie de pérrennisation<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal4"><i class="fas fa-info-circle"></i></a></label>
@@ -376,45 +425,12 @@
                             </div>
 
                         </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <label for="">Gouvernance du projet CNEUF<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal5"><i class="fas fa-info-circle"></i></a></label>
-
-                                <!--Modal-->
-                                <div class="modal fade" id="myModal5" role="dialog">
-                                    <div class="modal-dialog modal-md hidden-sm hidden-xs">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                                        </div>
-                                        <div class="modal-body">
-                                          <p>Décrivez la structure de gouvernance et comment les différents partenaires y sont
-                                                associés </p>
-                                        </div>
-
-                                      </div>
-                                    </div>
-                            <!-- xs visible-->
-                                    <div class="modal-dialog modal-sm visible-sm visible-xs">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                                              </div>
-                                              <div class="modal-body">
-                                                <p>Décrivez la structure de gouvernance et comment les différents partenaires y sont
-                                                        associés </p>
-                                              </div>
-
-                                            </div>
-                                          </div>
-                                  </div><textarea class="form-control" formControlName="gouvernance"> </textarea>
-                            </div>
-                        </div>
+                       
                 </div>
 
                 <div class="row">
+                     <div class="col-md-6 col-xs-12">
+                     </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Date de transfert à un partenaire<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal6"><i class="fas fa-info-circle"></i></a></label>
@@ -452,12 +468,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <label for="">Organisation opérationnelle<br><i class="description">Précisez ainsi les compétences (ressources humaines) requises</i></label>
-                                <textarea class="form-control"  formControlName="org_opera"> </textarea>
-                            </div>
-                        </div>
+                       
                 </div>
 
 
@@ -1609,7 +1620,8 @@
              <div class="row">
                      <h5>Autres implantations de l'AUF impliquées</h5>
                      <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addImpl()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
-                 </div>
+                     <br> <br>
+                    </div>
                  <div formArrayName="implantations" >
                   <div *ngFor="let impl of implForms.controls; let i = index" [formGroupName]="i">
                       <ng-container >
