@@ -429,8 +429,6 @@
                 </div>
 
                 <div class="row">
-                     <div class="col-md-6 col-xs-12">
-                     </div>
                         <div class="col-md-6 col-xs-12">
                             <div class="form-group">
                                 <label for="">Date de transfert à un partenaire<br> <i class="description"> Cliquez pour voir les détails </i> <a data-toggle="modal" data-target="#myModal6"><i class="fas fa-info-circle"></i></a></label>
@@ -496,7 +494,8 @@
                 <div class="row">
                     <h5>Partenaires Académiques</h5>
                     <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addParts()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
-                </div>
+                  <br> <br>
+                  </div>
                 <div formArrayName="partenaireAcad" >
                   <div *ngFor="let acad of acadForms.controls; let i = index" [formGroupName]="i">
                       <ng-container >
@@ -875,7 +874,8 @@
          <div class="row">
                 <h5>Partenaires Socio-économique (Entreprises,  ONG, Associations)</h5>
                 <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addEco()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
-            </div>
+                <br> <br>           
+              </div>
             <div formArrayName="partenaireSe" >
               <div *ngFor="let eco of ecoForms.controls; let i = index" [formGroupName]="i">
                   <ng-container >
@@ -1247,7 +1247,8 @@
             <div class="row">
                     <h5>Autres partenaires (Institutionnels, Coopérations, Médias...)</h5>
                     <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addAut() ><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
-                </div>
+                    <br> <br>               
+                  </div>
                 <div formArrayName="partenaireAutre" >
                   <div *ngFor="let aut of autForms.controls; let i = index" [formGroupName]="i">
                       <ng-container >
@@ -1620,6 +1621,7 @@
              <div class="row">
                      <h5>Autres implantations de l'AUF impliquées</h5>
                      <button class="btn  btn1 pull-right" id="add_establishment" type="button" (click)= addImpl()><i class="fa fa-plus-circle padding-fa-buttom"></i> Ajouter un partenaire </button>
+                  <br> <br>                    
                      <br> <br>
                     </div>
                  <div formArrayName="implantations" >
