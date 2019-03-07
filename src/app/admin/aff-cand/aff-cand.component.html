@@ -16,6 +16,17 @@
   </div>
 <br>
 <br>
+<div class="row">
+<p style="text-align : center;"> 
+  <i title="Brouillon" class="fas fa-edit" style="color:#702381;"></i> Brouillon &nbsp;&nbsp;&nbsp;&nbsp;
+  <i title="Attente de consolidation" class="fas fa-clock fa-lg" style="color:orange;"></i> Attente de consolidation &nbsp;&nbsp;&nbsp;&nbsp;
+  <i title="Consolider et en attente d'expert" class="fas fa-user-clock fa-lg" style="color:green;"></i> Consolidé et en attente d'expert&nbsp;&nbsp;&nbsp;&nbsp;
+  <i title="Consolider et assigner à un expert" class="fas fa-user fa-lg" style="color:green;"></i> Consolidé et assigné à un expert&nbsp;&nbsp;&nbsp;&nbsp;
+  <i title="Valider" class="fas fa-check-circle " style="color:green;"></i> Validé &nbsp;&nbsp;&nbsp;&nbsp;
+  <i title="Rejetter" class="fas fa-times-circle" style="color:red;"></i> Rejetté
+</p>
+</div>
+<br> <br>
     <div class="row ">
         <div class="table-responsive">
             <table class="table table-bordered">
@@ -30,7 +41,7 @@
               </tr>
               <tr class="non-vu" *ngFor= " let cand of candidatures; ">
                   <td>{{cand.id}}</td>
-                  <td>{{cand.id}}</td>
+                  <td>28/02/2019</td>
                   <td>{{cand.nom_projet}}</td>
                   <td>{{cand.nom_porteur_projet}}</td>
                   <td>{{cand.direction_reg}}</td>

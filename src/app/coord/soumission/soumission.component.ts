@@ -57,6 +57,24 @@ candidature: Candidature;
       }
 
     }
+    createinst() {
+      return this.fb.group ({
+      fpa1: '',
+      fpa2: '',
+      fpa3: '',
+      fpa4: '',
+      ipa1: '',
+      ipa2: '',
+      ipa3: '',
+      ipa4: '',
+      ppa1: '',
+      ppa2: '',
+      ppa3: '',
+      ppa4: ''
+      
+      });
+      } 
+
     createPart() {
       return this.fb.group({
         institution: '',
@@ -144,6 +162,11 @@ candidature: Candidature;
       const part = <FormArray>this.form.controls.RecettePartAcad as FormArray;
       part.push(this.createRecAcad() );
     }
+
+  get partesnaires() {
+    return this.form.get('partenaires') as FormArray;
+    } 
+
   removePart(index) {
     this.acadForms.removeAt(index);
   }
@@ -183,13 +206,17 @@ get implForms() {
 addImpl() {
 const impl = <FormArray>this.form.controls.implantations as FormArray;
   impl.push(this.createPart());
+  const part = <FormArray>this.form.controls.partenaires as FormArray;
+    part.push(this.createinst() ); 
+ 
 }
 removeImpl(index) {
 this.implForms.removeAt(index);
 }
 
 Soumettre() {
-  console.log(this.form.value);
+  const frm = JSON.stringify(JSON.parse(this.form.value));
+  console.log(frm);
   console.log('hello');
   this.candserice.saveCand(this.form.value).subscribe( data => {
     alert('cneuf created successfully.');
