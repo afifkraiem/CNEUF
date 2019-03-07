@@ -17,6 +17,8 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
 import { ArticleComponent } from './admin/article/article.component';
 import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
+import { ExpertComponent } from './expert/expert.component';
+
 
 
 const routes: Routes = [
@@ -43,6 +45,12 @@ const routes: Routes = [
       {path: 'article', component: ArticleComponent},
       {path: 'aff_cand', component: AffCandComponent},
       {path: 'cand-details/:id', component: CandDetailsComponent}
+
+    ]
+  },
+
+  {path : 'expert', component :ExpertComponent,  children: [
+   
 
     ]
   },

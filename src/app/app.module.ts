@@ -29,6 +29,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { AdminDashComponent } from './admin/admin-dash/admin-dash.component';
 import { httpInterceptorProviders, AuthInterceptor } from './auth/auth-interceptor';
 import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
+import { ExpertComponent } from './expert/expert.component';
+
 @NgModule({
    declarations: [
       AppComponent,
@@ -51,7 +53,8 @@ import { AffCandComponent } from './admin/aff-cand/aff-cand.component';
       AdminDashComponent,
       SoumissionComponent,
       AffCandComponent,
-      CandDetailsComponent
+      CandDetailsComponent,
+      ExpertComponent
    ],
    imports: [
       BrowserModule,
