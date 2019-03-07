@@ -1,7 +1,7 @@
 import { CandidatureService } from './../../services/candidature.service';
 import { Candidature } from './../../candidature';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, FormArray, FormBuilder } from '@angular/forms';
+import { FormControl, FormGroup, FormArray, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { TokenStorageService } from 'src/app/auth/token-storage.service';
 import { StringifyOptions } from 'querystring';
 
@@ -49,15 +49,37 @@ pnom: string;
         implantations: this.fb.array([]),
         RecettePartAcad: this.fb.array([]),
         RecettePartSe: this.fb.array([]),
-        RecettePartAutre: this.fb.array([])
+        RecettePartAutre: this.fb.array([]),
+        RecetteAUF: this.fb.group ({
+          afa1: new FormControl(''),
+          cafa1: new FormControl(''),
+          afa2: new FormControl(''),
+          cafa2: new FormControl(''),
+          afa3: new FormControl(''),
+          cafa3: new FormControl(''),
+          afa4: new FormControl(''),
+          cafa4: new FormControl(''),
+          aia1: new FormControl(''),
+          caia1: new FormControl(''),
+          aia2: new FormControl(''),
+          caia2: new FormControl(''),
+          aia3: new FormControl(''),
+          caia3: new FormControl(''),
+          aia4: new FormControl(''),
+          caia4: new FormControl(''),
+          apa1: new FormControl(''),
+          capa1: new FormControl(''),
+          apa2: new FormControl(''),
+          capa2: new FormControl(''),
+          apa3: new FormControl(''),
+          capa3: new FormControl(''),
+          apa4: new FormControl(''),
+          capa4: new FormControl(''),
+          }),
 
 
 
       });
-      if (this.tokenstorage.getToken()) {
-        this.username = this.tokenstorage.getUsername();
-        console.log(this.username);
-      }
 
     }
     createinst() {
@@ -85,10 +107,9 @@ pnom: string;
       ppa3: '',
       cppa3: '',
       ppa4: '',
-      cppa4: ''
-      
+      cppa4: '',
       });
-      } 
+      }
 
     createPart() {
       return this.fb.group({
@@ -108,18 +129,30 @@ pnom: string;
     }
     createRecAcad() {
       return this.fb.group ({
-        faa1: '',
-        faa2: '',
-        faa3: '',
-        faa4: '',
-        iaa1: '',
-        iaa2: '',
-        iaa3: '',
-        iaa4: '',
-        paa1: '',
-        paa2: '',
-        paa3: '',
-        paa4: ''
+          faa1: '',
+          faa2: '',
+          faa3: '',
+          faa4: '',
+          iaa1: '',
+          iaa2: '',
+          iaa3: '',
+          iaa4: '',
+          paa1: '',
+          paa2: '',
+          paa3: '',
+          paa4: '',
+          cfaa1: '',
+          cfaa2: '',
+          cfaa3: '',
+          cfaa4: '',
+          ciaa1: '',
+          ciaa2: '',
+          ciaa3: '',
+          ciaa4: '',
+          cpaa1: '',
+          cpaa2: '',
+          cpaa3: '',
+          cpaa4: ''
 
       });
     }
@@ -136,8 +169,19 @@ pnom: string;
         psa1: '',
         psa2: '',
         psa3: '',
-        psa4: ''
-
+        psa4: '',
+        cfsa1: '',
+        cfsa2: '',
+        cfsa3: '',
+        cfsa4: '',
+        cisa1: '',
+        cisa2: '',
+        cisa3: '',
+        cisa4: '',
+        cpsa1: '',
+        cpsa2: '',
+        cpsa3: '',
+        cpsa4: ''
       });
     }
     createRecAut() {
@@ -153,7 +197,21 @@ pnom: string;
         pta1: '',
         pta2: '',
         pta3: '',
-        pta4: ''
+        pta4: '',
+        cfta1: '',
+        cfta2: '',
+        cfta3: '',
+        cfta4: '',
+        cita1: '',
+        cita2: '',
+        cita3: '',
+        cita4: '',
+        cpta1: '',
+        cpta2: '',
+        cpta3: '',
+        cpta4: ''
+
+
 
       });
     }
@@ -175,12 +233,8 @@ pnom: string;
       acad.push(this.createPart() );
 
       const part = <FormArray>this.form.controls.RecettePartAcad as FormArray;
-      part.push(this.createRecAcad() );
+      part.push(this.createRecAcad());
     }
-
-  get partesnaires() {
-    return this.form.get('partenaires') as FormArray;
-    } 
 
   removePart(index) {
     this.acadForms.removeAt(index);
@@ -194,7 +248,7 @@ pnom: string;
   const eco = <FormArray>this.form.controls.partenaireSe as FormArray;
     eco.push(this.createPart());
     const part = <FormArray>this.form.controls.RecettePartSe as FormArray;
-    part.push(this.createRecSe() );   
+    part.push(this.createRecSe() );
 }
 
 removeEco(index) {
@@ -222,8 +276,8 @@ addImpl() {
 const impl = <FormArray>this.form.controls.implantations as FormArray;
   impl.push(this.createPart());
   const part = <FormArray>this.form.controls.partenaires as FormArray;
-    part.push(this.createinst() ); 
- 
+    part.push(this.createinst() );
+
 }
 removeImpl(index) {
 this.implForms.removeAt(index);
@@ -236,6 +290,6 @@ Soumettre() {
     alert('cneuf created successfully.');
   });
   }
- 
+
   }
 
