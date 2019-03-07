@@ -44,7 +44,11 @@ candidature: Candidature;
         partenaireSe: this.fb.array([]),
         partenaireAutre: this.fb.array([]),
         implantations: this.fb.array([]),
-        partenaires: this.fb.array([])
+        RecettePartAcad: this.fb.array([]),
+        RecettePartSe: this.fb.array([]),
+        RecettePartAutre: this.fb.array([])
+
+
 
       });
       if (this.tokenstorage.getToken()) {
@@ -69,36 +73,76 @@ candidature: Candidature;
         doc: '',
       });
     }
-    createinst() {
+    createRecAcad() {
       return this.fb.group ({
-        fpa1: '',
-        fpa2: '',
-        fpa3: '',
-        fpa4: '',
-        ipa1: '',
-        ipa2: '',
-        ipa3: '',
-        ipa4: '',
-        ppa1: '',
-        ppa2: '',
-        ppa3: '',
-        ppa4: ''
+        faa1: '',
+        faa2: '',
+        faa3: '',
+        faa4: '',
+        iaa1: '',
+        iaa2: '',
+        iaa3: '',
+        iaa4: '',
+        paa1: '',
+        paa2: '',
+        paa3: '',
+        paa4: ''
+
+      });
+    }
+    createRecSe() {
+      return this.fb.group ({
+        fsa1: '',
+        fsa2: '',
+        fsa3: '',
+        fsa4: '',
+        isa1: '',
+        isa2: '',
+        isa3: '',
+        isa4: '',
+        psa1: '',
+        psa2: '',
+        psa3: '',
+        psa4: ''
+
+      });
+    }
+    createRecAut() {
+      return this.fb.group ({
+        fta1: '',
+        fta2: '',
+        fta3: '',
+        fta4: '',
+        ita1: '',
+        ita2: '',
+        ita3: '',
+        ita4: '',
+        pta1: '',
+        pta2: '',
+        pta3: '',
+        pta4: ''
 
       });
     }
     get acadForms() {
       return this.form.get('partenaireAcad') as FormArray;
     }
-    get partesnaires() {
-      return this.form.get('partenaires') as FormArray;
+    get recAcad() {
+      return this.form.get('RecettePartAcad') as FormArray;
+    }
+    get recSe() {
+      return this.form.get('RecettePartSe') as FormArray;
+    }
+    get recAut() {
+      return this.form.get('RecettePartAutre') as FormArray;
     }
 
     addParts() {
     const acad = <FormArray>this.form.controls.partenaireAcad as FormArray;
       acad.push(this.createPart() );
 
-      const part = <FormArray>this.form.controls.partenaires as FormArray;
-      part.push(this.createinst() );
+      const part = <FormArray>this.form.controls.RecettePartAcad as FormArray;
+      part.push(this.createRecAcad() );
     }
   removePart(index) {
     this.acadForms.removeAt(index);
@@ -111,6 +155,8 @@ candidature: Candidature;
   addEco() {
   const eco = <FormArray>this.form.controls.partenaireSe as FormArray;
     eco.push(this.createPart());
+    const part = <FormArray>this.form.controls.RecettePartSe as FormArray;
+    part.push(this.createRecSe() );   
 }
 
 removeEco(index) {
@@ -123,6 +169,8 @@ get autForms() {
 addAut() {
 const aut = <FormArray>this.form.controls.partenaireAutre as FormArray;
   aut.push(this.createPart());
+  const part = <FormArray>this.form.controls.RecettePartAutre as FormArray;
+      part.push(this.createRecAut() );
 }
 removeAut(index) {
 this.autForms.removeAt(index);

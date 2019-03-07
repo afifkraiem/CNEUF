@@ -2031,32 +2031,85 @@
                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
                                </tr>
-                                  <tbody formArrayName="partenaires" *ngFor="let part of partesnaires.controls; let i = index" [formGroupName]="i" >
+                                  <tbody formArrayName="RecettePartAcad" *ngFor="let part of recAcad.controls; let i = index" [formGroupName]="i" >
                                <tr>
-                                    <td rowspan="3" class="titre-table" >Partenaire 1</td>
+                                    <td rowspan="3" class="titre-table" >Partenaire Académique i</td>
                                     <td>Fonctionnement</td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fpa1" name="fpa1"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fpa2"  name="fpa2"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fpa3" name="fpa3"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fpa4" name="fpa4"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="faa1" name="faa1"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="faa2"  name="faa2"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="faa3" name="faa3"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="faa4" name="faa4"><input type="checkbox"></td>
                                 </tr>
 
                                 <tr>
                                     <td>Investissement</td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="ipa1" name="ipa1"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="ipa2" name="ipa2"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ipa3" name="ipa3"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ipa4" name="ipa4"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="iaa1" name="iaa1"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="iaa2" name="iaa2"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="iaa3" name="iaa3"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="iaa4" name="iaa4"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <td>Personnel</td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ppa1" name="ppa1"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ppa2" name="ppa2"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ppa3" name="ppa3"><input type="checkbox"></td>
-                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ppa4" name="ppa4"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="paa1" name="paa1"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="paa2" name="paa2"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="paa3" name="paa3"><input type="checkbox"></td>
+                                    <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="paa4" name="paa4"><input type="checkbox"></td>
                                 </tr>
 
                               </tbody>
+                              <tbody formArrayName="RecettePartSe" *ngFor="let part of recSe.controls; let i = index" [formGroupName]="i" >
+                                  <tr>
+                                       <td rowspan="3" class="titre-table" >Partenaire economique i</td>
+                                       <td>Fonctionnement</td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fsa1" name="fsa1"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fsa2"  name="saa2"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fsa3" name="fsa3"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fsa4" name="fsa4"><input type="checkbox"></td>
+                                   </tr>
+   
+                                   <tr>
+                                       <td>Investissement</td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="isa1" name="isa1"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="isa2" name="isa2"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="isa3" name="isa3"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="isa4" name="isa4"><input type="checkbox"></td>
+                                   </tr>
+                                   <tr>
+                                       <td>Personnel</td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="psa1" name="psa1"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="psa2" name="psa2"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="psa3" name="psa3"><input type="checkbox"></td>
+                                       <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="psa4" name="psa4"><input type="checkbox"></td>
+                                   </tr>
+   
+                                 </tbody>
+
+                                 <tbody formArrayName="RecettePartAutre" *ngFor="let part of recAut.controls; let i = index" [formGroupName]="i" >
+                                    <tr>
+                                         <td rowspan="3" class="titre-table" >Partenaire Autre i</td>
+                                         <td>Fonctionnement</td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fta1" name="fta1"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fta2"  name="fta2"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fta3" name="fta3"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="fta4" name="fta4"><input type="checkbox"></td>
+                                     </tr>
+     
+                                     <tr>
+                                         <td>Investissement</td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="ita1" name="ita1"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros"  formControlName="ita2" name="ita2"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ita3" name="ita3"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="ita4" name="ita4"><input type="checkbox"></td>
+                                     </tr>
+                                     <tr>
+                                         <td>Personnel</td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="pta1" name="pta1"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="pta2" name="pta2"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="pta3" name="pta3"><input type="checkbox"></td>
+                                         <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="pta4" name="pta4"><input type="checkbox"></td>
+                                     </tr>
+     
+                                   </tbody>
 
                             </table>
 
