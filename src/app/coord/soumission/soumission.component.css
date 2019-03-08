@@ -44,6 +44,9 @@ border: 1px solid #eee;
 padding: 3%;
 margin: 2%
 }
+table{
+  margin-bottom: 0px;
+}
 .table-form{
 display: inline-block;
 width: 80%;

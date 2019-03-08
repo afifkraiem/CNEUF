@@ -12,7 +12,8 @@ import { StringifyOptions } from 'querystring';
 })
 export class SoumissionComponent implements OnInit {
 
-    form: FormGroup;
+    
+form: FormGroup;
 username: any;
 candidature: Candidature;
 parts: any [];
@@ -49,7 +50,14 @@ pnom: string;
         implantations: this.fb.array([]),
         RecettePartAcad: this.fb.array([]),
         RecettePartSe: this.fb.array([]),
-        RecettePartAutre: this.fb.array([])
+        RecettePartAutre: this.fb.array([]),
+        RecetteAUF: this.fb.group({
+          test1: '',
+          test2: '',
+          test3: '',
+          test4: '',
+          
+        })
 
 
 
