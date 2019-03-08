@@ -12,7 +12,7 @@ import { StringifyOptions } from 'querystring';
 })
 export class SoumissionComponent implements OnInit {
 
-    
+
 form: FormGroup;
 username: any;
 candidature: Candidature;
@@ -77,6 +77,38 @@ pnom: string;
           apa4: new FormControl(''),
           capa4: new FormControl(''),
           }),
+          Depences: this.fb.group({
+            d_fct_a1: '',
+            d_fct_a2: '',
+            d_fct_a3: '',
+            d_fct_a4: '',
+            d_invest_a1: '',
+            d_invest_a2: '',
+            d_invest_a3: '',
+            d_invest_a4: '',
+            d_perso_a1: '',
+            d_perso_a2: '',
+            d_perso_a3: '',
+            d_perso_a4: '',
+            m_d_fct_a1: '',
+            m_d_fct_a2: '',
+            m_d_fct_a3: '',
+            m_d_fct_a4: '',
+            m_d_invest_a1: '',
+            m_d_invest_a2: '',
+            m_d_invest_a3: '',
+            m_d_invest_a4: '',
+            m_d_perso_a1: '',
+            m_d_perso_a2: '',
+            m_d_perso_a3: '',
+            m_d_perso_a4: ''
+
+          }),
+          devis_travaux: '',
+          budget_prev: '',
+          equipement: '',
+          charte_qualite: '',
+          cgu: ''
 
 
 

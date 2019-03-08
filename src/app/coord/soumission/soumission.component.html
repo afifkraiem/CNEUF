@@ -2028,32 +2028,32 @@
                                  <tr>
                                      <td rowspan="3" class="col-md-2 titre-table" >AUF</td>
                                      <td>Fonctionnement</td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="test1" ><input type="checkbox" ></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="test2" ><input type="checkbox" ></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="test3" ><input type="checkbox" ></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="test4" ><input type="checkbox" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="afa1" ><input type="checkbox"  formControlName="cafa1" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="afa2" ><input type="checkbox"  formControlName="cafa2" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="afa3" ><input type="checkbox"  formControlName="cafa3" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="afa4" ><input type="checkbox"  formControlName="cafa4" ></td>
                                  </tr>
                                  <tr>
                                      <td>Investissement</td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="aia1" ><input type="checkbox"  value="oui" formControlName="caia1" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="aia2" ><input type="checkbox"  value="oui" formControlName="caia2" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="aia3" ><input type="checkbox"  value="oui" formControlName="caia3" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="aia4" ><input type="checkbox"  value="oui" formControlName="caia4" ></td>
                                  </tr>
                                  <tr>
                                      <td>Personnel</td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
-                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" ><input type="checkbox"  value="oui"></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="apa1" ><input type="checkbox"  value="oui" formControlName="capa1" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="apa2" ><input type="checkbox"  value="oui" formControlName="capa2" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="apa3" ><input type="checkbox"  value="oui" formControlName="capa3" ></td>
+                                     <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="apa4" ><input type="checkbox"  value="oui" formControlName="capa4" ></td>
                                  </tr>
                                  </tbody>
                                </table>
                       </div>
 
-                      <div class="table-responsive"  >
+                      <div class="table-responsive"  formArrayName="RecettePartAcad" >
                         <table class="table table-bordered"  >
-                            <tbody formArrayName="RecettePartAcad" *ngFor="let part of recAcad.controls; let i = index" [formGroupName]="i" >
+                            <tbody  *ngFor="let part of recAcad.controls; let i = index" [formGroupName]="i" >
                              <tr>
                                   <td rowspan="3" class="col-md-2 titre-table" >Partenaire Académique i</td>
                                   <td>Fonctionnement</td>
@@ -2080,9 +2080,9 @@
                         </table>
                       </div>
 
-                      <div class="table-responsive"  >
+                      <div class="table-responsive" formArrayName="RecettePartSe" >
                         <table class="table table-bordered"  >
-                              <tbody formArrayName="RecettePartSe" *ngFor="let part of recSe.controls; let i = index" [formGroupName]="i" >
+                              <tbody  *ngFor="let part of recSe.controls; let i = index" [formGroupName]="i" >
                                   <tr>
                                        <td rowspan="3" class=" col-md-2 titre-table" >Partenaire economique i</td>
                                        <td>Fonctionnement</td>
@@ -2106,14 +2106,14 @@
                                        <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="psa3" name="psa3"><input type="checkbox" formControlName="cpsa3" name="cpsa3"></td>
                                        <td><input type="number" class="form-control table-form" placeholder="Entrez le montant en euros" formControlName="psa4" name="psa4"><input type="checkbox" formControlName="cpsa4" name="cpsa4"></td>
                                    </tr>
-                                  
+
                                  </tbody>
                         </table>
                       </div>
 
-                      <div class="table-responsive"  >
+                      <div class="table-responsive" formArrayName="RecettePartAutre" >
                         <table class="table table-bordered"  >
-                                 <tbody formArrayName="RecettePartAutre" *ngFor="let part of recAut.controls; let i = index" [formGroupName]="i" >
+                                 <tbody  *ngFor="let part of recAut.controls; let i = index" [formGroupName]="i" >
                                     <tr >
                                          <td rowspan="3" class=" col-md-2 titre-table" >Partenaire Autre i</td>
                                          <td>Fonctionnement</td>
@@ -2151,8 +2151,8 @@
                  <h4>Budget global dépenses sur 4 années</h4>
                  <i class="description"> Indiquez le budget global dépenses sur 4 années ( un champs text est fournis aussi  pour décrire les détails du budget)<br></i>
                          <br>
-                     <div class="table-responsive" >
-                             <table class="table table-bordered">
+                     <div class="table-responsive"  >
+                             <table class="table table-bordered" formGroupName = "Depences">
                                 <tr>
                                     <th>Dépenses</th>
                                     <th>Année 1</th>
